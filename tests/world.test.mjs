@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {initial,ROLES,PROOF_ACTIONS,replay,transition,observe,checksum} from '../src/world.mjs';
+test('one world across five role projections',()=>{const s=initial(43);assert.equal(new Set(ROLES.map(r=>observe(s,r).worldId)).size,1);});
+test('shared five-actor causality, information separation, conservation',()=>{const s=replay(43,PROOF_ACTIONS);assert.equal(s.events.length,5);assert.equal(s.implementation,'CONTRACTED');assert.equal(s.balances.FINANZIATORE,60);assert.equal(s.balances.IMPRESA,40);assert.equal(observe(s,'GIUDICE').visibleEvents.length,4);assert.equal(observe(s,'FINANZIATORE').visibleEvents.length,5);assert.equal(checksum(replay(43,PROOF_ACTIONS)),checksum(s));});
+test('founder cannot promulgate; judicial power gated',()=>{assert.equal(transition(initial(),{actor:'COSTANTINO',type:'PROMULGA'}).reason,'UNAUTHORIZED');assert.equal(transition(initial(),{actor:'GIUDICE',type:'ACCOGLIE'}).reason,'BAD_PHASE');});
+test('unfunded legitimate program stays unfunded',()=>{const s=replay(2,PROOF_ACTIONS.filter(a=>a.type!=='FINANZIA'));assert.equal(s.implementation,'UNFUNDED');});
+for(let seed=0;seed<200;seed++)test('replay seed '+seed,()=>{assert.equal(checksum(replay(seed,PROOF_ACTIONS)),checksum(replay(seed,PROOF_ACTIONS)));});
