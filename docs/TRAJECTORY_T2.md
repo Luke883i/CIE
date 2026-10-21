@@ -2,8 +2,8 @@
 
 ## Stage status
 
-- F1 shared world: GitHub PR #1 `semantic/f1-living-world` Draft; CI was green on its original SHA at last review, not merged.
-- F2 autonomous episode: bounded fictional runtime completed locally; GitHub PR #2, if published, must be based on F1 head and remain Draft until remote CI is verified. **Not** a full-game release.
+- F1 shared world: GitHub PR #1 merged into `main` at `31eabd3473b3d621eef7634ade48846386d8be5c`.
+- F2 autonomous episode: GitHub PR #2 (`semantic/f2-autonomous-world` → `main`) is open as Draft, based on merged F1; head must remain pinned to whichever exact commit is reviewed. Local suite and remote CI passed during this slice. **Not** a full-game release; independent review and merge remain outstanding.
 - F3 next: mutable `Person -> Mandate -> Office -> Institution` with vacancy, incompatibility, replacement and persistent references to the same historical act, plus jurisdictions and organizational competition.
 - F4 judicial procedure: standing, evidence, hearings, appeals, recusal, collegial court.
 - F5 economy: multi-sector double-entry, debt, maturity, liability and contingent guarantees.
@@ -28,3 +28,11 @@ A player occupies a person with a revocable office mandate; that person can be r
 ## Global acceptance gate
 
 All 12 invariant release gates remain open at game level: world identity, replay, five full campaigns, institutional validity, knowledge, stock-flow, executable V9, reticular causality, actor strategy, inclusive Atlas, end-to-end QA, reproducible release. Passing F2 is not passing those gates; a local test passing is not CI certification.
+
+## T2 actual-audit recalibration
+
+- Evidence: 370 Node tests; 5,000 complete seeded solo episodes (all roles); 5,000 exact replays; five Chromium journeys. These verify the bounded F2 slice, not the complete institutional or economic model.
+- F3 next high-leverage dependency: mutable person-office mandates, appointment/recusal and historical identity, backed by one concrete interactive succession episode.
+- F4 and F5 become independent runtime workstreams only after the F3 data contracts are reviewed. F8 navigation may proceed from the same institutional contract.
+- Model risk dominates the remaining budget, not JavaScript runtime: reticular V9, institutional authority fidelity, balance of NPCs, and mapping 1,037 dossier lineages onto actual causal mechanics.
+- Structural score unchanged: 115 relative units after F2 (89 along critical path). It has not been empirically calibrated into hours or delivery dates.
