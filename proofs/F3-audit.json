@@ -1,0 +1,17 @@
+{
+  "schema": "CIE-F3-AUDIT-1",
+  "ruleset": "CIE-F3-1.0.0",
+  "seedsPerRole": 200,
+  "campaigns": 1000,
+  "replays": 1000,
+  "mandateTransitions": 1000,
+  "ledgerReconciliations": 1000,
+  "organizationReactions": 42000,
+  "failures": [],
+  "endings": {
+    "SUCCESSION_WITH_NO_EXECUTION": 435,
+    "SUCCESSION_AND_RETURN": 150,
+    "SUCCESSION_WITH_SHORTFALL": 250,
+    "SUCCESSION_AND_EXECUTION": 165
+  }
+}
