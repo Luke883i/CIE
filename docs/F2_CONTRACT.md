@@ -10,7 +10,7 @@ Version: `CIE-F2-1.0.0` · status: implemented as a bounded fictional game episo
 - `Economy`: four balances with strictly conserved transfer sum (160 artificial units); no new money. This is NOT a stock-flow-consistent macroeconomic system (F5).
 - `Knowledge`: all private financial events hidden from nonparties, with observer-local IDs and no global event-count exposure. Current visible phase/turn remain observable; metadata privacy is not equivalent to network secrecy.
 - `NPC`: policy sees a detached role-specific observation and a random word derived only from `(RULESET,seed,turn,actor,decisionKind)`. No Math.random, no LLM, no Date, no external network.
-- `Game`: fixed six-phase transition machine, five actors, two choices each; automated NPC advancement with bounded hops; distinct endings; no requirement to impersonate other actors.
+- `Game`: fixed six-phase transition machine, five actors, two choices each; automated NPC advancement with bounded hops; explicit WAIT/delegation on the human decision slot; distinct endings; no requirement to impersonate other actors.
 - `Replay`: portable `{schema,seed,humanId,commands,resultDigest}`; reexecution reproduces exact authoritative state. The FNV digest is not cryptographic, not proof against a malicious user, and not adequate for remote multiplayer (F9).
 
 ## Observation boundary

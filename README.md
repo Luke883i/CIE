@@ -14,6 +14,6 @@ python scripts/browser_smoke.py # optional: requires python playwright + /usr/bi
 npm run serve             # open http://localhost:8080/web/ in a browser
 ```
 
-Open `/web/`, select a character and seed, press **Genera mondo**, make your decision, and inspect the NPC actions and outcome. Export/import a JSON replay. Offline runtime has no LLM calls or network APIs.
+Open `/web/`, select a character and seed, press **Genera mondo**, make a decision or delegate it using **Attendi**, and inspect the NPC actions and outcome. Export/import a JSON replay. Offline runtime has no LLM calls or network APIs.
 
 Contracts: `docs/F2_CONTRACT.md`; audit: `docs/F2_AUDIT.md`; trajectory: `docs/TRAJECTORY_T2.md`; proofs: `proofs/F2-audit.json`, `proofs/F2-browser.png`. `src/world.mjs` remains legacy F1 compatibility; `src/episode.mjs` is the F2 authoritative engine. No new GitHub PR should be merged until the published SHA passes CI and review.

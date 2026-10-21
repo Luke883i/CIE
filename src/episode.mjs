@@ -134,7 +134,11 @@ export function startEpisode({seed=41,humanId='COSTANTINO'}={}){
 }
 export function play(session,actionType){
   if(session.world.terminal)return {ok:false,code:'EPISODE_TERMINAL'};
-  const possible=listActions(session.world,session.humanId).find(x=>x.type===actionType);
+  const legal=listActions(session.world,session.humanId);
+  const delegation=actionType==='WAIT';
+  // An explicit wait delegates the scheduled choice to the institution's deterministic default policy.
+  // It advances the same canonical clock; it never creates a second world or a privileged action.
+  const possible=delegation&&legal.length?npcChoice(observe(session.world,session.humanId),session.world.seed):legal.find(x=>x.type===actionType);
   if(!possible)return {ok:false,code:'NOT_AVAILABLE'};
   const applied=submitAction(session.world,possible);if(!applied.ok)return applied;
   const next=resolveUntilHuman(applied.world,session.humanId);
