@@ -1,0 +1,70 @@
+{
+  "schema": "CIE-F2-AUDIT-1",
+  "ruleset": "CIE-F2-1.0.0",
+  "totalEpisodes": 5000,
+  "seedCountPerRole": 1000,
+  "roles": [
+    "COSTANTINO",
+    "FINANZIATORE",
+    "PARLAMENTARE",
+    "PRESIDENTE",
+    "GIUDICE"
+  ],
+  "fullyReplayed": 5000,
+  "terminalOutcomes": [
+    "CONTRACTED",
+    "REJECTED",
+    "RETURNED",
+    "STRUCK",
+    "UNFUNDED"
+  ],
+  "endingsByRole": {
+    "COSTANTINO": {
+      "UNFUNDED": 495,
+      "CONTRACTED": 263,
+      "STRUCK": 242
+    },
+    "FINANZIATORE": {
+      "UNFUNDED": 558,
+      "CONTRACTED": 200,
+      "STRUCK": 242
+    },
+    "PARLAMENTARE": {
+      "REJECTED": 500,
+      "CONTRACTED": 140,
+      "UNFUNDED": 250,
+      "STRUCK": 110
+    },
+    "PRESIDENTE": {
+      "RETURNED": 500,
+      "CONTRACTED": 140,
+      "UNFUNDED": 250,
+      "STRUCK": 110
+    },
+    "GIUDICE": {
+      "STRUCK": 500,
+      "CONTRACTED": 171,
+      "UNFUNDED": 329
+    }
+  },
+  "minTick": 3,
+  "maxTick": 5,
+  "ledgerInvariants": 5000,
+  "replayInvariants": 5000,
+  "anomalies": [],
+  "claims": {
+    "supported": [
+      "single-player deterministic five-perspective toy episode",
+      "autonomous four NPC per session",
+      "seed-sensitive choices",
+      "closed-ledger and replay within model"
+    ],
+    "notCertified": [
+      "external institutional realism",
+      "full semantic V9 coverage",
+      "browser security against local attacker",
+      "full release DoD",
+      "independent third-party certification"
+    ]
+  }
+}
