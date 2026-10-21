@@ -1,4 +1,4 @@
-name: Deterministic world contract
+name: CIE deterministic game contracts
 on: [push, pull_request]
 jobs:
   verify:
@@ -8,4 +8,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm run verify
+      - run: npm run verify:f3

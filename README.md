@@ -1,19 +1,20 @@
-# CIE — Costantino I d'Europa · F2
+# CIE — Costantino I d'Europa
 
-A deterministic, fictional political-institutional **single-player episode** with one shared world and five playable perspectives. Choose Costantino, financier, parliamentarian, head of state or judge; the other four roles operate autonomously using only their own authorised observations. Every role has two contextual options and reaches a bounded final outcome. This is a real playable vertical slice, not a finished European political simulator.
+**F3 · Living Institutions (Draft).** A deterministic offline playable episode with one canonical fictional European world, five human entry roles, autonomous NPCs, two causally connected dossiers and succession of the president of a fictional republic. The player follows an individual: P1 remains P1 after losing office, while P2 assumes the presidency without inheriting P1 private information. 21 organizations participate through stances in 3 jurisdiction levels. **Not the 16-quarter public release.**
 
 ## Run
 
-Requires Node 22+ (Python 3 for the optional local static server).
+Node.js 22+ and Python 3 for a static server:
 
 ```bash
-npm test                  # Node regression + 150 seed/role journeys
-npm run audit             # 5000 autonomous episodes and replay; overwrites proofs/F2-audit.json
-npm run verify            # regression plus audit
-python scripts/browser_smoke.py # optional: requires python playwright + /usr/bin/chromium
-npm run serve             # open http://localhost:8080/web/ in a browser
+npm test                 # F1, F2 and F3 regression/property tests
+npm run audit:f3         # 1000 completed F3 careers + replay + conservation
+npm run verify:f3        # above tests and audit
+npm run serve            # http://localhost:8080/web/f3.html
 ```
 
-Open `/web/`, select a character and seed, press **Genera mondo**, make a decision or delegate it using **Attendi**, and inspect the NPC actions and outcome. Export/import a JSON replay. Offline runtime has no LLM calls or network APIs.
+`/web/f3.html` is the new playable vertical slice; `/web/index.html` remains the immutable F2-compatible game. `python scripts/browser_f3_smoke.py` runs a Chromium smoke when Python Playwright and Chromium are installed; local HTTP routing may be blocked in some runners and this script tests inlined production source (not a hosting deployment).
 
-Contracts: `docs/F2_CONTRACT.md`; audit: `docs/F2_AUDIT.md`; trajectory: `docs/TRAJECTORY_T2.md`; proofs: `proofs/F2-audit.json`, `proofs/F2-browser.png`. `src/world.mjs` remains legacy F1 compatibility; `src/episode.mjs` is the F2 authoritative engine. No new GitHub PR should be merged until the published SHA passes CI and review.
+Documentation: `docs/F3_CONTRACT.md`, `docs/F3_AUDIT.md`, `docs/TRAJECTORY_T3.md` and prior F2 contracts. Proofs under `proofs/` regenerate with the documented scripts. The browser owner can inspect the entire fictional state; no cryptographic or multiplayer secrecy claims.
+
+The V9 dataset is not yet integrated into this new engine: F6 must turn source lineage into actual reticular mechanisms and falsifiable gameplay. No legal accuracy or external social prediction is claimed.

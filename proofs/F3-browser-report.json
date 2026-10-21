@@ -1,0 +1,34 @@
+{
+  "browser": "Chromium",
+  "mode": "inlined modules due to local HTTP policy",
+  "all_roles": [
+    {
+      "role": "COSTANTINO",
+      "decisions": 2,
+      "outcome": "Finale \u00b7 SUCCESSION_WITH_NO_EXECUTION"
+    },
+    {
+      "role": "FINANZIATORE",
+      "decisions": 2,
+      "outcome": "Finale \u00b7 SUCCESSION_AND_EXECUTION"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "decisions": 2,
+      "outcome": "Finale \u00b7 SUCCESSION_AND_EXECUTION"
+    },
+    {
+      "role": "PRESIDENTE",
+      "decisions": 2,
+      "outcome": "Finale \u00b7 SUCCESSION_AND_EXECUTION"
+    },
+    {
+      "role": "GIUDICE",
+      "decisions": 2,
+      "outcome": "Finale \u00b7 SUCCESSION_WITH_SHORTFALL"
+    }
+  ],
+  "postMandateP1_keeps_person": true,
+  "reviewed_no_private_finance": true,
+  "errors": []
+}
