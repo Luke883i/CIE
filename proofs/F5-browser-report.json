@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "browser": "Chromium",
+  "roles": [
+    {
+      "role": "COSTANTINO",
+      "prologueActions": 2,
+      "economicTerminal": true,
+      "outcomeVisible": true
+    },
+    {
+      "role": "FINANZIATORE",
+      "prologueActions": 2,
+      "economicTerminal": true,
+      "outcomeVisible": true
+    },
+    {
+      "role": "PARLAMENTARE",
+      "prologueActions": 2,
+      "economicTerminal": true,
+      "outcomeVisible": true
+    },
+    {
+      "role": "PRESIDENTE",
+      "prologueActions": 2,
+      "economicTerminal": true,
+      "outcomeVisible": true
+    },
+    {
+      "role": "GIUDICE",
+      "prologueActions": 5,
+      "economicTerminal": true,
+      "outcomeVisible": true
+    }
+  ],
+  "javascriptErrors": [],
+  "limitation": "inlined source modules; not HTTP deployment proof"
+}

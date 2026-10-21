@@ -1,0 +1,27 @@
+{
+  "schema": "CIE-F5-AUDIT-1",
+  "ruleset": "CIE-F5-1.0.0",
+  "cases": 1000,
+  "complete": 1000,
+  "replays": 1000,
+  "ledgerPass": 1000,
+  "failures": [],
+  "endings": {
+    "DURABLE_PROGRESS": 442,
+    "STALLED_REFORM": 478,
+    "FRAGILE_PROGRESS": 80
+  },
+  "progress": {
+    "0": 281,
+    "1": 115,
+    "2": 82,
+    "3": 80,
+    "4": 90,
+    "5": 106,
+    "6": 96,
+    "7": 99,
+    "8": 51
+  },
+  "manualVsDelegatedChanged": 1000,
+  "criticalStops": 0
+}

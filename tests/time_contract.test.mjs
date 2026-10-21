@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {dueWindow,acceptLease} from '../src/time_contract.mjs';
+test('no tick before deadline; no browser timer dependency',()=>{assert.equal(dueWindow({trustedNowMs:999,committedAtMs:0,intervalMs:1000}).ticks,0);});
+test('bounded deterministic catch-up and explicit lease',()=>{const claim=dueWindow({trustedNowMs:12500,committedAtMs:0,intervalMs:1000,maxTicks:4,revision:4});assert.equal(claim.ticks,4);assert.equal(claim.remaining,8);const a=acceptLease({revision:4,committedAtMs:0},claim);assert.equal(a.ok,true);assert.equal(acceptLease(a.next,claim).code,'STALE_OR_EMPTY_LEASE');});
+test('refuse client clock rollback, negative revision and huge catchup',()=>{assert.throws(()=>dueWindow({trustedNowMs:10,committedAtMs:11}));assert.throws(()=>dueWindow({trustedNowMs:10,committedAtMs:0,maxTicks:101}));});
