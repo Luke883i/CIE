@@ -10,6 +10,7 @@ Requires Node 22+ (Python 3 for the optional local static server).
 npm test                  # Node regression + 150 seed/role journeys
 npm run audit             # 5000 autonomous episodes and replay; overwrites proofs/F2-audit.json
 npm run verify            # regression plus audit
+python scripts/browser_smoke.py # optional: requires python playwright + /usr/bin/chromium
 npm run serve             # open http://localhost:8080/web/ in a browser
 ```
 
