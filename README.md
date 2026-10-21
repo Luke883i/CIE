@@ -1,3 +1,2 @@
 # CIE — Costantino I d'Europa
-
-Repository foundation. The deterministic living-world seed is developed in a reviewed semantic PR; main remains a deliberately minimal baseline until merge.
+**Deterministic living world F1.** First runnable, fictional five-role shared-history nucleus, not a finished game. `npm test` (Node 22+); `npm run serve` then visit `/web/`. One canonical world, five legal and informational perspectives, seeded replay, procedural sequencing and a conservative toy subledger. See docs/CONSTITUTION.md and docs/SLICES.md. Runtime is offline with no generative AI. This is an engineering demonstration, not a validated model of Italian constitutional processes or the 1,037-case V9 universe.
