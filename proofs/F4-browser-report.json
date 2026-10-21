@@ -1,0 +1,34 @@
+{
+  "browser": "Chromium",
+  "roles": [
+    {
+      "role": "COSTANTINO",
+      "humanDecisions": 2,
+      "ending": "SUCCESSION_WITH_NO_EXECUTION"
+    },
+    {
+      "role": "FINANZIATORE",
+      "humanDecisions": 2,
+      "ending": "SUCCESSION_AND_EXECUTION"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "humanDecisions": 2,
+      "ending": "SUCCESSION_WITH_NO_EXECUTION"
+    },
+    {
+      "role": "PRESIDENTE",
+      "humanDecisions": 2,
+      "ending": "SUCCESSION_AND_EXECUTION"
+    },
+    {
+      "role": "GIUDICE",
+      "humanDecisions": 5,
+      "ending": "SUCCESSION_WITH_SHORTFALL"
+    }
+  ],
+  "allFiveComplete": true,
+  "sealedFinanceNotSeenBeforeDiscovery": true,
+  "browserErrors": [],
+  "limitation": "inlined modules, no HTTP-hosted smoke"
+}

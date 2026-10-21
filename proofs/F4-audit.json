@@ -1,0 +1,21 @@
+{
+  "schema": "CIE-F4-AUDIT-1",
+  "ruleset": "CIE-F4-1.0.0",
+  "seedsPerRole": 200,
+  "total": 1000,
+  "replays": 1000,
+  "cases": 1105,
+  "remedies": {
+    "ACCEPTED": 820,
+    "REHEARING_DENIED_NO_DEFECT": 160,
+    "VACATED_AND_REHEARD": 125
+  },
+  "outcomes": {
+    "SUCCESSION_AND_EXECUTION": 95,
+    "SUCCESSION_WITH_NO_EXECUTION": 630,
+    "SUCCESSION_AND_RETURN": 135,
+    "SUCCESSION_WITH_SHORTFALL": 140
+  },
+  "zeroLedgerAnomalies": true,
+  "anomalies": []
+}

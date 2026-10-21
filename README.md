@@ -1,20 +1,25 @@
 # CIE — Costantino I d'Europa
 
-**F3 · Living Institutions (Draft).** A deterministic offline playable episode with one canonical fictional European world, five human entry roles, autonomous NPCs, two causally connected dossiers and succession of the president of a fictional republic. The player follows an individual: P1 remains P1 after losing office, while P2 assumes the presidency without inheriting P1 private information. 21 organizations participate through stances in 3 jurisdiction levels. **Not the 16-quarter public release.**
+An offline, deterministic, fictional political-institutional strategy prototype. **The latest playable vertical slice is F4 — Judicial Chain & Remedies.** It preserves independently replayable historical episodes F3, F2 and F1. This is **not** a completed published European political game.
 
-## Run
+## Play F4
 
-Node.js 22+ and Python 3 for a static server:
+Requires Node 22+ and Python 3 for serving local assets.
 
 ```bash
-npm test                 # F1, F2 and F3 regression/property tests
-npm run audit:f3         # 1000 completed F3 careers + replay + conservation
-npm run verify:f3        # above tests and audit
-npm run serve            # http://localhost:8080/web/f3.html
+npm run serve
+# visit http://localhost:8080/web/f4.html
 ```
 
-`/web/f3.html` is the new playable vertical slice; `/web/index.html` remains the immutable F2-compatible game. `python scripts/browser_f3_smoke.py` runs a Chromium smoke when Python Playwright and Chromium are installed; local HTTP routing may be blocked in some runners and this script tests inlined production source (not a hosting deployment).
+Select Costantino, Financier, Parliamentarian, former President P1, or Court President (Chair). In one world, two connected dossiers cross institutions and the P1→P2 succession. If a law is promulgated, a fictional constitutional complaint triggers discovery, challenge to a conflicted judge, hearing, three-seat deliberation, procedural review and binding game consequences. The user controls one person; the others operate automatically.
 
-Documentation: `docs/F3_CONTRACT.md`, `docs/F3_AUDIT.md`, `docs/TRAJECTORY_T3.md` and prior F2 contracts. Proofs under `proofs/` regenerate with the documented scripts. The browser owner can inspect the entire fictional state; no cryptographic or multiplayer secrecy claims.
+## Verify
 
-The V9 dataset is not yet integrated into this new engine: F6 must turn source lineage into actual reticular mechanisms and falsifiable gameplay. No legal accuracy or external social prediction is claimed.
+```bash
+npm run verify:f4
+python scripts/browser_f4_smoke.py # optional Chromium+Playwright
+```
+
+`web/f4.html` is the new UI; `web/f3.html` and `web/index.html` remain previous scenarios. Replay export/import is deterministic but has a non-cryptographic checksum, not a multiplayer security guarantee. F4 is fictional: no implication of faithful Italian or EU constitutional adjudication, and no generative AI, networking or unseeded entropy in the game engine.
+
+Full contracts: `docs/F4_CONTRACT.md`, `docs/F4_AUDIT.md`, `docs/TRAJECTORY_T4.md`. **No merge until CI on reviewed same SHA and human approval.**
