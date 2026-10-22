@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "browser": "Chromium",
+  "fiveRoles": [
+    {
+      "role": "COSTANTINO",
+      "institutionalSteps": 2,
+      "endReached": true,
+      "mapSelected": "ITA",
+      "geometries": 32
+    },
+    {
+      "role": "FINANZIATORE",
+      "institutionalSteps": 2,
+      "endReached": true,
+      "mapSelected": "ITA",
+      "geometries": 32
+    },
+    {
+      "role": "PARLAMENTARE",
+      "institutionalSteps": 2,
+      "endReached": true,
+      "mapSelected": "ITA",
+      "geometries": 32
+    },
+    {
+      "role": "PRESIDENTE",
+      "institutionalSteps": 2,
+      "endReached": true,
+      "mapSelected": "ITA",
+      "geometries": 32
+    },
+    {
+      "role": "GIUDICE",
+      "institutionalSteps": 5,
+      "endReached": true,
+      "mapSelected": "ITA",
+      "geometries": 32
+    }
+  ],
+  "svgCountries": 32,
+  "uiInteractions": [
+    "country search",
+    "keyboard selection",
+    "lens",
+    "zoom",
+    "command palette ctrl+k",
+    "bookmarks",
+    "quick-jump",
+    "terminal game",
+    "replay"
+  ],
+  "javascriptErrors": [],
+  "limitation": "inlined exact offline modules because container Chromium blocks 127.0.0.1; no hosted HTTP smoke claim"
+}

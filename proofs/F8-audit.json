@@ -1,0 +1,24 @@
+{
+  "schema": "CIE-F8-AUDIT-1",
+  "ruleset": "CIE-F8-ATLAS-1.0.0",
+  "countries": 32,
+  "euCountries": 27,
+  "cartographicProxies": [
+    "MLT"
+  ],
+  "roles": [
+    "COSTANTINO",
+    "FINANZIATORE",
+    "PARLAMENTARE",
+    "PRESIDENTE",
+    "GIUDICE"
+  ],
+  "seedCountPerRole": 100,
+  "gameWorlds": 500,
+  "projections": 12000,
+  "geometryPaths": 32,
+  "unchangedWorldDigests": 500,
+  "identityMatches": 12000,
+  "unexpectedPrivateCountryStats": 0,
+  "failures": []
+}

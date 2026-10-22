@@ -1,0 +1,176 @@
+{
+  "schema": "CIE-F8.1-PR-MANIFEST-1",
+  "repository": "Luke883i/CIE",
+  "expectedBaseSha": "3fa136d2d2366054e780635c0abc7f3095b2c390",
+  "changes": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "size": 262,
+      "sha256": "7acc8a48396f3f4ad4b2569e6fb9ce07fefee6362fa9a1188c9d746e1c462b9a",
+      "gitBlobSha1": "1ef90e783c2ed6701e8d652e62fc44a754e9b669"
+    },
+    {
+      "path": "README.md",
+      "size": 2518,
+      "sha256": "4f9636166e0996af76cdee2eba413f30efa980e3c22a44173c73f9c3f3dec393",
+      "gitBlobSha1": "36297b84c4f9c26086bf525ed314829a3f8093e2"
+    },
+    {
+      "path": "assets/illustrations/cie-diplomacy.svg",
+      "size": 608,
+      "sha256": "eb787744b80ffbc3f06b5cca7bd4e0e3a12c705b5263f311794e6309902e94ee",
+      "gitBlobSha1": "244b34e272bc4f684f19f7b6e7af9d407678ee07"
+    },
+    {
+      "path": "assets/illustrations/cie-mandate.svg",
+      "size": 1579,
+      "sha256": "2387fbca160a771f7c97386b85439f6e34d6eb3a46f543fd885dc9e63ccf63a8",
+      "gitBlobSha1": "054351f6c9cfb7c023967853fed300d7a3d04ef4"
+    },
+    {
+      "path": "data/europe-32.geojson",
+      "size": 48570,
+      "sha256": "c4ab6250b90b37b853b610fbc369faa5c70913174e45cd446086fe643afea4dd",
+      "gitBlobSha1": "d28473f4fef2b238496a2b82225c987ad25c564a"
+    },
+    {
+      "path": "data/europe-32.mjs",
+      "size": 48654,
+      "sha256": "8bd201b8edbf0de985ee368f4f9692887d9bc7303014afb29b7cc106dd1fd3bc",
+      "gitBlobSha1": "f2a84bce9cea72dca22c39db5af5e7d37568489f"
+    },
+    {
+      "path": "design/F8_DESIGN_SYSTEM.md",
+      "size": 3206,
+      "sha256": "91c1b7ba8e7d9313a83b280694530217620747a77adb3377a6134380618ae607",
+      "gitBlobSha1": "8bdfb4773fa37859c1ec0b151ccc027b4abbe75a"
+    },
+    {
+      "path": "docs/F8_1_REVIEW.md",
+      "size": 1529,
+      "sha256": "b172a36f64a1e6b59dcf1b08c350810b9eb88f93e7cb1417125b89242c83373f",
+      "gitBlobSha1": "01561865fc142e98b36ebd89a7cc9afe19815c8c"
+    },
+    {
+      "path": "docs/F8_AUDIT.md",
+      "size": 4584,
+      "sha256": "9f3b783d2fe2585733c2fde1b3dc1f5fe26987936e05409fa9e493a0cd4bc63f",
+      "gitBlobSha1": "3b4c4099fc90aa0f61dd13bc77584948f758eb98"
+    },
+    {
+      "path": "docs/F8_CONTRACT.md",
+      "size": 4528,
+      "sha256": "153d47708de3e9c898be80bdcf72625ad93b571754965d6d3c7e7a527c549b0c",
+      "gitBlobSha1": "a23ff2171cd965768865585483b8fd4138f3ecd6"
+    },
+    {
+      "path": "docs/GEO_SOURCE_POLICY.md",
+      "size": 1785,
+      "sha256": "7914c9fb2e9f715b27660bcfec76ccde54ccf22cd839f92e5f06a7ff0d5a6a94",
+      "gitBlobSha1": "6d8d0c0021e0cdf525b714f857fa1e8893c3cd21"
+    },
+    {
+      "path": "docs/TRAJECTORY_T8.md",
+      "size": 3352,
+      "sha256": "71f01796238a7a6358dda6977e8d0ed2de0d3aedc041bb2b83cb077ae537eee0",
+      "gitBlobSha1": "c6fbc19ba698c21883d95be3f1d6d61656bd673b"
+    },
+    {
+      "path": "package.json",
+      "size": 1002,
+      "sha256": "974a0f1fb4fbf24976b980b908b4f1a188095255ebb4ef2f00f61552b03e5bc2",
+      "gitBlobSha1": "4621f40e79728e71dc1aaaae7faea07106e89348"
+    },
+    {
+      "path": "proofs/F8-audit.json",
+      "size": 469,
+      "sha256": "4bdff2a530aed98a072cba8b7931d69fd8f96d2aacc77c674dd00fe3c7438d3e",
+      "gitBlobSha1": "de9b8125cddae3d89d18ae83bde636189bf30c93"
+    },
+    {
+      "path": "proofs/F8-browser-report.json",
+      "size": 1176,
+      "sha256": "7a2918cb70f2c5e5875700aa6b5f4db3031352247f4d1d773757c8d67ef20e65",
+      "gitBlobSha1": "1b69a35c6b4ec663bf0c25791c60ea1cf3e621f7"
+    },
+    {
+      "path": "proofs/F8-http-routes.json",
+      "size": 1971,
+      "sha256": "660ead0acdf190f8a283e05dfe86e855385db7f1fe82a97b42b74fa1d71168ae",
+      "gitBlobSha1": "709b5a00295df20ddb6d1c6e27aeee6531865628"
+    },
+    {
+      "path": "scripts/audit_f8.mjs",
+      "size": 1919,
+      "sha256": "76633708f4c4e21976ba7d9c7b1986ba8fcffa38c4fc267b6fefeb1a7cd964df",
+      "gitBlobSha1": "f8d608ba0f45d59e1085652bf0ecbb063b054387"
+    },
+    {
+      "path": "scripts/browser_f8_smoke.py",
+      "size": 8449,
+      "sha256": "6bb184e36ac87dfbe22201fb7af3a598eca527c6f72c05ab4495278b5214bda3",
+      "gitBlobSha1": "f86b3b70045e26b93a66cedfe66fbe1f06ebfffa"
+    },
+    {
+      "path": "scripts/build_geo.py",
+      "size": 2481,
+      "sha256": "935b7bb734d21ee99858181cef3935d7ace3b26631a22246de7660b117464a90",
+      "gitBlobSha1": "2d78059ca16c8038a99204dbb8e169d643237b56"
+    },
+    {
+      "path": "scripts/http_asset_smoke.py",
+      "size": 1420,
+      "sha256": "5d80e297da023cbccdd82fdeab85c8e52b74cc8e3061a1b3fc48fe4a3d4c0fe4",
+      "gitBlobSha1": "9097643e57c178d9571d490ac00d9bb160d9f537"
+    },
+    {
+      "path": "src/atlas.mjs",
+      "size": 4918,
+      "sha256": "720cd302caed74d2b034ba0e8905d102f8ed7080ba0a7e9e424c167c91d1bdb6",
+      "gitBlobSha1": "0bd4197c13978cf503e86cb21932f117d8b30f10"
+    },
+    {
+      "path": "src/atlas_ui.mjs",
+      "size": 2159,
+      "sha256": "23dbaf99b2ef8c4ac0b1a50c1377cd377879bb95d0e3d1a8cf2cef7eafa3d1b6",
+      "gitBlobSha1": "c1bcef24cc6148ef920270b86c87368990655d0d"
+    },
+    {
+      "path": "tests/f8.test.mjs",
+      "size": 4393,
+      "sha256": "aff8bae88e1474b5b5510a933e354c9989ca22cd7dafc6ebcd531c1dbc2d0568",
+      "gitBlobSha1": "5ca54a5ff057563c9de1e2d4b1c15c5fd50d4774"
+    },
+    {
+      "path": "tests/f8_ui.test.mjs",
+      "size": 1816,
+      "sha256": "405744ca0527d183231f00d8eb48cd846ed200ab4dfe010c13b82ff963e70ee4",
+      "gitBlobSha1": "d4d173fccdd901f5990ccd8881867b868652edfc"
+    },
+    {
+      "path": "web/f8-enhancements.css",
+      "size": 8601,
+      "sha256": "fa6d4a91c0dddce4652a5b73b191ad393d8dda2d0844cb6390f72a0866c3786b",
+      "gitBlobSha1": "7e3665cb89a2178a5496365405ca2ee2597b6895"
+    },
+    {
+      "path": "web/f8.css",
+      "size": 5759,
+      "sha256": "d1e67fae9a4b21be5622ea5448c618810089306186a07f8db81b1c9fd766883f",
+      "gitBlobSha1": "b6f4895f4f77eb102021282655ab1c7509c901eb"
+    },
+    {
+      "path": "web/f8.html",
+      "size": 12404,
+      "sha256": "76c70319aecca5995e3fceeeca02074ff64a51ebf9964c1817317f26ce6d5d45",
+      "gitBlobSha1": "4ea4517608cbe7969abee686a8b35f42d5fab664"
+    },
+    {
+      "path": "web/f8.mjs",
+      "size": 18950,
+      "sha256": "aa53ec8c035ce05c348e57966b6a60ecadf894beab96e9434abc3ed070ebf735",
+      "gitBlobSha1": "bf93341e056e69ed0d6ab9102471ca058eccc843"
+    }
+  ],
+  "note": "Only text assets included in Git PR. Browser screenshot PNG available in full local release ZIP, generated by smoke runner; do not claim screenshot in Git tree."
+}

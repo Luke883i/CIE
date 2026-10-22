@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {commandCatalog,matchCommands,togglePinned,uiSnapshot} from '../src/atlas_ui.mjs';
+import {f7Initial,f7Observe,f7Audit} from '../src/strategy.mjs';
+const geo=JSON.parse(fs.readFileSync(new URL('../data/europe-32.geojson',import.meta.url),'utf8'));
+const catalog=commandCatalog(geo);
+test('command catalog contains exactly 32 countries, 3 lenses, 4 targets',()=>{assert.equal(catalog.length,39);assert.equal(new Set(catalog.map(x=>x.id)).size,39);});
+test('accent-insensitive command search',()=>{assert.equal(matchCommands(catalog,'relazioni')[0].id,'lens:RELAZIONI');assert.equal(matchCommands(catalog,'italia')[0].target,'ITA');assert.deepEqual(matchCommands(catalog,'zznotfound'),[]);});
+test('finite search and malformed arguments rejected',()=>{assert.throws(()=>matchCommands(catalog,'x'.repeat(81)),/UI_SEARCH/);assert.throws(()=>matchCommands(catalog,'a',100),/UI_SEARCH/);});
+test('bookmark FIFO and exact toggle',()=>{const ids=geo.features.map(x=>x.id);let p=[];for(let i=0;i<6;i++)p=togglePinned(p,ids[i],ids);assert.equal(p.length,5);assert.equal(p[0],ids[1]);assert.deepEqual(togglePinned(p,ids[1],ids),p.slice(1));assert.throws(()=>togglePinned(p,'ATTACK',ids),/UI_BOOKMARK/);});
+for(let i=0;i<100;i++)test('UI command and bookmarks cannot mutate game '+i,()=>{const s=f7Initial({seed:i,humanRole:['COSTANTINO','FINANZIATORE','PARLAMENTARE','PRESIDENTE','GIUDICE'][i%5]});const before=f7Audit(s).digest;const m=uiSnapshot(f7Observe(s));for(const cmd of matchCommands(catalog,geo.features[i%32].properties.name))assert.equal(cmd.kind,'territory');togglePinned([],geo.features[i%32].id,geo.features.map(x=>x.id));assert.equal(m.worldId,f7Observe(s).worldId);assert.equal(f7Audit(s).digest,before);});

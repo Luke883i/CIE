@@ -1,0 +1,38 @@
+@import url('./f7.css');
+@import url('./f8-enhancements.css');
+:root{--marine:#102b3b;--sand:#edd9b0;--forest:#447d70;--highlight:#e6ad55;--map-water:#16384b;--map-eu:#739d8a;--map-partner:#9ca6a0;--map-stroke:#bed3be;--ink-strong:#173044}
+.atlas8{background:linear-gradient(130deg,#fdfaf2,#f2eee4);border-radius:16px;overflow:hidden;border:1px solid #ded6c5;box-shadow:0 12px 36px #253b431a}
+.atlas8-head{padding:22px 23px 15px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.atlas8-head h2{font:30px/1.1 Georgia,'Times New Roman',serif;color:#153443;margin:6px 0 7px}
+.atlas8-head p{font-size:11px;color:#768077;margin:0;letter-spacing:.1px}
+.atlas8-controls{display:flex;gap:6px}.atlas8-controls button{border-radius:8px;background:#fff;border:1px solid #c5c6bc;padding:9px 12px;font-size:14px;font-weight:700;color:#244553;min-width:36px}
+.atlas8-controls button:disabled{opacity:.3;cursor:not-allowed}
+.atlas8-tabs{display:flex;gap:7px;padding:0 23px 16px}.atlas8-tabs button{background:#ebece5;border:1px solid #cfcec0;color:#426055;border-radius:20px;padding:9px 15px;font-size:11px;font-weight:750;letter-spacing:.2px}.atlas8-tabs button[aria-pressed="true"]{background:#1b5248;border-color:#1b5248;color:white}
+.atlas8-grid{display:grid;grid-template-columns:minmax(0,1fr) 245px;background:#183446;gap:0}
+.geo-surface{min-width:0;position:relative;background:#183446;border-right:1px solid #50737a}
+#euromap{display:block;width:100%;height:auto;min-height:275px;max-height:540px;touch-action:pan-y}
+.country{stroke:#c4d5c3;stroke-width:1.2;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .12s ease,opacity .12s ease}
+.country.is-eu{fill:#6e9888}.country.is-partner{fill:#b4aa98}.country.is-relevant{fill:#91bbaa;stroke:#e2d6a0;stroke-width:1.6}.country.is-linked{fill:#a4bdac}.country.is-dimmed{opacity:.18}.country.is-selected{fill:#e6b56d;stroke:#fff9d8;stroke-width:3;filter:drop-shadow(0 0 5px #f4bb5fa8)}.country:hover{fill:#d5c39b;stroke:#fff9df;stroke-width:2.7}
+.country:focus-visible{outline:none;stroke:#ffffff;stroke-width:4;filter:drop-shadow(0 0 8px #e9b965)}
+.geo-edge{fill:none;stroke:#f8de92;stroke-width:2;stroke-dasharray:6 7;opacity:.95;vector-effect:non-scaling-stroke}
+.watermark{font:15px Georgia,serif;fill:#8ca9b0;letter-spacing:2.5px;opacity:.55;pointer-events:none}.watermark-minor{font:9px system-ui,sans-serif;fill:#9aafb0;letter-spacing:1.2px;opacity:.5;pointer-events:none}
+.geo-footer{min-height:42px;padding:7px 15px;display:flex;justify-content:space-between;align-items:center;gap:10px;color:#dae5df;font-size:10px;flex-wrap:wrap;border-top:1px solid #507180}.geo-key{display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 4px 0 9px}.geo-key.eu{background:#7fab97}.geo-key.partner{background:#c4b59a}.geo-key.active{background:#eab26b}
+.geo-inspector{padding:17px 16px;min-width:0;color:#f4efdf;background:#1d3b4b}
+.geo-inspector label{display:block;color:#a7c2c0;font-size:11px;font-weight:700;margin:0 0 7px}.geo-inspector input,.geo-inspector select{background:#eff4ee;color:#203c47;border:1px solid #b9c9c6;margin-bottom:14px;width:100%;border-radius:7px}
+.geo-inspector select{height:158px;padding:4px}.geo-inspector select option{padding:5px 4px;font-size:12px}.geo-country{border-top:1px solid #4b6673;padding-top:15px}.mini-label{font-size:9px;color:#e6b76c;letter-spacing:1.3px;font-weight:800}.geo-country h3{font:27px Georgia,serif;margin:6px 0;color:#fff4da}.geo-country p,.geo-focus p{font-size:11px;color:#b5c9c9;line-height:1.55}.relevance{font-size:12px;line-height:1.4;font-weight:700;border-left:3px solid #e7b765;padding:8px 11px;background:#355260;color:#fff3cf}.geo-focus{margin-top:15px;padding:12px;border-radius:9px;background:#2b4f54}.geo-focus strong{font-size:12px;color:#e4f1e5}.geo-focus p{margin:5px 0 0}.atlas8-bottom{background:#f1eadc;border-top:1px solid #d8d1c4;padding:11px 20px;display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#5e736e;flex-wrap:wrap}
+@media(max-width:1320px){.atlas8-grid{grid-template-columns:minmax(0,1fr) 215px}.geo-inspector{padding:12px}.atlas8-head h2{font-size:27px}}
+@media(max-width:1080px){.atlas8-grid{grid-template-columns:1fr}.geo-surface{border-right:0}.geo-inspector{display:grid;grid-template-columns:1fr 1fr;gap:7px 18px}.geo-inspector label{grid-column:span 1}.geo-inspector select{height:100px}.geo-country,.geo-focus{grid-column:span 2}}
+@media(max-width:780px){.atlas8-head{padding:17px}.atlas8-head h2{font-size:25px}.atlas8-tabs{padding:0 16px 12px;flex-wrap:wrap}.atlas8-grid{display:flex;flex-direction:column}.geo-inspector{display:block}.geo-inspector select{height:95px}.atlas8-bottom{padding:11px 13px}.atlas8-controls button{padding:9px}#euromap{min-height:200px}.geo-country h3{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.country{transition:none}}
+
+.geo-surface{display:flex;flex-direction:column;justify-content:center}
+#euromap{flex:1;height:auto;max-height:none}
+.geo-footer{margin-top:auto}
+.role-engraving{width:100%;height:auto;display:block;margin:0 0 15px;border-radius:9px;border:1px solid #d8c6a7;object-fit:cover}
+.atlas8-controls{flex-wrap:wrap;justify-content:flex-end;max-width:315px}
+.atlas8-controls button{min-height:38px}
+@media(max-width:780px){.atlas8-controls{max-width:165px}.atlas8-head{align-items:flex-start}}
+
+.institution-pin{fill:#f7cd82;stroke:#153747;stroke-width:3;opacity:.95;filter:drop-shadow(0 0 3px #cda24c)}
+.negotiation-engraving{max-width:215px;height:52px;object-fit:cover;object-position:center;display:block;border-radius:7px;float:right;margin:0 0 8px 16px;border:1px solid #c2d3c8}
+@media(max-width:780px){.negotiation-engraving{float:none;max-width:100%;width:100%;height:47px;margin:0 0 12px}}
