@@ -1,11 +1,19 @@
 name: CIE deterministic game contracts
 on: [push, pull_request]
 jobs:
-  verify:
+  dual-goals:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm run verify:focus
+      - run: npm run verify:dual
+  legacy-proof-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run verify:legacy

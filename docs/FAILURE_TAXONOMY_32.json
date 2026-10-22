@@ -1,0 +1,258 @@
+[
+  {
+    "id": "C01",
+    "name": "Goal opacity",
+    "failure": "Il giocatore non sa per cosa sta giocando",
+    "remedy": "Titolo e payoff hanno un verbo-obiettivo, orizzonte, condizione misurabile",
+    "verification": "heuristic",
+    "acceptance": "5/5 ruoli mostrano scopo entro primo schermo"
+  },
+  {
+    "id": "C02",
+    "name": "Absent win threshold",
+    "failure": "Un valore cresce ma nessuno sa se basta",
+    "remedy": "Progresso corrente/4 e zero insolvenze",
+    "verification": "automatic",
+    "acceptance": "100% viste economiche con target esplicito"
+  },
+  {
+    "id": "C03",
+    "name": "Hidden loss condition",
+    "failure": "Il fallimento compare solo alla fine",
+    "remedy": "La soglia debito/default e rischio sono spiegati ex ante senza promettere esito",
+    "verification": "automatic",
+    "acceptance": "100% stati contengono regola esatta"
+  },
+  {
+    "id": "C04",
+    "name": "Role ambiguity",
+    "failure": "Il titolo del ruolo non spiega competenza",
+    "remedy": "Frase in seconda persona distinta per ognuno dei cinque ruoli",
+    "verification": "automatic",
+    "acceptance": "5 messaggi semanticamente distinti"
+  },
+  {
+    "id": "C05",
+    "name": "Ludic identity deficit",
+    "failure": "E una dashboard senza narrativa di conflitto",
+    "remedy": "Patto digitale, ostacoli e attori vengono contestualizzati",
+    "verification": "human",
+    "acceptance": ">=80% sa rispondere cosa gioco"
+  },
+  {
+    "id": "C06",
+    "name": "Abstract metrics",
+    "failure": "Consenso o progresso sembrano KPI operativi reali",
+    "remedy": "Unità e target come astrazioni di gioco, differenza tra obiettivo e fattore",
+    "verification": "automatic",
+    "acceptance": "ogni metrica ha label+range+spiegazione"
+  },
+  {
+    "id": "C07",
+    "name": "Metric valence inversion",
+    "failure": "Più pressione sembra un punteggio positivo",
+    "remedy": "Rischi non presentati fra obiettivi da massimizzare",
+    "verification": "automatic",
+    "acceptance": "solo progress/default nel pannello vittoria"
+  },
+  {
+    "id": "C08",
+    "name": "Metric hierarchy collapse",
+    "failure": "Ogni indicatore sembra altrettanto importante",
+    "remedy": "Un obiettivo primario e una condizione di sicurezza; rischi nei dettagli",
+    "verification": "automatic",
+    "acceptance": "max 2 metriche di primo livello"
+  },
+  {
+    "id": "C09",
+    "name": "Disembodied action",
+    "failure": "Scegli tra etichette senza percepire effetto",
+    "remedy": "CTA usa un verbo e nomina oggetto/effetto per quanto conoscibile",
+    "verification": "human",
+    "acceptance": ">=85% sa parafrasare la propria azione"
+  },
+  {
+    "id": "C10",
+    "name": "Pre-action uncertainty",
+    "failure": "Non sa cosa accade cliccando",
+    "remedy": "Aspettativa limitata e caveat sugli NPC visibili",
+    "verification": "automatic",
+    "acceptance": "100% CTA validi, nessuna previsione NPC"
+  },
+  {
+    "id": "C11",
+    "name": "False certainty",
+    "failure": "L app promette che il piano funzionera",
+    "remedy": "Caveat osservabilità e fattori indipendenti",
+    "verification": "automatic",
+    "acceptance": "zero asserzioni di esito NPC ex-ante"
+  },
+  {
+    "id": "C12",
+    "name": "Feedback latency",
+    "failure": "Non collega conseguenze e decisione",
+    "remedy": "Resoconto dopo click con deltas osservabili",
+    "verification": "automatic",
+    "acceptance": "receipt generato su 100% mosse testate"
+  },
+  {
+    "id": "C13",
+    "name": "Feedback causality laundering",
+    "failure": "La scena grafica fa pensare a prova territoriale",
+    "remedy": "Illustrazione esplicitamente simbolica, non mappa di effetti territoriali",
+    "verification": "automatic",
+    "acceptance": "0 claim di KPI locali da vista globale"
+  },
+  {
+    "id": "C14",
+    "name": "Invisible time horizon",
+    "failure": "Il turno non ha legame con finale",
+    "remedy": "Trimestre corrente su 8 e condizione a T8",
+    "verification": "automatic",
+    "acceptance": "100% viste economic con clock"
+  },
+  {
+    "id": "C15",
+    "name": "Dead effort",
+    "failure": "La progressione percepita non ha traguardi",
+    "remedy": "Target visibile e feedback di avvicinamento",
+    "verification": "human",
+    "acceptance": ">=70% percepisce progresso"
+  },
+  {
+    "id": "C16",
+    "name": "Premature complexity",
+    "failure": "Dati V9 e organizzazioni oscurano l ingresso",
+    "remedy": "Dettagli disponibili solo su richiesta",
+    "verification": "automatic",
+    "acceptance": "0 menu avanzati aperti in default"
+  },
+  {
+    "id": "C17",
+    "name": "Recall tax",
+    "failure": "Serve ricordare obiettivo da altro schermo",
+    "remedy": "Obiettivo sempre accanto alla CTA",
+    "verification": "automatic",
+    "acceptance": "100% schermate decisioni includono goal"
+  },
+  {
+    "id": "C18",
+    "name": "Plan homonym",
+    "failure": "Prudente/cooperativo sembra identico a livello di gioco",
+    "remedy": "Mostra rischio/beneficio distinti e scelta contestuale",
+    "verification": "automatic",
+    "acceptance": "alternative label non duplicate"
+  },
+  {
+    "id": "C19",
+    "name": "Empty progress semantics",
+    "failure": "Edifici illustrati anche se il progetto non avanza",
+    "remedy": "Stage derivato soltanto da view.progress",
+    "verification": "automatic",
+    "acceptance": "consultazione non cambia stage/digest"
+  },
+  {
+    "id": "C20",
+    "name": "Responsibility diffusion",
+    "failure": "Il giocatore pensa di poter dirigere tutti i ruoli",
+    "remedy": "Potere del personaggio e autonomia degli altri comunicati",
+    "verification": "human",
+    "acceptance": ">=85% capisce confine di agency"
+  },
+  {
+    "id": "C21",
+    "name": "Hollow social loop",
+    "failure": "Patti non hanno volto ne memoria",
+    "remedy": "NPC e promesse con stato e scadenza",
+    "verification": "human",
+    "acceptance": ">=70% sa citare una relazione cambiata"
+  },
+  {
+    "id": "C22",
+    "name": "Incoherent victory",
+    "failure": "Termine 8 trimestri senza sintesi comprensibile",
+    "remedy": "Quattro esiti finali tradotti e criteri espliciti",
+    "verification": "automatic",
+    "acceptance": "4 outcome labels univoci"
+  },
+  {
+    "id": "C23",
+    "name": "Unfair failure",
+    "failure": "Il finale negativo appare senza spiegazione",
+    "remedy": "Default e progresso mostrati in riepilogo finale",
+    "verification": "automatic",
+    "acceptance": "ogni esito contiene progress/default"
+  },
+  {
+    "id": "C24",
+    "name": "Punitive replay",
+    "failure": "Un errore richiede rifare tutto senza contesto",
+    "remedy": "Replay e nuovo seed presenti, senza false promesse undo",
+    "verification": "automatic",
+    "acceptance": "restore mantiene digest"
+  },
+  {
+    "id": "C25",
+    "name": "Visual competition",
+    "failure": "Troppi riquadri chiedono attenzione insieme",
+    "remedy": "Un messaggio, una CTA, due metriche",
+    "verification": "automatic",
+    "acceptance": "1 CTA primaria e <=2 metriche"
+  },
+  {
+    "id": "C26",
+    "name": "Help path invisibility",
+    "failure": "Approfondimenti nascosti senza etichetta",
+    "remedy": "Details accessibili con nome concreto",
+    "verification": "automatic",
+    "acceptance": "2 native details con summary"
+  },
+  {
+    "id": "C27",
+    "name": "Jargon cliff",
+    "failure": "Terms T0-T5, procedura, reticolo prima del gioco",
+    "remedy": "Lingua comune in superficie, termini specialistici nei dettagli",
+    "verification": "human",
+    "acceptance": ">=80% comprensione senza tutorial"
+  },
+  {
+    "id": "C28",
+    "name": "Temporal FOMO",
+    "failure": "Il giocatore teme avanzamento automatico incontrollato",
+    "remedy": "Avanzamento solo su comando in singleplayer",
+    "verification": "automatic",
+    "acceptance": "zero clock automatico in Focus"
+  },
+  {
+    "id": "C29",
+    "name": "Cognitive fatigue",
+    "failure": "Sessioni di decisioni equivalenti diventano monotone",
+    "remedy": "Riepilogo breve e ritmo differenziato, da playtest",
+    "verification": "human",
+    "acceptance": "mediana carico percepito <=3/5"
+  },
+  {
+    "id": "C30",
+    "name": "Ambiguous success language",
+    "failure": "Progresso fragile viene chiamato vittoria",
+    "remedy": "Solo DURABLE_PROGRESS soddisfa obiettivo forte",
+    "verification": "automatic",
+    "acceptance": "100% etichette di outcome coerenti con finalOutcome"
+  },
+  {
+    "id": "C31",
+    "name": "Accessibility lexical",
+    "failure": "Icone e colori veicolano l unico significato",
+    "remedy": "Label testuali, focus, aria-live e score in testo",
+    "verification": "automatic",
+    "acceptance": "0 badge senza label testuale"
+  },
+  {
+    "id": "C32",
+    "name": "Compulsion loop",
+    "failure": "Rientro o escalation senza scelte consapevoli",
+    "remedy": "Nessuna penalità per assenza; replay volontario",
+    "verification": "human",
+    "acceptance": "nessuna pressione dark-pattern osservata"
+  }
+]

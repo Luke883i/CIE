@@ -16,7 +16,8 @@ setup=setup.replace("combined+='const UI=(()=>{'+script('src/atlas_ui.mjs')+';re
 setup=setup.replace("combined+='const GEO=(()=>{'+script('data/europe-32.mjs')+';return {EUROPE_GEO};})();\n'", "combined+='const GEO=(()=>{'+script('data/europe-32.mjs')+';return {EUROPE_GEO};})();\n'")
 setup=setup[:setup.index("combined+='(()=>{const {'+n7+'}")]
 exec(setup)
-combined+='const C=(()=>{const {decisionModel,validatePlan}=B;const {playerExperience,observableResult}=P;'+script('src/focus_ux.mjs')+';return {focusModel,focusCommand,focusReceipt,focusAudit};})();\n'
+combined+='const GG=(()=>{'+script('src/game_goal.mjs')+';return {gameGoal,auditGameGoal};})();\n'
+combined+='const C=(()=>{const {decisionModel,validatePlan}=B;const {playerExperience,observableResult}=P;const {gameGoal,auditGameGoal}=GG;'+script('src/focus_ux.mjs')+';return {focusModel,focusCommand,focusReceipt,focusAudit};})();\n'
 combined+='(()=>{const {f7Initial,f7Play,f7Observe,f7FastForward,f7Save,f7Restore,f7Audit}=F7;const {focusModel,focusCommand,focusReceipt,focusAudit}=C;const {EUROPE_GEO}=GEO;'+script('web/focus.mjs')+';})();\n'
 html=(root/'web/f10.html').read_text();html=re.sub(r'<link[^>]*rel="stylesheet"[^>]*>','',html);html=re.sub(r'<script[^>]*type="module"[^>]*></script>','',html)
 css=(root/'web/focus.css').read_text()

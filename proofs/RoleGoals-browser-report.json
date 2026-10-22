@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "runs": [
+    {
+      "viewport": 1440,
+      "role": "COSTANTINO",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "FINANZIATORE",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "PARLAMENTARE",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "PRESIDENTE",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "GIUDICE",
+      "turns": 13,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "COSTANTINO",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "FINANZIATORE",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "PARLAMENTARE",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "PRESIDENTE",
+      "turns": 10,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "GIUDICE",
+      "turns": 13,
+      "goalShown": true,
+      "personalShown": true,
+      "replay": true
+    }
+  ],
+  "errors": [],
+  "note": "inlined local modules; not HTTP production or human usability proof"
+}

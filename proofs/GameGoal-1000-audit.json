@@ -1,0 +1,17 @@
+{
+  "schema": "CIE-GOAL-AUDIT-1",
+  "baseline": "CIE PR11 merged (local verified mirror)",
+  "states": 1000,
+  "observerUnchanged": 1000,
+  "unclearGoalContracts": 0,
+  "roles": [
+    "COSTANTINO",
+    "FINANZIATORE",
+    "PARLAMENTARE",
+    "PRESIDENTE",
+    "GIUDICE"
+  ],
+  "thresholds": "progress >= 4 && defaults === 0 at Q8",
+  "scope": "1000 synthetic observation projections, not 1000 people, not 1000 completed campaigns",
+  "pass": true
+}

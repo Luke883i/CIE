@@ -1,0 +1,2032 @@
+{
+  "schema": "CIE-ROLE-GOALS-AUDIT-1",
+  "base": "178789e21bf7548352b58088e39ab881a0a58d2a",
+  "roles": [
+    "COSTANTINO",
+    "FINANZIATORE",
+    "PARLAMENTARE",
+    "PRESIDENTE",
+    "GIUDICE"
+  ],
+  "projections": 1000,
+  "nonMutations": 1000,
+  "fullGames": 200,
+  "replay": 200,
+  "legalActions": 2140,
+  "dualOutcomeDistribution": {
+    "COMPLETED/MISSED": 95,
+    "COMPLETED/COMPLETED": 40,
+    "MISSED/MISSED": 31,
+    "MISSED/COMPLETED": 34
+  },
+  "personalCompletion": {
+    "COSTANTINO": 13,
+    "FINANZIATORE": 13,
+    "PARLAMENTARE": 8,
+    "PRESIDENTE": 27,
+    "GIUDICE": 13
+  },
+  "rows": [
+    {
+      "role": "COSTANTINO",
+      "seed": 80,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 81,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 82,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 2,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 83,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 84,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 19,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 85,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 86,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 87,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 24,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 88,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 89,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 90,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 91,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 4,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 92,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 93,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 26,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 94,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 2,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 95,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 96,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 27,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 97,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 98,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 4,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 99,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 29,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 100,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 101,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 7,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 102,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 103,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 104,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 1,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 105,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 106,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 2,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 107,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 3,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 108,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 24,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 109,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 110,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 111,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 18,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 112,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 113,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 2,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 114,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 8,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 115,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 116,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 117,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 25,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 118,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 2,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "COSTANTINO",
+      "seed": 119,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 1,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 80,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 81,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 82,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 83,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 84,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 85,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 86,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 87,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 88,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 89,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 90,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 91,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 92,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 93,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 94,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 95,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 96,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 97,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 98,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 99,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 100,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 101,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 102,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 103,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 104,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 105,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 106,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 107,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 108,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 109,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 110,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 111,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 112,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 113,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 114,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 115,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 116,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 117,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 118,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "FINANZIATORE",
+      "seed": 119,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 80,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 81,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 82,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 83,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 84,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 85,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 86,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 87,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 88,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 89,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 90,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 91,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 92,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 93,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 94,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 95,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 96,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 97,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 98,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 99,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 100,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 101,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 102,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 103,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 104,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 105,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 106,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 107,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 108,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 109,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 8,
+      "metric": 2,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 110,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 111,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 112,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 113,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 114,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 115,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 116,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 117,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 118,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 0,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "PARLAMENTARE",
+      "seed": 119,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 80,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 81,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 82,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 2,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 83,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 84,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 22,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 85,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 3,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 86,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 87,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 88,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 89,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 90,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 91,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 3,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 92,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 93,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 94,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 95,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 96,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 97,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 4,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 98,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 99,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 25,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 100,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 101,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 102,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 103,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 104,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 105,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 106,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 107,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 108,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 109,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 0,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 110,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 111,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 112,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 113,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 114,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 115,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 116,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 117,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 118,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 1,
+      "dual": "MISSED/MISSED"
+    },
+    {
+      "role": "PRESIDENTE",
+      "seed": 119,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 30,
+      "dual": "COMPLETED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 80,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 81,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 82,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 83,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 84,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 85,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 86,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 87,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 88,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 89,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 90,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 91,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 92,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 93,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 94,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 95,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 96,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 97,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 98,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 99,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 100,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 101,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 102,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 103,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 104,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 105,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 106,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 107,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 108,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 109,
+      "policy": "INCISIVO",
+      "global": "DEBT_CRISIS",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 110,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 111,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 112,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 113,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 114,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 115,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 116,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 117,
+      "policy": "COOPERATIVO",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 118,
+      "policy": "INCISIVO",
+      "global": "STALLED_REFORM",
+      "personal": "COMPLETED",
+      "actions": 8,
+      "metric": 20,
+      "dual": "MISSED/COMPLETED"
+    },
+    {
+      "role": "GIUDICE",
+      "seed": 119,
+      "policy": "PRUDENTE",
+      "global": "DURABLE_PROGRESS",
+      "personal": "MISSED",
+      "actions": 0,
+      "metric": 20,
+      "dual": "COMPLETED/MISSED"
+    }
+  ],
+  "epistemic": "Deterministic artificial campaigns, not human-player enjoyment or externally calibrated political model."
+}
