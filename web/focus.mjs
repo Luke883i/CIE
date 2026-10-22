@@ -7,19 +7,26 @@ let session=f7Initial({seed:41,humanRole:'COSTANTINO',caseId:'V4/E03'}),planId='
 const el=(parent,tag,value,cls)=>{const x=document.createElement(tag);x.textContent=String(value);if(cls)x.className=cls;parent.append(x);return x;};
 const setError=t=>{$('error').textContent=String(t??'')};
 function render(){
- const v=f7Observe(session),role=session.core.core.humanRole,m=focusModel(v,role,{planId});focusAudit(m);planId=m.planId??'COOPERATIVO';
- $('role-label').textContent=m.roleName;$('clock').textContent=m.turn;$('kicker').textContent=m.kicker.toUpperCase();$('title').textContent=m.headline;$('description').textContent=m.description;$('goal').textContent=m.goal;
+ const v=f7Observe(session),role=session.core.core.humanRole,m=focusModel(v,role,{planId,playerCommands:f7Save(session).commands});focusAudit(m);planId=m.planId??'COOPERATIVO';
+ $('role-label').textContent=m.roleName;$('clock').textContent=m.turn;$('kicker').textContent=m.kicker.toUpperCase();$('title').textContent=m.headline;$('description').textContent=m.description;$('goal').textContent=m.goal;$('game-pitch').textContent=m.gamePitch;$('role-task').textContent=m.roleTask;$('game-horizon').textContent=m.gameHorizon;$('stakes').textContent=m.stakes;$('live-status').textContent=m.liveStatus;$('epistemic').textContent=m.epistemic;
+ $('personal-title').textContent=m.personal.title;
+ $('personal-count').textContent=m.personal.actionsDisplay;
+ $('personal-condition').textContent=m.personal.metricCondition;
+ $('personal-state').textContent=m.personal.guidance;
+ $('personal-tension').textContent=m.personal.tension;
+ $('dual-outcome').textContent=m.dual.combinedLabel;
+ $('dual-outcome').hidden=!m.ended;
  $('warning').hidden=!m.warning;$('warning').textContent=m.warning??'';$('choice-label').textContent=m.planLabel||'Il prossimo capitolo';$('tradeoff').textContent=m.tradeoff||m.description;$('quarter').textContent=m.turn.toUpperCase();
  $('commit').textContent=m.cta+' →';$('commit').disabled=!m.canAct&&!m.ended;$('commit').dataset.action=m.ended?'restart':'play';
  const opts=$('alternatives');opts.replaceChildren();for(const p of m.alternatives){const b=el(opts,'button','','alternative');b.type='button';b.setAttribute('aria-pressed',String(m.planId===p.id));el(b,'span',p.label,'alternative-title');const sub=el(b,'small',p.risk);b.firstChild.append(sub);el(b,'span',m.planId===p.id?'✓':'→');b.onclick=()=>{planId=p.id;render()};}
  $('world-stage').textContent=m.stageName;$('milestone').textContent=m.phase==='INSTITUTIONAL'?'La storia inizia dalle istituzioni.':`${m.turn} · Il progetto prende forma con le tue scelte.`;
  for(const g of document.querySelectorAll('[data-stage]'))g.classList.toggle('visible',Number(g.dataset.stage)<=m.stage);
- const metrics=$('metrics');metrics.replaceChildren();for(const p of m.metrics)el(metrics,'span',`${p.label} ${p.value}`,'metric');
+ const metrics=$('metrics');metrics.replaceChildren();for(const p of m.metrics){const card=el(metrics,'div','','goal-metric');el(card,'strong',p.label);el(card,'b',p.display);card.title=p.help;card.setAttribute('aria-label',p.label+': '+p.display+'. '+p.help);}
  const history=$('history');history.replaceChildren();const recent=v.strategic?.publicResults??[];if(recent.length===0)el(history,'p','Le conseguenze dei negoziati compariranno qui.');for(const entry of recent.slice(-5).reverse())el(history,'div',`T${entry.quarter}: ${entry.outcome} · ${entry.reason}`,'history-item');
  $('situation').textContent=m.phase==='ECONOMIC'?`${m.metrics.map(x=>x.label+': '+x.value).join(' · ')} · ${v.strategic?.activePacts?.length??0} impegni attivi`:'Procedimento istituzionale in corso.';
 }
 function choose(){
- const v=f7Observe(session),role=session.core.core.humanRole,m=focusModel(v,role,{planId});if(m.ended){startSession();return;}
+ const v=f7Observe(session),role=session.core.core.humanRole,m=focusModel(v,role,{planId,playerCommands:f7Save(session).commands});if(m.ended){startSession();return;}
  const cmd=focusCommand(v,role,planId);const outcome=f7Play(session,cmd);if(!outcome.ok){setError('Azione non disponibile: '+outcome.code);return;}
  session=outcome.session;planId=session.core.core.mode==='ECONOMIC'?'COOPERATIVO':'PRUDENTE';render();const after=f7Observe(session),receipt=focusReceipt(v,after,outcome.decision);
  const parts=receipt.changes.map(x=>x.label+' '+(x.delta>0?'+':'')+x.delta).join(' · ');

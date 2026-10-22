@@ -1,6 +1,6 @@
 {
   "name": "cie-living-world",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -30,6 +30,11 @@
     "audit:f10": "node scripts/audit_f10.mjs",
     "verify:f10": "npm test && npm run audit:f8 && npm run audit:f10",
     "audit:focus": "node scripts/audit_focus.mjs",
-    "verify:focus": "npm run verify:f10 && npm run audit:focus"
+    "verify:focus": "npm run verify:f10 && npm run audit:focus",
+    "audit:goal": "node scripts/audit_game_goal.mjs",
+    "audit:dual": "node scripts/audit_role_objectives.mjs",
+    "verify:dual": "npm test && npm run audit:goal && npm run audit:dual",
+    "verify:goal": "npm test && npm run audit:goal",
+    "verify:legacy": "npm run audit:f8 && npm run audit:f10"
   }
 }
