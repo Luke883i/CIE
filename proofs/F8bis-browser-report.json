@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "browser": "Chromium",
+  "roles": [
+    {
+      "role": "COSTANTINO",
+      "institutionalCTAs": 2,
+      "economicCTAs": 8,
+      "terminal": true,
+      "replay": true
+    },
+    {
+      "role": "FINANZIATORE",
+      "institutionalCTAs": 2,
+      "economicCTAs": 8,
+      "terminal": true,
+      "replay": true
+    },
+    {
+      "role": "PARLAMENTARE",
+      "institutionalCTAs": 2,
+      "economicCTAs": 8,
+      "terminal": true,
+      "replay": true
+    },
+    {
+      "role": "PRESIDENTE",
+      "institutionalCTAs": 2,
+      "economicCTAs": 8,
+      "terminal": true,
+      "replay": true
+    },
+    {
+      "role": "GIUDICE",
+      "institutionalCTAs": 5,
+      "economicCTAs": 8,
+      "terminal": true,
+      "replay": true
+    }
+  ],
+  "quickCTAVisibleMobile390": true,
+  "advancedClosedByDefault": true,
+  "geometries": 32,
+  "jsErrors": [],
+  "limitation": "inlined exact modules because localhost navigation is blocked; not production hosting"
+}

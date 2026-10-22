@@ -1,0 +1,33 @@
+{
+  "schema": "CIE-F8BIS-AUDIT-1",
+  "basedOn": "F7 canonical engine + F8 atlas",
+  "semanticMutations": 100000,
+  "scenarioKind": "typed, synthetic, standalone observer projections; not full reachability nor human play sessions",
+  "acceptedPlans": 290322,
+  "terminalOrNoChoice": 3226,
+  "constrainedActionSets": 3449,
+  "judicialChecked": 19355,
+  "endedScenarios": 3226,
+  "deterministic": true,
+  "observerUnchanged": true,
+  "allMutationsRecorded": true,
+  "reachableEpisodes": 200,
+  "reachableReplayed": 200,
+  "distinctEconomicOutcomes": 40,
+  "errors": [],
+  "ctaContract": {
+    "visiblePlanCount": 3,
+    "defaultSelected": true,
+    "requiredPreDecisionInteractions": 0,
+    "primaryActionCount": 1,
+    "detailsOptIn": true,
+    "hiddenNpcPredictions": 0,
+    "source": "UX contract, not human task completion evidence"
+  },
+  "limitations": [
+    "No certification of measurable human enjoyment",
+    "No causal realism beyond fictional rules",
+    "No 100k full-game campaigns",
+    "Visual and assistive technology QA separate"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "desktop_F8": {
+    "viewportH": 960,
+    "target": "#decision",
+    "targetY": 1913,
+    "targetAboveFold": false,
+    "horizontalOverflow": 0
+  },
+  "desktop_F8bis": {
+    "viewportH": 960,
+    "target": "#hero-commit",
+    "targetY": 395,
+    "targetAboveFold": true,
+    "horizontalOverflow": 0
+  },
+  "mobile_F8": {
+    "viewportH": 844,
+    "target": "#decision",
+    "targetY": 3750,
+    "targetAboveFold": false,
+    "horizontalOverflow": 0
+  },
+  "mobile_F8bis": {
+    "viewportH": 844,
+    "target": "#hero-commit",
+    "targetY": 383,
+    "targetAboveFold": true,
+    "horizontalOverflow": 0
+  }
+}
