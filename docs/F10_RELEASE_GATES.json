@@ -1,0 +1,18 @@
+{
+  "schema": "CIE-F10-GATES-1",
+  "overall": "GLOBAL_NOT_MET",
+  "local_gates": [
+    {"id": "L1", "objective": "Authoritative F7 unchanged", "evidence": "git blob identity; regressions", "status": "LOCAL_PASS"},
+    {"id": "L2", "objective": "One actionable CTA and three legal presets", "evidence": "F10 + F8bis tests and Chromium", "status": "LOCAL_PASS"},
+    {"id": "L3", "objective": "Five visually distinct stages driven by observed progress", "evidence": "stageFromProgress tests; visual Chromium", "status": "LOCAL_PASS"},
+    {"id": "L4", "objective": "Eight quarterly checkpoints", "evidence": "F10 model and Chromium", "status": "LOCAL_PASS"},
+    {"id": "L5", "objective": "At most four stats, two alerts, three observed deltas", "evidence": "100k semantic assertions", "status": "LOCAL_PASS"},
+    {"id": "L6", "objective": "No hidden info, no mutation by preview", "evidence": "100k semantic assertions and observer integrity", "status": "LOCAL_PASS"},
+    {"id": "L7", "objective": "500 actual complete local campaigns and replay", "evidence": "F10 audit full-run", "status": "LOCAL_PASS"},
+    {"id": "L8", "objective": "Five browser roles, mobile, replay", "evidence": "F10 Chromium smoke", "status": "LOCAL_PASS"},
+    {"id": "L9", "objective": "100 driver contract with targets and statuses", "evidence": "registry schema test", "status": "LOCAL_PASS"},
+    {"id": "L10", "objective": "Human enjoyment and load improved", "evidence": "PXI and task-observation study not performed", "status": "DEBT_BLOCKED"}
+  ],
+  "global_debt": ["F9 persistent server", "F10-human field playtest", "F11 16-quarter complete release", "independent accessibility/security audit"],
+  "note": "LOCAL_PASS is internal reproducible evidence only. Never infer human enjoyment or global game readiness."
+}

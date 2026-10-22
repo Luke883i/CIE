@@ -1,6 +1,6 @@
 {
   "name": "cie-living-world",
-  "version": "0.8.1",
+  "version": "0.10.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -26,6 +26,8 @@
     "audit:f8": "node scripts/audit_f8.mjs",
     "verify:f8": "npm test && npm run audit:f8",
     "audit:f8bis": "node scripts/audit_f8bis.mjs",
-    "verify:f8bis": "npm test && npm run audit:f8 && npm run audit:f8bis"
+    "verify:f8bis": "npm test && npm run audit:f8 && npm run audit:f8bis",
+    "audit:f10": "node scripts/audit_f10.mjs",
+    "verify:f10": "npm test && npm run audit:f8 && npm run audit:f10"
   }
 }
