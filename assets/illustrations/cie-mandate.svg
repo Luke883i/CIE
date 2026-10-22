@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 174" role="img" aria-labelledby="title desc">
+<title id="title">Mandato e continuità</title><desc id="desc">Una piazza istituzionale stilizzata, attraversata da un arco dorato e una rete di relazioni.</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173747"/><stop offset="1" stop-color="#2f615b"/></linearGradient><linearGradient id="arch" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e9c784"/><stop offset="1" stop-color="#ad8655"/></linearGradient></defs>
+<rect width="460" height="174" fill="url(#sky)"/><g fill="none" stroke="#759589" stroke-opacity=".5"><path d="M0 153 Q230 104 460 153"/><path d="M0 140 Q230 95 460 140"/><path d="M0 128 Q230 87 460 128"/></g>
+<path d="M77 142V68Q230 -13 383 68V142h-39V82Q230 13 116 82v60Z" fill="url(#arch)" opacity=".94"/><path d="M116 87Q230 23 344 87" stroke="#fff5ce" stroke-width="2" fill="none"/>
+<g fill="#e3e6d5"><path d="M163 143V100H192v43M216 143V86h28v57M268 143v-43h30v43"/><rect x="151" y="143" width="159" height="6"/></g>
+<g stroke="#f6d289" stroke-width="1.5" fill="none" stroke-dasharray="4 4"><path d="M64 114L155 103 231 88 298 103 394 114"/><path d="M154 103Q224 157 298 103"/></g>
+<g fill="#fff0cd" stroke="#1a3c49" stroke-width="2"><circle cx="64" cy="114" r="5"/><circle cx="154" cy="103" r="5"/><circle cx="231" cy="88" r="5"/><circle cx="298" cy="103" r="5"/><circle cx="394" cy="114" r="5"/></g>
+<text x="16" y="25" fill="#f4dfb2" font-family="Georgia,serif" font-size="17">Imperium sine imperatore</text>
+</svg>

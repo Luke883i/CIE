@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "mode": "local Python HTTP assets route only, not browser HTTP E2E",
+  "routes": [
+    {
+      "path": "web/f8.html",
+      "status": 200,
+      "sha256": "1edf26ce77cb2dccaf6395e9f6eb249d74500fbc59001e7bf4a6d6d7064a6699"
+    },
+    {
+      "path": "web/f8.css",
+      "status": 200,
+      "sha256": "d1e67fae9a4b21be5622ea5448c618810089306186a07f8db81b1c9fd766883f"
+    },
+    {
+      "path": "web/f8-enhancements.css",
+      "status": 200,
+      "sha256": "f69b643475dd1d5f7f901ac927e79d7af0dce344781d0cd617f5c2614275ad45"
+    },
+    {
+      "path": "web/f8.mjs",
+      "status": 200,
+      "sha256": "61fb03e3330a9ea977c938aa3b16a0b579ed05902f24af5730abcc3130af6e35"
+    },
+    {
+      "path": "src/atlas_ui.mjs",
+      "status": 200,
+      "sha256": "23dbaf99b2ef8c4ac0b1a50c1377cd377879bb95d0e3d1a8cf2cef7eafa3d1b6"
+    },
+    {
+      "path": "src/atlas.mjs",
+      "status": 200,
+      "sha256": "720cd302caed74d2b034ba0e8905d102f8ed7080ba0a7e9e424c167c91d1bdb6"
+    },
+    {
+      "path": "src/strategy.mjs",
+      "status": 200,
+      "sha256": "6806c8e069c9aaca0b1fc720947224fa1becdd95694fe11f908c519a836fb6d1"
+    },
+    {
+      "path": "src/reticulum.mjs",
+      "status": 200,
+      "sha256": "b9a65735de7ed20f08e02811b0ac094cf3c8a658290119b64cddd44932d0ec62"
+    },
+    {
+      "path": "data/europe-32.mjs",
+      "status": 200,
+      "sha256": "8bd201b8edbf0de985ee368f4f9692887d9bc7303014afb29b7cc106dd1fd3bc"
+    },
+    {
+      "path": "data/europe-32.geojson",
+      "status": 200,
+      "sha256": "c4ab6250b90b37b853b610fbc369faa5c70913174e45cd446086fe643afea4dd"
+    },
+    {
+      "path": "assets/illustrations/cie-mandate.svg",
+      "status": 200,
+      "sha256": "2387fbca160a771f7c97386b85439f6e34d6eb3a46f543fd885dc9e63ccf63a8"
+    },
+    {
+      "path": "assets/illustrations/cie-diplomacy.svg",
+      "status": 200,
+      "sha256": "eb787744b80ffbc3f06b5cca7bd4e0e3a12c705b5263f311794e6309902e94ee"
+    }
+  ],
+  "total": 12
+}

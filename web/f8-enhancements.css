@@ -1,0 +1,63 @@
+/* CIE F8.1 - Design-system runtime layer: editorial, accessible, responsive. */
+:root{--cie-paper:#f1eee7;--cie-surface:#fffcf6;--cie-surface-raised:#ffffff;--cie-navy:#0f2335;--cie-teal:#1b5a52;--cie-teal-soft:#e8f1e9;--cie-gold:#dcaa56;--cie-border:#dcd8cf;--cie-shadow:0 14px 38px rgba(18,37,51,.085);--cie-focus:#be7521;--cie-duration:150ms}
+body{background:radial-gradient(ellipse 80vw 62vh at 60% -22%,#e8e1d3,var(--cie-paper));}
+.topbar{background:linear-gradient(112deg,#102235,#142b3e 64%,#1b3b47);box-shadow:0 3px 15px #0d203020;position:relative;z-index:3}
+.topbar .mark{box-shadow:inset 0 -2px #bb8643,0 3px 11px #080f2350}
+.topbar .quiet:hover{background:#ffffff12;border-color:#d9b379}
+.topright{gap:8px}.command-trigger{white-space:nowrap}.command-trigger kbd{font:10px ui-monospace,monospace;color:#e8cfa5;border:1px solid #607582;padding:3px 5px;border-radius:4px;margin-left:9px}
+.workspace{max-width:1880px;grid-template-columns:minmax(222px,254px) minmax(470px,1fr) minmax(222px,273px);gap:18px}
+.leftpanel,.rightpanel{box-shadow:var(--cie-shadow)}
+.leftpanel{background:linear-gradient(180deg,#fffbf5,#fffdf8);border-top:3px solid #ca9650}
+.rightpanel{border-top:3px solid #36665b}
+.headline{margin-bottom:16px}.headline h1{letter-spacing:-.8px;font-size:34px}
+.quick-route{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 14px;padding:7px;border-radius:12px;background:#e7e6dd;border:1px solid #dbd8ca}
+.quick-route button{padding:8px 13px;border-radius:8px;border:1px solid transparent;background:transparent;color:#285047;font-size:12px;font-weight:750;min-height:39px;transition:background var(--cie-duration),transform var(--cie-duration)}
+.quick-route button:hover,.quick-route button:focus-visible{background:#fffdf7;border-color:#d4d0be;box-shadow:0 2px 6px #1e354013}
+.atlas8{box-shadow:0 16px 35px #1833471c;border-color:#d7d0c2;border-radius:18px}
+.atlas8-head{background:linear-gradient(120deg,#fcfaf3,#f4f0e5);padding:22px 24px 16px}
+.atlas8-head h2{font-size:32px;letter-spacing:-.6px}.atlas8-head p{font-size:11px;line-height:1.5}
+.atlas-status{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:9px 0 7px}.atlas-identity{font-weight:800;letter-spacing:.3px;background:#e7efe9;border:1px solid #c5d6c9;color:#27594e;padding:5px 8px;border-radius:5px;font-size:10px}.atlas-noise{font-size:10px;color:#7d8779}
+.atlas8-controls button{transition:background var(--cie-duration),border-color var(--cie-duration);background:#fffcf8;min-height:42px;min-width:42px}
+.atlas8-controls button:hover:not(:disabled){background:#eaf1eb;border-color:#4d8276}
+.atlas8-tabs{padding:2px 24px 17px}.atlas8-tabs button{font-size:12px;min-height:42px;border-radius:10px;padding:10px 15px}.atlas8-tabs button:hover{border-color:#1b5248}.atlas8-tabs button[aria-pressed=true]{box-shadow:0 3px 10px #183b3a25}
+.atlas8-grid{background:#193949}.geo-surface{background:radial-gradient(circle at 55% 44%,#214d5a,#163246 70%);overflow:hidden}
+#euromap{min-height:340px;touch-action:none}.country{transition:fill var(--cie-duration),opacity var(--cie-duration)}.country.is-selected{filter:drop-shadow(0 0 9px #f5c971d0)}
+.geo-inspector{background:linear-gradient(140deg,#1b3b4b,#183442 83%);border-left:1px solid #68818a}
+.geo-inspector input,.geo-inspector select{min-height:44px}.geo-country{border-color:#567280}
+.geo-country h3{letter-spacing:-.4px}.country-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.bookmark-action{background:#284c5b;color:#f9d796;border:1px solid #56747a;border-radius:7px;padding:7px 9px;font-size:11px;min-height:38px;white-space:nowrap}
+.bookmark-action[aria-pressed=true]{background:#eee3c8;color:#54431f}.bookmark-action:hover{border-color:#edce88}
+.atlas-pins{border-top:1px solid #59727b;margin-top:13px;padding-top:15px}
+.pinned-territories{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0 16px}
+.pinned-territories .pin-empty{font-size:11px;color:#b7c5c4;font-style:italic}
+.pin-chip{border:1px solid #a6c0b2;background:#2b5555;color:#fff4d8;border-radius:20px;font-size:11px;padding:7px 10px;min-height:38px}
+.pin-chip:hover{background:#3b7066}
+.geo-footer{background:#102d3c}.atlas8-bottom{background:#f8f4e9}
+.metrics>div{position:relative;overflow:hidden;box-shadow:0 5px 15px #223a390c;min-height:102px;border-radius:12px}
+.metrics>div::before{content:'';position:absolute;inset:0 auto 0 0;width:3px;background:#c2944d}
+.metrics>div:nth-child(2)::before{background:#4e8d7a}.metrics>div:nth-child(3)::before{background:#687f9e}.metrics>div:nth-child(4)::before{background:#b97666}
+.lens,.diplomacy,.decision{box-shadow:var(--cie-shadow);border-radius:16px}
+.lens .chain span{position:relative;border:1px solid #dce9e1}
+.lens .chain span:not(:last-child)::after{content:'›';position:absolute;right:-8px;top:25%;color:#677f74;z-index:1;font-size:16px}
+.choice:hover{box-shadow:0 8px 15px #7a603120;transform:translateY(-1px)}.decision{scroll-margin-top:24px}
+.diplomacy,.rightpanel{scroll-margin-top:24px}
+.command-palette{width:min(600px,calc(100vw - 30px));max-width:600px;background:#fcfaf5;border:1px solid #d0c4b2;padding:0;overflow:hidden;border-radius:17px;box-shadow:0 24px 95px #0a1c2c75}
+.command-palette::backdrop{background:#071b29ae;backdrop-filter:blur(3px)}
+.command-header{display:flex;align-items:center;justify-content:space-between;padding:22px 24px 13px;border-bottom:1px solid #e8dfd1;gap:12px}
+.command-header h2{font:29px/1.1 Georgia,serif;color:var(--cie-navy);margin:5px 0}
+.command-palette .palette-close{background:#e9e7de;color:#314b4e;border:1px solid #dad4c6;border-radius:9px;font-size:23px;width:40px;height:40px;display:grid;place-items:center;padding:0}
+.command-label{display:block;font-size:12px;color:#49655e;font-weight:750;padding:16px 24px 8px}
+#command-search{display:block;margin:0 24px 11px;width:calc(100% - 48px);height:50px;font-size:15px;border:1px solid #a4b9ab;box-shadow:0 0 0 3px #ebf1eb;border-radius:8px}
+.command-results{padding:3px 14px 16px;max-height:320px;overflow:auto}
+.command-result{display:flex;align-items:center;justify-content:space-between;gap:12px;background:transparent;color:#22394b;border:1px solid transparent;border-radius:8px;width:100%;text-align:left;min-height:47px;padding:9px 12px;cursor:pointer}
+.command-result small{font-size:11px;color:#6c827f}.command-result-label{font-size:13px;font-weight:750}
+.command-result[aria-current=true],.command-result:hover{background:#e7f0e8;border-color:#a4c7ba}.command-empty{padding:10px;color:#697877}
+.command-note{margin:0;padding:13px 23px;background:#eae9e0;color:#64716c;font-size:11px}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+:where(.command-palette button,.quick-route button,.bookmark-action,.pin-chip):focus-visible{outline:3px solid #d8a450;outline-offset:3px}
+@media(max-width:1450px){.workspace{grid-template-columns:minmax(190px,225px) minmax(0,1fr) minmax(200px,235px);padding:14px;gap:12px}.atlas8-head h2{font-size:28px}.topbar{padding-left:18px;padding-right:18px}}
+@media(max-width:1120px){.workspace{grid-template-columns:minmax(190px,225px) minmax(0,1fr)}.rightpanel{grid-column:2}.topbar{gap:10px}}
+@media(max-width:780px){.workspace{display:flex;flex-direction:column}.topbar strong small{display:block;margin:2px 0}.command-trigger{padding:9px}.command-trigger kbd{display:none}.atlas8-head{flex-direction:column;align-items:stretch;padding:16px}.atlas8-controls{justify-content:flex-start;max-width:none}.atlas8-tabs{padding:5px 16px 12px}.atlas8-grid{display:block}.quick-route{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.quick-route button{font-size:12px}.country-heading{margin-top:6px}}
+@media(max-width:430px){.topbar{gap:7px;padding:8px}.topbar .mark{padding:9px 6px;font-size:17px}.topbar .overline{font-size:8px}.topbar strong{font-size:15px}.topright{gap:4px}.topright .quiet{font-size:11px;padding:8px}.topright #help{display:none}.geo-footer{font-size:9px}.metrics{gap:7px}}
+@media(prefers-contrast:more){.atlas8,.choice,.geo-inspector input,.geo-inspector select{border:2px solid currentColor}.country{stroke-width:2.5}.country.is-selected{stroke-width:5}.command-result[aria-current=true]{outline:3px solid #145c57}}
+@media(prefers-reduced-motion:reduce){.quick-route button,.choice,.country,.atlas8-controls button{transition:none;transform:none}html{scroll-behavior:auto}}
