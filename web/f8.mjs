@@ -1,4 +1,5 @@
 import {commandCatalog,matchCommands,togglePinned,uiSnapshot} from '../src/atlas_ui.mjs';
+import {decisionModel,deltaForKnownFacts,validatePlan,UX_RULESET} from '../src/gameplay_ux.mjs';
 import {atlasModel,geometryIndex,clampZoom,ATLAS_LENSES} from '../src/atlas.mjs';
 import {EUROPE_GEO} from '../data/europe-32.mjs';
 import {f7Initial,f7Play,f7Observe,f7FastForward,f7Save,f7Restore,f7Counterfactual,F7_MOVES} from '../src/strategy.mjs';
@@ -10,12 +11,13 @@ const econNames={BUILD_COALITION:'Costruisci coalizione',MOBILIZE_NETWORK:'Mobil
 const approach={INVESTIGATE:'Indaga',COOPERATE:'Coopera',ACCELERATE:'Accelera'};
 const moveNames={PROPOSE_PACT:'Proponi un patto',DEMAND_CONCESSION:'Chiedi concessioni',PUBLIC_HEARING:'Audizione pubblica',DECLINE:'Non negoziare',EXIT_PACT:'Abbandona il patto'};
 let session=f7Initial({seed:41,humanRole:'COSTANTINO',caseId:'V4/E03'}),move='PROPOSE_PACT',other='PARLAMENTARE',strategy='COOPERATE';
+let preferredPlan='COOPERATIVO';
 const cases=V9_CASES.filter(x=>x.granularity.startsWith('curated'));
 for(const c of cases){const o=document.createElement('option');o.value=c.uid;o.textContent=c.uid+' · '+c.title;$('case-pick').append(o)}$('case-pick').value='V4/E03';
 function add(parent,tag,text='',cls=''){const el=document.createElement(tag);el.textContent=String(text);if(cls)el.className=cls;parent.append(el);return el;}
 function fail(msg){$('error').textContent=String(msg)}
 function pickMove(x){move=x;render()}
-function choose(choice){const eco=session.core.core.mode==='ECONOMIC';const input=eco?{choice,move,other,strategy}:choice;const r=f7Play(session,input);if(!r.ok)return fail(r.code);session=r.session;fail('');$('feedback').textContent=r.decision?`Trattativa: ${r.decision.outcome}. ${r.decision.reason}. Fiducia ${r.decision.trustDelta>=0?'+':''}${r.decision.trustDelta}.`:'Atto istituzionale registrato.';render();}
+function choose(choice){const before=f7Observe(session);const eco=session.core.core.mode==='ECONOMIC';const input=eco?{choice,move,other,strategy}:choice;const r=f7Play(session,input);if(!r.ok)return fail(r.code);session=r.session;fail('');$('feedback').textContent=r.decision?`Trattativa: ${r.decision.outcome}. ${r.decision.reason}. Fiducia ${r.decision.trustDelta>=0?'+':''}${r.decision.trustDelta}.`:'Atto istituzionale registrato.';render();const after=f7Observe(session);const delta=deltaForKnownFacts(before,after);const summary=delta.length?delta.slice(0,3).map(d=>`${d.key} ${d.delta>0?'+':''}${d.delta}`).join(' · '):'Il mondo comune ha registrato un nuovo atto.';const result=r.decision?.outcome??'Atto registrato';$('hero-feedback').hidden=false;$('hero-feedback').textContent=`${result} · ${summary}. I risultati riflettono soltanto fatti visibili al tuo ruolo.`;announceUI('Decisione eseguita: '+result);} 
 function speed(n){const r=f7FastForward(session,{quarters:n,stopAtCritical:true});if(!r.ok)return fail(r.code);session=r.session;fail('');$('feedback').textContent=`${r.moved} trimestri avanzati · ${r.stop}`;render();}
 function render(){
  const v=f7Observe(session),eco=v.mode==='ECONOMIC',e=session.core.core.economy,role=session.core.core.humanRole;
@@ -41,13 +43,13 @@ function render(){
  $('timeline').replaceChildren();for(const h of [...session.history].reverse().slice(0,6)){const d=add($('timeline'),'div','','timeline-item');add(d,'small',`Q${h.quarter} · ${names[h.other]}`);add(d,'strong',moveNames[h.move]+' — '+h.outcome);add(d,'span',`Fiducia ${h.trustDelta>=0?'+':''}${h.trustDelta}; ${h.reason}`)}
  if(!session.history.length)add($('timeline'),'p','La storia dei negoziati comparirà qui.','muted');
  $('ledger').replaceChildren();const facts=eco?{Progresso:e.progress,'Consenso':e.support,'Legittimità':e.legitimacy,'Volatilità':e.volatility,'Patti attivi':session.pacts.filter(p=>p.status==='ACTIVE').length,'Patti rispettati':session.pacts.filter(p=>p.status==='FULFILLED').length,'Patti traditi':session.pacts.filter(p=>p.status==='BROKEN').length,'Totale monetario':v.consolidated?.total}:{Fase:v.legal?.stage??'','Istituzione':v.legal?.incumbent??''};for(const [k,val] of Object.entries(facts)){const d=add($('ledger'),'div');add(d,'span',k);add(d,'strong',val??'—')}
- renderAtlas(v,role);
+ renderAtlas(v,role);renderGuidance(v,role);
 }
 $('counterpart').onchange=()=>{other=$('counterpart').value;render()};
-$('new').onclick=()=>{try{session=f7Initial({seed:Number($('seed').value),humanRole:$('role').value,caseId:$('case-custom').value.trim()||$('case-pick').value});move='PROPOSE_PACT';other='PARLAMENTARE';strategy='COOPERATE';pinnedCountries=[];fail('');$('feedback').textContent='';render()}catch(e){fail(e.message)}};
+$('new').onclick=()=>{try{session=f7Initial({seed:Number($('seed').value),humanRole:$('role').value,caseId:$('case-custom').value.trim()||$('case-pick').value});preferredPlan='COOPERATIVO';$('hero-feedback').hidden=true;move='PROPOSE_PACT';other='PARLAMENTARE';strategy='COOPERATE';pinnedCountries=[];fail('');$('feedback').textContent='';render()}catch(e){fail(e.message)}};
 for(const n of [1,2,4])$('skip'+n).onclick=()=>speed(n);
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify(f7Save(session),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='CIE-F7-replay.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)};
-$('import').onchange=async ev=>{try{const file=ev.target.files?.[0];if(!file)return;if(file.size>140000)throw Error('FILE_TOO_LARGE');session=f7Restore(JSON.parse(await file.text()));$('seed').value=session.core.core.world.seed;$('role').value=session.core.core.humanRole;$('case-custom').value=session.core.caseId;fail('');render()}catch(e){fail('Replay respinto: '+e.message)}finally{ev.target.value=''}};
+$('import').onchange=async ev=>{try{const file=ev.target.files?.[0];if(!file)return;if(file.size>140000)throw Error('FILE_TOO_LARGE');session=f7Restore(JSON.parse(await file.text()));preferredPlan='COOPERATIVO';$('hero-feedback').hidden=true;$('seed').value=session.core.core.world.seed;$('role').value=session.core.core.humanRole;$('case-custom').value=session.core.caseId;fail('');render()}catch(e){fail('Replay respinto: '+e.message)}finally{ev.target.value=''}};
 $('help').onclick=()=>$('instructions').showModal();
 $('help-mobile').onclick=()=>$('instructions').showModal();
 
@@ -65,7 +67,7 @@ function renderPinned(){
  for(const id of pinnedCountries){const f=EUROPE_GEO.features.find(x=>x.id===id);const b=add(panel,'button',f.properties.name,'pin-chip');b.type='button';b.onclick=()=>setSelect(id);}
 }
 function announceUI(text){$('ui-live').textContent=text;}
-function jumpTo(target){const el=target==='journal'?document.querySelector('.rightpanel'):$(target);if(!el||el.hidden){announceUI('Sezione non disponibile in questa fase');return;}el.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});if(target==='decision')el.querySelector('button:not([disabled])')?.focus({preventScroll:true});announceUI('Aperta sezione '+target);}
+function jumpTo(target){const el=target==='journal'?document.querySelector('.rightpanel'):$(target);if(!el||el.hidden){announceUI('Sezione non disponibile in questa fase');return;}if(el.closest('details:not([open])'))el.closest('details').open=true;el.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});if(target==='decision')el.querySelector('button:not([disabled])')?.focus({preventScroll:true});announceUI('Aperta sezione '+target);}
 function runCommand(c){if(c.kind==='territory'){atlasSearch='';$('geo-search').value='';setSelect(c.target);jumpTo('atlas');}else if(c.kind==='lens'){atlasLens=c.target;renderAtlas();jumpTo('atlas');}else jumpTo(c.target);$('command-palette').close();announceUI(c.label+' selezionato');}
 function displayCommands(){const entries=matchCommands(commandEntries,$('command-search').value);const pane=$('command-results');pane.replaceChildren();commandIndex=Math.min(commandIndex,Math.max(0,entries.length-1));if(!entries.length)add(pane,'p','Nessun risultato. Prova un territorio o una lente.','command-empty');
  entries.forEach((x,i)=>{const b=add(pane,'button','','command-result');b.type='button';b.setAttribute('data-command-id',x.id);b.setAttribute('aria-current',String(commandIndex===i));add(b,'span',x.label,'command-result-label');add(b,'small',x.detail);b.onmouseenter=()=>{commandIndex=i;highlightCommand()};b.onclick=()=>runCommand(x);});}
@@ -128,3 +130,31 @@ function renderAtlas(v,role){
 }
 
 initAtlas();initCommandUI();render();
+
+// F8bis: no second engine. A single visible CTA maps observer-scoped plan -> existing F7 reducer.
+function renderGuidance(view,role){
+ const model=decisionModel(view,role),group=$('hero-plans');group.replaceChildren();
+ $('hero-role').textContent=model.roleName+' · LA TUA SCRIVANIA';
+ $('hero-title').textContent=model.title;$('hero-prompt').textContent=model.prompt;
+ $('hero-tick').textContent=model.phase==='ECONOMIC'?'TRIMESTRE '+session.core.core.economy.quarter+'/8':'PRELUDIO';
+ $('hero-context').textContent=model.mission+' '+model.context;
+ if(!model.plans.some(p=>p.id===preferredPlan))preferredPlan=model.plans[0]?.id??'COOPERATIVO';
+ for(const plan of model.plans){
+  const b=add(group,'button','','hero-plan');b.type='button';b.setAttribute('role','radio');b.setAttribute('aria-checked',String(preferredPlan===plan.id));b.setAttribute('data-plan',plan.id);
+  add(b,'span',plan.tag,'plan-kicker');add(b,'strong',plan.label,'plan-name');add(b,'span',plan.subtitle,'plan-note');
+  b.title=plan.risk;b.onclick=()=>{preferredPlan=plan.id;renderGuidance(view,role);group.querySelector('[data-plan="'+plan.id+'"]')?.focus()};
+  b.addEventListener('keydown',ev=>{if(ev.key==='ArrowLeft'||ev.key==='ArrowRight'){ev.preventDefault();const idx=model.plans.findIndex(p=>p.id===plan.id),other=model.plans[(idx+(ev.key==='ArrowRight'?1:-1)+model.plans.length)%model.plans.length];preferredPlan=other.id;renderGuidance(view,role);group.querySelector('[data-plan="'+other.id+'"]')?.focus()}});
+ }
+ $('hero-commit').disabled=!model.canAct;
+ $('hero-commit').textContent=model.CTA+' →';
+ $('hero-details').setAttribute('aria-expanded',String($('advanced-tactics').open));
+}
+$('hero-commit').addEventListener('click',()=>{
+ const view=f7Observe(session),role=session.core.core.humanRole,model=decisionModel(view,role),p=model.plans.find(p=>p.id===preferredPlan);
+ if(!p||!validatePlan(view,role,p)){announceUI('Nessuna azione disponibile');return}
+ if(p.command.kind==='ECONOMIC'){move=p.command.move;other=p.command.other;strategy=p.command.strategy}
+ choose(p.command.choice);
+});
+$('hero-details').addEventListener('click',()=>{$('advanced-tactics').open=!$('advanced-tactics').open;$('hero-details').setAttribute('aria-expanded',String($('advanced-tactics').open));if($('advanced-tactics').open)$('advanced-tactics').scrollIntoView({block:'start',behavior:'instant'});});
+$('advanced-tactics').addEventListener('toggle',()=>{$('hero-details').setAttribute('aria-expanded',String($('advanced-tactics').open))});
+renderGuidance(f7Observe(session),session.core.core.humanRole);
