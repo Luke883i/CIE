@@ -1,0 +1,41 @@
+{
+  "schema": "CIE-F6-AUDIT-1",
+  "ruleset": "CIE-F6-1.0.0",
+  "baseExpected": "F5 merged",
+  "sourceRegistryCount": 1037,
+  "seedCountPerRole": 60,
+  "episodes": 300,
+  "replays": 300,
+  "chains": 2400,
+  "bridges": 300,
+  "rejectedTampered": 150,
+  "sampledCases": 300,
+  "progressDistribution": {
+    "0": 4,
+    "1": 10,
+    "2": 3,
+    "3": 1,
+    "4": 15,
+    "5": 25,
+    "6": 30,
+    "7": 130,
+    "8": 82
+  },
+  "anomalies": [],
+  "claims": {
+    "supported": [
+      "five-domain synthetic V9 T0–T5 cascade",
+      "original 1037-case source registry",
+      "one real 8-unit interbook transfer and 600-unit reconciled portfolio",
+      "deterministic bounded quarterly gameplay"
+    ],
+    "notSupported": [
+      "1037 independent causal effects",
+      "empirical European policy causal validation",
+      "full stock-flow-consistent macroeconomy",
+      "human entertainment validation",
+      "persistent server authority",
+      "shipping readiness"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "browser": "Chromium",
+  "fiveRoles": [
+    {
+      "role": "COSTANTINO",
+      "steps": 2,
+      "terminal": true,
+      "v9Chains": 6
+    },
+    {
+      "role": "FINANZIATORE",
+      "steps": 2,
+      "terminal": true,
+      "v9Chains": 6
+    },
+    {
+      "role": "PARLAMENTARE",
+      "steps": 2,
+      "terminal": true,
+      "v9Chains": 6
+    },
+    {
+      "role": "PRESIDENTE",
+      "steps": 2,
+      "terminal": true,
+      "v9Chains": 6
+    },
+    {
+      "role": "GIUDICE",
+      "steps": 5,
+      "terminal": true,
+      "v9Chains": 6
+    }
+  ],
+  "javascriptErrors": [],
+  "limitation": "inlined offline modules; not a public HTTP deploy proof"
+}

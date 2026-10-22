@@ -59,8 +59,9 @@ function npc(e,seed,role){const options=ECON_CHOICES[role];const h=f3Word(seed,'
  if(role==='PARLAMENTARE'&&vulnerable)return 'EXAMINE_BUDGET';if(role==='FINANZIATORE'&&e.cash.BANK<18)return 'KEEP_LIQUIDITY';
  return options[h%2];}
 export function economicValidate(w){const e=index(w);if(!e||e.ruleset!==F5_RULESET||!int(e.quarter)||e.quarter<1||e.quarter>9)throw Error('BAD_CLOCK');
- if(Object.values(e.cash).some(x=>!int(x)||x<0)||Object.values(e.cash).reduce((a,b)=>a+b,0)!==CASH_TOTAL)throw Error('CASH_NOT_CONSERVED');
- const shadow=clone(START_CASH);for(const [i,j] of e.journal.entries()){if(j.sequence!==i+1||!int(j.amount)||j.amount<=0||shadow[j.from]<j.amount)throw Error('BAD_JOURNAL');shadow[j.from]-=j.amount;shadow[j.to]+=j.amount;}
+ if(Object.values(e.cash).some(x=>!int(x)||x<0)||Object.values(e.cash).reduce((a,b)=>a+b,0)!==CASH_TOTAL+(e.bridgeCapital??0))throw Error('CASH_NOT_CONSERVED');
+ if(!int(e.bridgeCapital??0)||(e.bridgeCapital??0)<0||(e.bridgeCapital??0)>20)throw Error('INVALID_CAPITAL_BRIDGE');
+ const shadow=clone(START_CASH);shadow.TREASURY+=(e.bridgeCapital??0);for(const [i,j] of e.journal.entries()){if(j.sequence!==i+1||!int(j.amount)||j.amount<=0||shadow[j.from]<j.amount)throw Error('BAD_JOURNAL');shadow[j.from]-=j.amount;shadow[j.to]+=j.amount;}
  if(JSON.stringify(shadow)!==JSON.stringify(e.cash))throw Error('JOURNAL_NOT_RECONCILED');
  if(e.debt.firms!==e.debt.bankAsset||e.debt.treasury!==e.debt.fundAsset||Object.values(e.debt).some(v=>typeof v==='number'&&v<0))throw Error('CLAIMS_MISMATCH');
  if(e.events.some((ev,i)=>ev.id!==`Q${ev.quarter}-${String(i+1).padStart(3,'0')}`))throw Error('EVENT_SEQUENCE');
