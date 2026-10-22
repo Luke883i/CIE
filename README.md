@@ -1,7 +1,15 @@
-# CIE · F10 Visible World & Playable Decisions
+# CIE — Costantino I d'Europa | Focus Mode
 
-**Open `/web/f10.html`** for the current interactive, offline single-player alpha. A symbolic project illustration evolves with the observed progress of the authoritative F7 world; quarterly milestones, role-specific guidance and causal receipts keep decisions legible. The legacy F8bis runtime remains on `/web/f8.html`. No generative AI in the runtime.
+Deterministic, fictional European political-strategy game; **one decision at a time**. Five roles, same shared world and autonomous NPCs. Focus Mode is the default experience (`/web/` or `/web/f10.html`). Advanced simulation preserved at `/web/f10-expert.html` (a new session, not state-synchronized).
 
-`npm run serve` | `npm test` | `npm run audit:f10` | `npm run verify:f10` | `python scripts/browser_f10_smoke.py`
+Run using Node 22+ and Python 3:
 
-100-driver contract: `docs/F10_100_DRIVERS.json`; source scouting: `docs/F10_SCOUTING.md`; acceptance/limitations: `docs/F10_CONTRACT.md`, `docs/F10_AUDIT.md`. This is **not** a certified fun or publishable game; human PXI tests and server persistence are future requirements.
+```bash
+npm run serve              # open http://localhost:8080/web/
+npm test                   # all earlier tests + Focus
+npm run audit:focus        # 1,000 seeded semantic probes
+npm run verify:focus       # historical F10 suite + Focus
+python scripts/browser_focus_smoke.py  # Chromium/Playwright local visual audit
+```
+
+Focus Mode has one first-viewport CTA, up to three hidden optional alternatives, two compact state metrics, a symbolic world stage, and two collapsible deeper areas. All decisions dispatch only canonical F7 commands, with observer-visible consequences and deterministic replays. No generative AI and no server-persistent 24/7 world yet. See `docs/FOCUS_CONTRACT.md`, `docs/FOCUS_AUDIT.md`, `docs/TRAJECTORY_FOCUS.md`.

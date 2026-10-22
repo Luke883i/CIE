@@ -1,0 +1,29 @@
+{
+  "schema": "CIE-FOCUS-AUDIT-1",
+  "referenceMain": "b5e16f6af67cc3a66f3ccf522b37facb8de7647f",
+  "semanticReflections": 1000,
+  "validated": 1000,
+  "failed": 0,
+  "phaseCount": {
+    "institutional": 500,
+    "economic": 500
+  },
+  "planChecks": 3000,
+  "violations": [],
+  "proofType": "seeded contract falsification, not lived user cognition",
+  "predicates": [
+    "single CTA",
+    "max three optional choices",
+    "max two metrics",
+    "legal role decision",
+    "no observer mutation",
+    "no sentinel leakage",
+    "institutional and economic phases"
+  ],
+  "humanClaimsNotSupported": [
+    "reduced subjective workload",
+    "actual enjoyment",
+    "accessibility certification",
+    "production browser deployment"
+  ]
+}

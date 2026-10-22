@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "viewportRuns": [
+    {
+      "viewport": 1440,
+      "role": "COSTANTINO",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "FINANZIATORE",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "PARLAMENTARE",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "PRESIDENTE",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 1440,
+      "role": "GIUDICE",
+      "turns": 13,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "COSTANTINO",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "FINANZIATORE",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "PARLAMENTARE",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "PRESIDENTE",
+      "turns": 10,
+      "replay": true
+    },
+    {
+      "viewport": 390,
+      "role": "GIUDICE",
+      "turns": 13,
+      "replay": true
+    }
+  ],
+  "errors": [],
+  "oneCTAFirstViewport": true,
+  "optionalDisclosureClosed": true,
+  "localHttpVirtualOrigin": true,
+  "notProven": "human fun, independent accessibility audit, production deploy"
+}

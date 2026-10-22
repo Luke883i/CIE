@@ -1,0 +1,136 @@
+{
+  "schema": "CIE-FOCUS-PUBLISH-1",
+  "baselineMain": "b5e16f6af67cc3a66f3ccf522b37facb8de7647f",
+  "textFiles": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 265,
+      "sha256": "b243936c94225ad58f5c45538708443e98ac792800679a6b45f4e95e939caf1f",
+      "gitBlob": "b8a8ed939458553d6a2d9fe17c5b7976a6d64307"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1126,
+      "sha256": "bb8b5a0cbed22632c3683dbdbf9a1f1a8a5ddcd7f86378d578a26df6f51e85e0",
+      "gitBlob": "a186a33b908493a1507c6dc10388bfbbca8f69c5"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1363,
+      "sha256": "80c8a593cd85479775cd2d223cae655b24a3c64e4d24cd1c7b593f70a4d14eda",
+      "gitBlob": "ae9c33bb8db2cbd1be05af5ea733eb5556d7ef04"
+    },
+    {
+      "path": "src/focus_ux.mjs",
+      "bytes": 4251,
+      "sha256": "2cbc1b67624a26ad44f2b646bdc7c97c84b8bc3ab9f26d34d79f6f79869f354e",
+      "gitBlob": "14b376bf324119300676a7a1510236219b899b7a"
+    },
+    {
+      "path": "web/f10.html",
+      "bytes": 6204,
+      "sha256": "425c02823aba88a3a582b4fdf448b1ea5ff12a785dfb866a5c119d96446b85d8",
+      "gitBlob": "0088b9885a0b88f8d1f3c9ae771254b7925cfb6d"
+    },
+    {
+      "path": "web/f10-expert.html",
+      "bytes": 17517,
+      "sha256": "f84cbe57587b429bf585ed690c0036987b30e2fb9bf4c29c45750dd4341f8a7c",
+      "gitBlob": "01b443f3d63dcf54c541f574c21ee47cc6220a69"
+    },
+    {
+      "path": "web/focus.css",
+      "bytes": 8732,
+      "sha256": "7dc6d0149f1d80df1ee83cf00752256764f15e4d34ad7bd3b3a39f528ee0a248",
+      "gitBlob": "1882bee227f708a388081547b9888d8d8f854a72"
+    },
+    {
+      "path": "web/focus.mjs",
+      "bytes": 5808,
+      "sha256": "07cd1415c00cef759e1451f3d080f9557b80290df10b926a32d85f682b097819",
+      "gitBlob": "23e19f8056caa3e01a27237c1f416a09593c14eb"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 318,
+      "sha256": "bf884efb7c425571b3a382c40950ca117241499b042bb52584cee0ebe0fb6a4a",
+      "gitBlob": "cb9f394c394fb9fb8a36d0e2fe40ee50c7bcddd1"
+    },
+    {
+      "path": "tests/focus.test.mjs",
+      "bytes": 2702,
+      "sha256": "e196bb33d649a0ef45f47b0010ba51e2082441253730c594e9052b16b1b53d80",
+      "gitBlob": "18333b2efedeec356b208947600143aa5f5ac86c"
+    },
+    {
+      "path": "scripts/audit_focus.mjs",
+      "bytes": 2883,
+      "sha256": "d18018b11f7a533b989fdcb6db9e77e0aa3d21c5f018867eba9fc04d657e15ee",
+      "gitBlob": "9c857e22b82c1f043b769e2d03beb249a7da444c"
+    },
+    {
+      "path": "scripts/browser_focus_smoke.py",
+      "bytes": 4496,
+      "sha256": "151ca56a95e45d25655092e69aa28d50b834f1f0a6f154d431d0479733b1efe7",
+      "gitBlob": "a8e10eaebcc3f367504ce26a0808513fd49d8c73"
+    },
+    {
+      "path": "scripts/browser_f10_smoke.py",
+      "bytes": 130,
+      "sha256": "191013f05a8e56f12cd35f8003e2200a15a1fc72a20a0345b905545c65827b92",
+      "gitBlob": "2e1bcb440400cb1b81ac0375c78c9ad55622a5c5"
+    },
+    {
+      "path": "scripts/browser_f10_expert_smoke.py",
+      "bytes": 7752,
+      "sha256": "727a9d087aae21b7b4c8714063ff1dfe2e8e54d2dd655cf9f09c377e284920b0",
+      "gitBlob": "fea03e8092568a6aa6fea127d7f784aee5d0d7b0"
+    },
+    {
+      "path": "docs/FOCUS_CONTRACT.md",
+      "bytes": 3041,
+      "sha256": "83a0828d5d59356923216ca1a45fcbff403bcecb6b422db84a7f970868dc0618",
+      "gitBlob": "df8cedefbc87bde1ac4058235d4befbf5d1935f6"
+    },
+    {
+      "path": "docs/FOCUS_AUDIT.md",
+      "bytes": 1910,
+      "sha256": "507b7319c178b055e4524af446c87e08463e22312fbb94d749b8402cab1397d5",
+      "gitBlob": "636a4414c804914d7f73415b62f938bfe857e7da"
+    },
+    {
+      "path": "docs/TRAJECTORY_FOCUS.md",
+      "bytes": 1170,
+      "sha256": "0f9d18a9628393eb03cd642c8af213aeccaf709b850d4a7b4b06123e2faa4ccb",
+      "gitBlob": "bd2bd2602584049554f29d519e78547564a0c38e"
+    },
+    {
+      "path": "proofs/Focus-audit.json",
+      "bytes": 737,
+      "sha256": "2ca413dde07e565e48c5df33f3e2e0ed595148f249cadc66e6bad7fbb60cea59",
+      "gitBlob": "c2019d9c7e576446c3880dd903942ffb28096fda"
+    },
+    {
+      "path": "proofs/Focus-browser-report.json",
+      "bytes": 1285,
+      "sha256": "41d62476e15d54a82683b7c470d58e242d72ad844577fcfeb2aeab6d16e3fd6d",
+      "gitBlob": "9791604f965e5eabe926c085656b30983f962cea"
+    },
+    {
+      "path": "proofs/Focus-1000-reflections.jsonl",
+      "bytes": 86150,
+      "sha256": "ecff879adfce8f0827082e9e01afc48bdd6c8a8a9a1bd89eda3aa1544ab6bac3",
+      "gitBlob": "fe4c38b5f7e34e552eb444c7e74d1b0ad6732178"
+    }
+  ],
+  "screenshots": [
+    "proofs/Focus-desktop.png",
+    "proofs/Focus-mobile.png"
+  ],
+  "tests": {
+    "nodePassed": 1633,
+    "semanticReflections": 1000,
+    "browserRoleRuns": 10,
+    "expertRuns": 5
+  }
+}
