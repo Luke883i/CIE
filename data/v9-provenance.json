@@ -1,0 +1,19 @@
+{
+  "source_path_in_original_archive": "Costantino_I_V9_Reticolo_Giochi_Prove_2026-10-21/data/all_1037_proof_contracts.jsonl",
+  "source_zip": "Costantino_I_Bundle_V9_Reticolo_Giochi_Prove_2026-10-21(1).zip",
+  "raw_jsonl_sha256": "036b741462b52e2601a4607f890e0c5718fb92cd7cc7218a968aa0de9b7d5416",
+  "cases": 1037,
+  "granularity": {
+    "curated_case": 32,
+    "templated_seed_case": 1000,
+    "curated_pilot": 5
+  },
+  "domains": {
+    "energy": 12,
+    "procurement": 137,
+    "social": 677,
+    "finance": 125,
+    "governance": 86
+  },
+  "note": "lineage only; not independent causal validation"
+}
