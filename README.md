@@ -1,11 +1,7 @@
-# CIE — Costantino I d’Europa · F8bis Bluiette
+# CIE · F10 Visible World & Playable Decisions
 
-**Playable single-player with a deterministic shared fictional world.** Open `/web/f8.html`: the next meaningful action is now the first visible component, above the atlas. Three decisions, one primary CTA, observer-based feedback, a coherent blue gradient design and optional depth.
+**Open `/web/f10.html`** for the current interactive, offline single-player alpha. A symbolic project illustration evolves with the observed progress of the authoritative F7 world; quarterly milestones, role-specific guidance and causal receipts keep decisions legible. The legacy F8bis runtime remains on `/web/f8.html`. No generative AI in the runtime.
 
-**Run** `npm run serve` and open `http://localhost:8080/web/f8.html`.
+`npm run serve` | `npm test` | `npm run audit:f10` | `npm run verify:f10` | `python scripts/browser_f10_smoke.py`
 
-**Audit** `npm run verify:f8bis` or independently `npm test`, `npm run audit:f8` (atlas) and `npm run audit:f8bis` (100k UI-semantic mutation scenarios, 200 reachable sessions). Optional browser smoke: `python scripts/browser_f8bis_smoke.py` (Chromium + Python Playwright).
-
-F8bis **does not alter** the F7 authoritative engine, the 1,037 V9 source registry, legal rules, NPCs or money ledger. Existing advanced gameplay is still available through disclosure. The 100,000 scenarios are typed UI-semantic projection stress cases, **not 100,000 full campaigns or empirical human playtests**. The full game is not release-ready: F9 persistent server, F10 human engagement testing, F11 16-quarter release remain.
-
-See `docs/F8BIS_CONTRACT.md`, `docs/F8BIS_AUDIT.md`, `docs/F8BIS_TRAJECTORY.md`, `design/BLUELETTE_DESIGN_SYSTEM.md`.
+100-driver contract: `docs/F10_100_DRIVERS.json`; source scouting: `docs/F10_SCOUTING.md`; acceptance/limitations: `docs/F10_CONTRACT.md`, `docs/F10_AUDIT.md`. This is **not** a certified fun or publishable game; human PXI tests and server persistence are future requirements.

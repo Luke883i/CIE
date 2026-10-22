@@ -1,0 +1,26 @@
+{
+  "schema": "CIE-F10-AUDIT-1",
+  "base": "PR9 merged",
+  "semanticMutations": 100000,
+  "mutationKind": "100k synthetic observer-projection cases, not 100k full campaigns or human players",
+  "validatedPresets": 297708,
+  "warningCases": 73880,
+  "terminalCases": 764,
+  "nonzeroProgressCases": 88885,
+  "determinism": true,
+  "sourceUnchanged": true,
+  "mutationsRepresentedInCompressedSample": 1000,
+  "fullMutationProof": "For every index 0..99999 same deterministic generator and runtime assertions; sample every 100 recorded",
+  "reachableCampaigns": 500,
+  "exactReplays": 500,
+  "distinctEconomicOutcomes": 56,
+  "errors": [],
+  "limitations": [
+    "No human fun proven",
+    "No individual driver empirical validation",
+    "No server persistence",
+    "No real regional outcomes",
+    "No WCAG certification"
+  ],
+  "sampleSHA256": "d22eaba4d35c18ed0ca00d43586cbb933891c5b3c1f17ea81f5a4562122e12ed"
+}
