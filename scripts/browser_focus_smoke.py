@@ -1,4 +1,4 @@
-"""Browser Focus UX smoke through an offline virtual HTTP origin; not production deployment."""
+"""Browser Focus UX smoke with inlined local ES modules; not an HTTP deployment test."""
 from pathlib import Path
 import json, mimetypes
 from urllib.parse import urlparse, unquote
@@ -55,6 +55,6 @@ with sync_playwright() as pw:
   ctx.close()
  browser.close()
 assert not errors,errors
-out={'ok':True,'viewportRuns':records,'errors':errors,'oneCTAFirstViewport':True,'optionalDisclosureClosed':True,'localHttpVirtualOrigin':True,'notProven':'human fun, independent accessibility audit, production deploy'}
+out={'ok':True,'viewportRuns':records,'errors':errors,'oneCTAFirstViewport':True,'optionalDisclosureClosed':True,'inlinedLocalModules':True,'notProven':'human fun, independent accessibility audit, production deploy'}
 (root/'proofs/Focus-browser-report.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(out,ensure_ascii=False))

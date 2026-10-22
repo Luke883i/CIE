@@ -70,9 +70,9 @@
     },
     {
       "path": "scripts/browser_focus_smoke.py",
-      "bytes": 4496,
-      "sha256": "151ca56a95e45d25655092e69aa28d50b834f1f0a6f154d431d0479733b1efe7",
-      "gitBlob": "a8e10eaebcc3f367504ce26a0808513fd49d8c73"
+      "bytes": 4486,
+      "sha256": "ff99592b3a05cbc54681d268dc75bb93284a296a43bbb78f2b03718dd218a53e",
+      "gitBlob": "bf21e9767a858a2e5b9414c163d065c86a0f1338"
     },
     {
       "path": "scripts/browser_f10_smoke.py",
@@ -112,9 +112,9 @@
     },
     {
       "path": "proofs/Focus-browser-report.json",
-      "bytes": 1285,
-      "sha256": "41d62476e15d54a82683b7c470d58e242d72ad844577fcfeb2aeab6d16e3fd6d",
-      "gitBlob": "9791604f965e5eabe926c085656b30983f962cea"
+      "bytes": 1282,
+      "sha256": "0ae9d9c9be84fa3646b59c58397bae0f4365fba4a6a485e703bbeb0f5e2022c6",
+      "gitBlob": "abe4dff9878bef5a846afada8879382d1207e4cb"
     },
     {
       "path": "proofs/Focus-1000-reflections.jsonl",

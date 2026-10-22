@@ -65,6 +65,6 @@
   "errors": [],
   "oneCTAFirstViewport": true,
   "optionalDisclosureClosed": true,
-  "localHttpVirtualOrigin": true,
+  "inlinedLocalModules": true,
   "notProven": "human fun, independent accessibility audit, production deploy"
 }
