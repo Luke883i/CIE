@@ -61,3 +61,5 @@ body{background:radial-gradient(ellipse 80vw 62vh at 60% -22%,#e8e1d3,var(--cie-
 @media(max-width:430px){.topbar{gap:7px;padding:8px}.topbar .mark{padding:9px 6px;font-size:17px}.topbar .overline{font-size:8px}.topbar strong{font-size:15px}.topright{gap:4px}.topright .quiet{font-size:11px;padding:8px}.topright #help{display:none}.geo-footer{font-size:9px}.metrics{gap:7px}}
 @media(prefers-contrast:more){.atlas8,.choice,.geo-inspector input,.geo-inspector select{border:2px solid currentColor}.country{stroke-width:2.5}.country.is-selected{stroke-width:5}.command-result[aria-current=true]{outline:3px solid #145c57}}
 @media(prefers-reduced-motion:reduce){.quick-route button,.choice,.country,.atlas8-controls button{transition:none;transform:none}html{scroll-behavior:auto}}
+
+.help-mobile{display:none}@media(max-width:430px){.help-mobile{display:block}}

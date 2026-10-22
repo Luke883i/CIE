@@ -49,6 +49,7 @@ for(const n of [1,2,4])$('skip'+n).onclick=()=>speed(n);
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify(f7Save(session),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='CIE-F7-replay.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)};
 $('import').onchange=async ev=>{try{const file=ev.target.files?.[0];if(!file)return;if(file.size>140000)throw Error('FILE_TOO_LARGE');session=f7Restore(JSON.parse(await file.text()));$('seed').value=session.core.core.world.seed;$('role').value=session.core.core.humanRole;$('case-custom').value=session.core.caseId;fail('');render()}catch(e){fail('Replay respinto: '+e.message)}finally{ev.target.value=''}};
 $('help').onclick=()=>$('instructions').showModal();
+$('help-mobile').onclick=()=>$('instructions').showModal();
 
 // F8 ATLANTE: read-only projection of the existing F7 authoritative session.
 const atlasGeom=geometryIndex(EUROPE_GEO);

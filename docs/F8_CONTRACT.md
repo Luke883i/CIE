@@ -1,6 +1,6 @@
 # CIE · F8 European Atlas & Design — normative runtime contract
 
-**Contract:** `CIE-F8-ATLAS-1.0.0` · **target base:** GitHub `Luke883i/CIE` `main` `3fa136d2d2366054e780635c0abc7f3095b2c390` · **status:** locally verified PR candidate; remote publication is a separate operation, NOT an independent WCAG certification.
+**Contract:** `CIE-F8-ATLAS-1.0.0` · **target base:** GitHub `Luke883i/CIE` `main` `3fa136d2d2366054e780635c0abc7f3095b2c390` · **status:** local implementation, **NOT** a GitHub PR, NOT an independent WCAG certification.
 
 ## Product goal and E2E
 
@@ -29,12 +29,3 @@ A person chooses one of five existing F7 roles and a deterministic world seed; a
 ## Acceptance and open debts
 
 The local gate supports **F8 atlas/navigation DoD**, subject to exact source verification and browser audit. It **does not** assert full WCAG 2.2 AA or screen-reader certification, actual local institutional GIS coordinates, dynamic territorial economy, perfect geopolitical borders, measured game enjoyment, genuine hosted HTTP smoke, or persistence at closed browser. These remain G10/G14/G15 user acceptance and F9/F10/F11 tasks. Claims of full game DoD are prohibited.
-
-## F8.1 runtime refinement addendum
-
-- `commandCatalog` binds only to the verified, offline 32-country register, seven static navigation commands and zero game actions. `matchCommands` normalizes accents, bounds input length and result count.
-- `togglePinned` keeps at most five IDs from the country allowlist; pinned IDs are presentation-only and reset with a new world. No personal data or hidden NPC information may be added to bookmarks.
-- Ctrl/⌘+K opens an accessible native dialog; arrow keys select, Enter navigates, Escape closes. No command palette result calls an authoritative reducer.
-- Four skip-to-section buttons must scroll or focus the requested surface without advancing simulation time.
-- All new UI interactions must pass digest-equality in Chromium and 100 additional seed tests. Existing F7 replay/export and the 32-country atlas tests must remain green.
-- CSS assets must be served offline. F8.1 adds high-contrast/reduced-motion affordances, while independent screen-reader and WCAG validation remain F10 debts.

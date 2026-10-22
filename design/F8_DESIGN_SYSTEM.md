@@ -36,14 +36,3 @@ Two authored SVG motifs: 'mandate' architecture as continuity of office beyond p
 ## Next UX layer
 
 F9 must add consistent asynchronous progress and notification receipts without dark patterns. F10 requires 20 external playtests, instrumentation and iteration. F11 produces released asset set, licensed inventory, production perf/a11y checks and deployment smoke.
-
-
-## F8.1 · Editorial usability refinement (2026-10-22)
-
-**New design tokens (live, CSS):** `--cie-paper`, `--cie-surface`, `--cie-navy`, `--cie-teal`, `--cie-gold`, `--cie-focus`, `--cie-shadow`. `web/f8-enhancements.css` is imported directly by `web/f8.css` and is bundled offline. Reduced-motion and increased-contrast variants are declared, not assumed certified.
-
-**Navigation affordances:** persistent four-destination quick route; a command-palette modal opened by Ctrl/⌘+K for 32 locations, three map lenses, and four page destinations; accent-insensitive search with ArrowUp/ArrowDown, Enter and Esc; watchlist of up to five territories in this browser session. Choosing a territory from the palette updates the geographic inspector, never the canonical world. Bookmarks do not persist in saves and have no causal effects. New game explicitly clears the watchlist.
-
-**Control hierarchy:** top-level command-search button is secondary, atlas lenses are exclusive pressed states, country selection remains amber plus text and SVG `aria-pressed`, bookmarks have independent pressed state, all navigation affordances operate without a mouse. Search UI is confined to whitelisted, static `commandCatalog` entries from bundled geography; no generated authority or socio-economic country metrics.
-
-**Proof and honesty:** the palette has no game commands and cannot create a legal/economic act; `src/atlas_ui.mjs` is pure and tested separately. Five end-to-end Chromium role paths exercise palette/bookmark/jump as well as game/replay. Contrast and screen readers require independent F10 verification; this is not a claim of full WCAG conformance.

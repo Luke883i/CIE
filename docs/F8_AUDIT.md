@@ -1,6 +1,6 @@
 # CIE · F8 pre-PR technical audit
 
-**Audit date**: 2026-10-22. **Candidate state:** verified F8 source candidate; remote PR status tracked separately on GitHub. **Verified base**: `Luke883i/CIE` main `3fa136d2d2366054e780635c0abc7f3095b2c390` (merged PR #7, CI success). Ten essential F7 source Git blob hashes were compared to that main tree and matched exactly.
+**Audit date**: 2026-10-22. **Candidate state:** local-only F8, not published to GitHub. **Verified base**: `Luke883i/CIE` main `3fa136d2d2366054e780635c0abc7f3095b2c390` (merged PR #7, CI success). Ten essential F7 source Git blob hashes were compared to that main tree and matched exactly.
 
 ## Direct reproducible tests
 
@@ -33,10 +33,4 @@
 
 **Epistemic verdict**: F8 bounded local functional DoD **PASS within stated test scope**. Global publishable-game DoD **FAIL (not yet met)**. No independent certification, no remote PR, no production HTTP verification.
 
-## F8.1 adversarial re-audit (after refined interaction layer)
-
-- Regression: `npm test` includes 104 new UX model assertions plus prior 1,509 = **1,613 Node PASS**. The scope includes 100 world-digest-preservation checks, catalog constraints, accent-insensitive input and bookmark validation.
-- `npm run audit:f8` produces the same 500 worlds, 12,000 projections, 500 preserved digests and zero anomalous synthetic territorial statistics.
-- Chromium: five roles complete the full F7 episode, and on each role the browser smoke invokes Ctrl+K, filters Germany, enters selection, adds/retrieves bookmarks, changes lens via palette, jumps to decision and confirms unchanged canonical world digest.
-- Falsified defect: importing the enhancement CSS at the end of the original stylesheet violates CSS `@import` placement; moved import to header and updated browser harness to include the exact offline layer.
-- **Outstanding**: no independent WCAG audit or user engagement study; tests use inlined modules to bypass container Chromium localhost limitation. No server-persistent world. No network/principal secrecy. No authenticated deployment.
+**F8.1 small-screen help correction:** at 390px the header Help button is hidden for space. A desk-local accessible button invokes the same dialog; CSS visibility is media-query-controlled. Manual independent mobile screen-reader audit remains pending.
