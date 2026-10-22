@@ -1,0 +1,11 @@
+@import url('./f6.css');
+.diplomacy{background:linear-gradient(135deg,#fdfaf0,#ecf3ef);border:1px solid #d2d8c5;border-radius:14px;margin:16px 0;padding:20px;box-shadow:0 2px 12px #172d2911}
+.diplomacy h2{font:26px Georgia,serif;color:#18372f;margin:5px 0}.diplomacy p{font-size:13px;color:#52645c;line-height:1.6}
+.diplomacy label{font-size:12px;font-weight:700}.diplomacy select{border:1px solid #a4b7aa;border-radius:7px;padding:10px;background:#fff;min-width:180px;display:block;margin:7px 0}
+.negotiation-moves{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+.negotiation-moves button{border:1px solid #9ab1a1;color:#224c3d;background:#eef4ec;border-radius:8px;padding:10px;font-weight:700;min-height:45px;cursor:pointer}
+.negotiation-moves button.selected{background:#214f45;color:#fff;outline:2px solid #b79e67;outline-offset:2px}
+.trust{background:#f7f0dd;color:#55492d;padding:9px 12px;border-radius:8px;margin:7px 0;font-size:12px}
+.pact-list{display:flex;flex-wrap:wrap;gap:7px}.pact{font-size:11px;border:1px solid #bed2c1;padding:8px;border-radius:7px;background:white}
+.strategy-cf{font-size:11px;color:#485d52;margin-top:7px}.diplomacy h3{font-size:12px;margin:15px 0 7px}
+@media(max-width:700px){.negotiation-moves{grid-template-columns:repeat(2,minmax(0,1fr))}.diplomacy{padding:14px}}
