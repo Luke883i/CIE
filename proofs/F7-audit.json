@@ -1,0 +1,78 @@
+{
+  "schema": "CIE-F7-AUDIT-1",
+  "mainBaseline": "fb0ac0d98ea0739c3dd8828bf300574a9141f332",
+  "seedsPerRole": 60,
+  "episodes": 300,
+  "replays": 300,
+  "quarters": 2400,
+  "casesVisited": 300,
+  "balancesReconciled": 300,
+  "allCashTotal600": true,
+  "invalidReplaysRejected": 300,
+  "offers": 1440,
+  "offersAccepted": 342,
+  "offerAcceptRate": 0.2375,
+  "decisionOutcomes": {
+    "ACCEPTED": 342,
+    "REJECTED": 1098,
+    "HEARING_HELD": 960
+  },
+  "pactOutcomes": {
+    "ACTIVE": 11,
+    "FULFILLED": 265,
+    "BROKEN": 66,
+    "EXITED": 0
+  },
+  "endProgressCounts": {
+    "0": 64,
+    "1": 35,
+    "2": 19,
+    "3": 16,
+    "4": 18,
+    "5": 20,
+    "6": 46,
+    "7": 42,
+    "8": 40
+  },
+  "byRole": {
+    "COSTANTINO": {
+      "episodes": 60,
+      "accepted": 86,
+      "rejected": 274,
+      "hearings": 120
+    },
+    "FINANZIATORE": {
+      "episodes": 60,
+      "accepted": 102,
+      "rejected": 258,
+      "hearings": 120
+    },
+    "PARLAMENTARE": {
+      "episodes": 60,
+      "accepted": 78,
+      "rejected": 282,
+      "hearings": 120
+    },
+    "PRESIDENTE": {
+      "episodes": 60,
+      "accepted": 76,
+      "rejected": 284,
+      "hearings": 120
+    },
+    "GIUDICE": {
+      "episodes": 60,
+      "accepted": 0,
+      "rejected": 0,
+      "hearings": 480
+    }
+  },
+  "anomalies": [],
+  "limits": [
+    "No human enjoyment measurement",
+    "Deterministic bounded rational agents, not learned human strategies",
+    "The legal setting remains fictional",
+    "Client-side observation is not network confidentiality",
+    "No server autonomous clock",
+    "Original V9 causal claims remain hypotheses"
+  ]
+}
