@@ -1,0 +1,117 @@
+{
+  "schema": "CIE-ICTC-MUTATION-AUDIT-1",
+  "seed": 243071,
+  "determinism": "round-robin 20 attack classes x 4k + 20k benign variants (default); no random inputs",
+  "total": 100000,
+  "adversarial": 80000,
+  "benign": 20000,
+  "detected": 80000,
+  "missed": 0,
+  "falsePositives": 0,
+  "benignAccepted": 20000,
+  "classes": [
+    {
+      "class": "false_release",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "self_approval",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "global_false_pass",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "global_forged_evidence",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "missing_global_gate",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "duplicate_global_gate",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "semantic_gate_rewrite",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "semantic_work_rewrite",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "missing_workpackage",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "duplicate_workpackage",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "missing_falsifier",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "invalid_dependency",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "cyclic_dependency",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "drop_gate_mapping",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "duplicate_gate_mapping",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "invalid_weight",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "local_fake_pass",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "orphan_proof_reference",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "fabricated_human_study",
+      "tested": 4000,
+      "detected": 4000
+    },
+    {
+      "class": "baseline_sha_rewrite",
+      "tested": 4000,
+      "detected": 4000
+    }
+  ],
+  "pass": true,
+  "scope": "registry semantics and integrity only, not gameplay or human efficacy",
+  "baselineSha256": "72ad495d9297aac1bb357de8843651708c3c2250652701465f1a01ef7ef3f6e4"
+}

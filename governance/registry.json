@@ -1,0 +1,495 @@
+{
+  "schema": "CIE-ICTC-GOV-1",
+  "version": "0.1.0",
+  "baselineMainSha": "0831c0525d47ed81853441a58e5cf73d2f22d5f1",
+  "baseGraphSha256": "846568e060dd430ef76fb2e00418dd2ac3b4dda7c2dcf4c0ff0d3f573dd2b95a",
+  "referenceGraph": "convergence/assurance/holistic_reticulum_ac04.json.gz",
+  "methodology": "ICTC is CIE project-local shorthand for Intent-Contract-Test-Closure, not a claimed published standard",
+  "humanReleaseApproval": false,
+  "releaseState": "BLOCK",
+  "workPackages": [
+    {
+      "id": "ICTC01",
+      "title": "Baseline, scopes and evidence governance",
+      "dependsOn": [],
+      "gates": [
+        "GATE-G32"
+      ],
+      "weight": 3,
+      "impact": 5,
+      "uncertainty": 4,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "Provenance and immutable source snapshots; not a product certificate.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC02",
+      "title": "Five-human constitution, mandates and 0-N orders",
+      "dependsOn": [
+        "ICTC01"
+      ],
+      "gates": [
+        "GATE-G01",
+        "GATE-G03",
+        "GATE-G04"
+      ],
+      "weight": 8,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "One shared world, five valid mandates, forbidden order inert.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC03",
+      "title": "Twelve domains, scarce stock/flow economy",
+      "dependsOn": [
+        "ICTC02"
+      ],
+      "gates": [
+        "GATE-G06",
+        "GATE-G07",
+        "GATE-G08"
+      ],
+      "weight": 8,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "Double-entry and resource conservation under adversarial orders.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC04",
+      "title": "Territories, cohorts and distribution",
+      "dependsOn": [
+        "ICTC03"
+      ],
+      "gates": [
+        "GATE-G09",
+        "GATE-G10"
+      ],
+      "weight": 7,
+      "impact": 4,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "A traced, differentiated effect per affected cohort and territory.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC05",
+      "title": "Atomic joint transitions and replay",
+      "dependsOn": [
+        "ICTC02",
+        "ICTC03"
+      ],
+      "gates": [
+        "GATE-G02",
+        "GATE-G05"
+      ],
+      "weight": 8,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "120 arrival permutations and post-crash replay equal.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC06",
+      "title": "Persistent server, role privacy and security",
+      "dependsOn": [
+        "ICTC05"
+      ],
+      "gates": [
+        "GATE-G21",
+        "GATE-G22"
+      ],
+      "weight": 8,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "Five separate sessions, TLS candidate, no private field leakage.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC07",
+      "title": "NPC agency, war and regime shifts",
+      "dependsOn": [
+        "ICTC04",
+        "ICTC05"
+      ],
+      "gates": [
+        "GATE-G11",
+        "GATE-G12"
+      ],
+      "weight": 8,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "War-to-peace transitions and active opposition not pre-scripted.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC08",
+      "title": "Complete campaigns and differentiated goals",
+      "dependsOn": [
+        "ICTC07"
+      ],
+      "gates": [
+        "GATE-G13",
+        "GATE-G14"
+      ],
+      "weight": 8,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "16 quarters, five roles, replay and non-compensable endings.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC09",
+      "title": "Scenario and grammar factory",
+      "dependsOn": [
+        "ICTC07",
+        "ICTC08"
+      ],
+      "gates": [
+        "GATE-G16",
+        "GATE-G17"
+      ],
+      "weight": 6,
+      "impact": 4,
+      "uncertainty": 4,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "At least twelve distinct scenarios valid, reachable and replayable.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC10",
+      "title": "Narrative provenance and adult graphic art",
+      "dependsOn": [
+        "ICTC04",
+        "ICTC06"
+      ],
+      "gates": [
+        "GATE-G15",
+        "GATE-G25"
+      ],
+      "weight": 6,
+      "impact": 4,
+      "uncertainty": 4,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "Panels supported by role-visible event IDs and comprehensible fantasy.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC11",
+      "title": "Game balance and no dominant strategies",
+      "dependsOn": [
+        "ICTC08",
+        "ICTC09"
+      ],
+      "gates": [
+        "GATE-G18",
+        "GATE-G26"
+      ],
+      "weight": 9,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "No trivial fixed policy wins across adversarial seed/roles.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC12",
+      "title": "Turntable UX, tutorial, accessibility and performance",
+      "dependsOn": [
+        "ICTC08",
+        "ICTC10"
+      ],
+      "gates": [
+        "GATE-G19",
+        "GATE-G20",
+        "GATE-G27",
+        "GATE-G28"
+      ],
+      "weight": 7,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "Decision first, readable outcomes, mobile and assistive tech audit.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC13",
+      "title": "Human playtesting, consent and community safety",
+      "dependsOn": [
+        "ICTC11",
+        "ICTC12"
+      ],
+      "gates": [
+        "GATE-G23",
+        "GATE-G29"
+      ],
+      "weight": 9,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "Pre-registered human study, role comprehension and safe interaction.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    },
+    {
+      "id": "ICTC14",
+      "title": "Reproducible release and operation",
+      "dependsOn": [
+        "ICTC06",
+        "ICTC09",
+        "ICTC13"
+      ],
+      "gates": [
+        "GATE-G24",
+        "GATE-G30",
+        "GATE-G31"
+      ],
+      "weight": 9,
+      "impact": 5,
+      "uncertainty": 5,
+      "state": "OPEN",
+      "evidence": [],
+      "falsifier": "Full SBOM/license/rights and deploy/restore/rollback runbook exercised.",
+      "owner": "UNASSIGNED",
+      "reviewer": "UNASSIGNED"
+    }
+  ],
+  "gates": [
+    {
+      "id": "GATE-G01",
+      "name": "One canonical authoritative world",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G02",
+      "name": "Ruleset-versioned deterministic replay",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G03",
+      "name": "Five role-bound authorities",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G04",
+      "name": "0-N orders and delegation",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G05",
+      "name": "Atomic turn and idempotency",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G06",
+      "name": "Twelve durable domains",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G07",
+      "name": "Stock/flow material engine",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G08",
+      "name": "Reconciled assets liabilities and cash",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G09",
+      "name": "Territories with observed effects",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G10",
+      "name": "Cohorts and distributive impacts",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G11",
+      "name": "Autonomous strategic NPC",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G12",
+      "name": "War/peace/regime transitions",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G13",
+      "name": "16 quarter campaigns",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G14",
+      "name": "Personal-world-legacy outcomes",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G15",
+      "name": "Evidence-backed narrative scenes",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G16",
+      "name": "At least 12 playable distinct scenarios",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G17",
+      "name": "Scenario reachability and validity",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G18",
+      "name": "No trivial dominant policy",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G19",
+      "name": "Progressively disclosed context-first UX",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G20",
+      "name": "Independent accessibility audit",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G21",
+      "name": "Durable server/asynchronous tick",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G22",
+      "name": "Authentication privacy and security",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G23",
+      "name": "Human-verified engagement and enjoyment",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G24",
+      "name": "License/deploy/rollback/runbook",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G25",
+      "name": "Game identity, reasons to play and differentiated emotional payoff",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G26",
+      "name": "Five-role competitive balance and no universal strategy exploit",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G27",
+      "name": "Comprehensible re-entry, tutorial, goals and impossible-victory warnings",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G28",
+      "name": "Cross-browser performance, low-end fallback and resource budgets",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G29",
+      "name": "Consent, moderation, player safety, age rating and social abuse",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G30",
+      "name": "Complete source/build/asset supply-chain traceability and legal release rights",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G31",
+      "name": "Operational resilience, incident handling, backups, support and end-of-service",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    },
+    {
+      "id": "GATE-G32",
+      "name": "Open-world completeness governance and fresh adversarial independent sign-off",
+      "state": "OPEN",
+      "verifiedEvidence": []
+    }
+  ],
+  "proofs": [],
+  "scenarioPlanning": {
+    "deliveredCapacityPerIteration": [
+      1.25,
+      2,
+      3
+    ],
+    "integrationReserve": 6,
+    "humanCycles": 4,
+    "stabilizationReserve": 8
+  },
+  "convergenceHistory": []
+}
