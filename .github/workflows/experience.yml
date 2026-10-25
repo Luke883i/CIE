@@ -1,0 +1,18 @@
+name: CIE EX01 bounded player experience
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  ex01-gameplay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test experience/tests/episode.test.mjs
+      - run: node experience/tests/audit.mjs
+      - run: node experience/tests/verify_assurance.mjs
+      - run: npm run test:convergence
+      - run: npm run test:ictc
