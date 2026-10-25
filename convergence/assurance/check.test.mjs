@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';import {gunzipSync} from 'node:zlib';import {audit} from './check.mjs';
+const source=JSON.parse(gunzipSync(readFileSync(new URL('./holistic_reticulum_ac04.json.gz',import.meta.url))));
+const mutate=f=>{const g=structuredClone(source);f(g);return audit(g,false)};
+test('full inherited graph and canonical seven source pins verified',()=>{const r=audit();assert.equal(r.pass,true,JSON.stringify(r.errors));assert.equal(r.release,'BLOCK');assert.equal(r.localDoD,146);assert.equal(r.globalCertified,0);});
+test('false global PASS always fails',()=>assert.equal(mutate(g=>g.nodes.find(x=>x.type==='GLOBAL_GATE').state='PASS').pass,false));
+test('false release allowed fails',()=>assert.equal(mutate(g=>g.release='READY').pass,false));
+test('silent loss of requirement fails',()=>assert.equal(mutate(g=>g.nodes=g.nodes.filter(x=>x.id!=='DOD-A01')).pass,false));
+test('unknown node reference fails',()=>assert.equal(mutate(g=>g.edges[0].to='FAKE-NODE').pass,false));
+test('missing evidence obligation fails',()=>assert.equal(mutate(g=>g.edges=g.edges.filter(x=>!(x.to==='DOD-A01'&&x.relation==='MUST_PROVE'))).pass,false));
+test('release without gate G01 linkage fails',()=>assert.equal(mutate(g=>g.edges=g.edges.filter(x=>!(x.from==='GATE-G01'&&x.to==='RELEASE-CIE-1.0'))).pass,false));
+test('duplicated graph node fails',()=>assert.equal(mutate(g=>g.nodes.push({...g.nodes[0]})).pass,false));

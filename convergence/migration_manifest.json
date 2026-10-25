@@ -1,0 +1,415 @@
+{
+  "schema": "CIE-PR13-MIGRATION-1",
+  "baseMain": "21a93879d837091e23479da5621d128360d24815",
+  "originBundles": [
+    {
+      "id": "V3",
+      "archiveName": "CIE_V3_FRACTURE_LOCAL_2026-10-24.zip",
+      "sha256": "2739f5e5c3d4d840973360b13cc3338eafd57299de5ea108841bcc9d86ca53c6",
+      "sizeBytes": 1109232,
+      "includedBinary": false
+    },
+    {
+      "id": "V5.1",
+      "archiveName": "CIE_V5_1_GAME_DISCOVERY_INK_BLEU_2026-10-24.zip",
+      "sha256": "8e50d40aba00525a45a514318b97175ede13f65d0834836a1d8c9e8551c2a66e",
+      "sizeBytes": 10912341,
+      "includedBinary": false
+    },
+    {
+      "id": "V6.1",
+      "archiveName": "CIE_V6_1_ASSURANCE_DISCIPLINE_2026-10-25.zip",
+      "sha256": "d3301ce2402b1e91de47209da81798b124bd4a17928836a30d38edb38720e4de",
+      "sizeBytes": 2505953,
+      "includedBinary": false
+    },
+    {
+      "id": "AC01",
+      "archiveName": "CIE_AC01_HOLISTIC_CONVERGENCE_1_OF_N_2026-10-25.zip",
+      "sha256": "d404b4e3a546c329b5a1e21b1731766eac7806d1a0e9075beb738da23d1e050d",
+      "sizeBytes": 15452369,
+      "includedBinary": false
+    },
+    {
+      "id": "AC02",
+      "archiveName": "CIE_AC02_GOLDEN_CRISIS_2_OF_N_2026-10-25.zip",
+      "sha256": "5218d25d3831fed21fb0918a8e64ef655e03a636bd3ca76d5f8583f6e360c506",
+      "sizeBytes": 17360620,
+      "includedBinary": false
+    },
+    {
+      "id": "AC03",
+      "archiveName": "CIE_AC03_GOLDEN_CRISIS_PERSISTENCE_3_OF_N_2026-10-25.zip",
+      "sha256": "9f3b35c69ee30ecd6bbdfef01fdb73d8103933de399944ae8c5ac169eb2a66be",
+      "sizeBytes": 33453446,
+      "includedBinary": false
+    },
+    {
+      "id": "AC04",
+      "archiveName": "CIE_AC04_SEMANTIC_CONVERGENCE_4_OF_N_2026-10-25.zip",
+      "sha256": "93e3945c3e84de6cd7fd9581f309560bb752c9a486961102ec564e36bae9e196",
+      "sizeBytes": 56190676,
+      "includedBinary": false
+    }
+  ],
+  "softwareAndContracts": [
+    {
+      "path": "convergence/DOD_MATRIX.md",
+      "sha256": "73904cf513f6f807371a1898e26a48a2882bee8894b3aeae016f89853b741a7c",
+      "bytes": 2237,
+      "gitBlobSha1": "132e5078d59748f90fb54380ef3b2e0166aad693"
+    },
+    {
+      "path": "convergence/PR_BODY.md",
+      "sha256": "51ad05e0c85179efb2889ffcffe12f228250c595607b25e74fd177c66dd7a7f1",
+      "bytes": 2122,
+      "gitBlobSha1": "70d81170c25b04b286168e4aaddaf73858fb645e"
+    },
+    {
+      "path": "convergence/README.md",
+      "sha256": "49ac9a2842f24303c76c397342bc2c44720da40e3a826188655e487c7db85e15",
+      "bytes": 2784,
+      "gitBlobSha1": "67a23e80ec8ca562fc055f509ad2c40b99c3b24e"
+    },
+    {
+      "path": "convergence/ac03/scripts/audit.mjs",
+      "sha256": "24d33b40648195a30a905b7e21cd4e1c754c20c5e7a507bcf617a10c17abea34",
+      "bytes": 4475,
+      "gitBlobSha1": "1fde9673f0b91421ef8cba79e8cdb5144e72c1c6"
+    },
+    {
+      "path": "convergence/ac03/scripts/bootstrap.mjs",
+      "sha256": "be75ad3ca67cc1e15b60418d5211440513a18993904c2d4981a996ae4e8cc47c",
+      "bytes": 744,
+      "gitBlobSha1": "28a7fa78a03ffa0634d69e1e5e4838ccb3f84529"
+    },
+    {
+      "path": "convergence/ac03/scripts/crash_worker.mjs",
+      "sha256": "74d2780c54249dbd5a17c1162470a81ff78707a48478db91ceeee8a6eaddef36",
+      "bytes": 345,
+      "gitBlobSha1": "f4d4e88c667cbe43e89ee2cfc3d8dc1f3426284b"
+    },
+    {
+      "path": "convergence/ac03/scripts/multiprocess_e2e.py",
+      "sha256": "10524bd92dc4422cd635219cdabffdb928e9c5d41cc1b5c3a936898130a8a687",
+      "bytes": 3847,
+      "gitBlobSha1": "2cda1feeea7e4247f1a9404949ccc1d39862c558"
+    },
+    {
+      "path": "convergence/ac03/server/cli.mjs",
+      "sha256": "7269ac67e55a2be4c6425ef47e5794c69087652b80a9343efcabea07b27da5d9",
+      "bytes": 626,
+      "gitBlobSha1": "4a78601e81b75d99b44e740cd28057f777d218f9"
+    },
+    {
+      "path": "convergence/ac03/server/http.mjs",
+      "sha256": "1bf4c34364b942b418a6b7c682a79603656b428ae99d7a37eb812d5c9d1a462f",
+      "bytes": 3499,
+      "gitBlobSha1": "d7be1abc54e7cf14100d328e591d2edc21fbc1f9"
+    },
+    {
+      "path": "convergence/ac03/server/store.mjs",
+      "sha256": "e795f4c64c32e9497bd36ef7b36b0a42ee59449e4595ec5315c457cffa09c1a9",
+      "bytes": 8420,
+      "gitBlobSha1": "de960d2ed91cd02dc1b8c02545df35319eb6fca4"
+    },
+    {
+      "path": "convergence/ac03/src/golden_crisis.mjs",
+      "sha256": "abf071c7d06873ca7812b3f65ac6fe726dbfa1cb0f9030f9bcf59ec37c7fa3b3",
+      "bytes": 10312,
+      "gitBlobSha1": "91c946bfb3160d5666c24c9b9b8860c3cb20929d"
+    },
+    {
+      "path": "convergence/ac03/src/v3_immutable.mjs",
+      "sha256": "acd3f845de3b32faf0cbda2cf3f3a91c92ced1f4b6c846ae1cee3646db6a60d4",
+      "bytes": 23625,
+      "gitBlobSha1": "14d31ebae228dca2cdf3b11f24f16d470c7bdf2e"
+    },
+    {
+      "path": "convergence/ac03/tests/authority.test.mjs",
+      "sha256": "f797e8152bbccb21dc712c16fafa8b7983dbb528ba1c0e0f7a587cf6ac6a871c",
+      "bytes": 9495,
+      "gitBlobSha1": "0c2b072b3188fbf78215900f5681fcd0ce3a5f6e"
+    },
+    {
+      "path": "convergence/ac03/tests/crash.test.mjs",
+      "sha256": "43c2aa6bc716954fefd85d9381a373281f9a6edf018fd3208dc578612a236612",
+      "bytes": 2001,
+      "gitBlobSha1": "5a820ceb16dc3a85cb48e07337b76c7362414383"
+    },
+    {
+      "path": "convergence/ac03/web/app.mjs",
+      "sha256": "ecafc4487729fc6b1a77736a8b029188a3e4fea28deb944b9b33ccdef57cbc11",
+      "bytes": 3790,
+      "gitBlobSha1": "89ea8c7c81e316f3c610451db415841984404473"
+    },
+    {
+      "path": "convergence/ac03/web/index.html",
+      "sha256": "d322de40f1ac0e7c5faaf7f09d2be538d26db87db637fcab056f9fcc14de0826",
+      "bytes": 2264,
+      "gitBlobSha1": "a5eb6796bb2f862bd2c1401f65d0e3d2f0580fd4"
+    },
+    {
+      "path": "convergence/ac03/web/style.css",
+      "sha256": "7eb13476f849cf107249f94ec912344590b58362edc9d52bde9457d5a7d93efc",
+      "bytes": 2289,
+      "gitBlobSha1": "076e0ec7cfb3db68275c1ac94920968f79346747"
+    },
+    {
+      "path": "convergence/ac04/scripts/audit.mjs",
+      "sha256": "48df9637ec606c9b2896597c7ba79e63d46a31d87d22883ec66b2c5b32321e08",
+      "bytes": 2957,
+      "gitBlobSha1": "5b895317f39b0b55294ee56358581b778d327032"
+    },
+    {
+      "path": "convergence/ac04/scripts/bootstrap.mjs",
+      "sha256": "5590e7497f27ec464e262f366b0dfcf92f3fddeeecbc1d5f4dc99420cd021468",
+      "bytes": 548,
+      "gitBlobSha1": "7fd6644b3070f79b7aa3f1d2813a74b3bbe23249"
+    },
+    {
+      "path": "convergence/ac04/scripts/crash_worker.mjs",
+      "sha256": "4c50996ad8cd12c7a43eb478e6508ae6fa33e772705a42e49773cf897e82789b",
+      "bytes": 598,
+      "gitBlobSha1": "0c63fd985e3fc36a226e55ab2f395413e78c2be4"
+    },
+    {
+      "path": "convergence/ac04/scripts/http_smoke.py",
+      "sha256": "245ff8aa4cc7375a84d10ac7bcd2c49acc6c0b6c00c57a1b6469bb49891c2049",
+      "bytes": 3481,
+      "gitBlobSha1": "a60fe62e4181e9a80f4939df30acc3dffcae56b7"
+    },
+    {
+      "path": "convergence/ac04/server/http.mjs",
+      "sha256": "25ddae785944b9f2156abeb03cb55837636b33abc5d99ee74a9ce958b181ad9f",
+      "bytes": 3308,
+      "gitBlobSha1": "848ffdf4c814f164b83224c48518ef27d834ff35"
+    },
+    {
+      "path": "convergence/ac04/src/canonical_lane.mjs",
+      "sha256": "bfbea8888a07f0c344c9d1d77571f379ac888efcc3f6ee88100997d78eacce15",
+      "bytes": 7232,
+      "gitBlobSha1": "0f0f63487fe5cedb57572565b0bf32c00c18f0b0"
+    },
+    {
+      "path": "convergence/ac04/tests/bridge.test.mjs",
+      "sha256": "7794327af211f4723a62c1781bee0cd0ace87e68443023b0f1a0a5ca62b7c2b9",
+      "bytes": 5720,
+      "gitBlobSha1": "1332491627a663329e3db5c19c588072c47a1eb6"
+    },
+    {
+      "path": "convergence/ac04/tests/crash.test.mjs",
+      "sha256": "153e51a929e4d8ab7e74c2e9c95be020d6fbdfb2eb1177917f7fc53b7870732a",
+      "bytes": 1526,
+      "gitBlobSha1": "219023ecdb30aad8bf030d0a499e8443b4ac6d82"
+    },
+    {
+      "path": "convergence/ac04/web/app.mjs",
+      "sha256": "6f79e95673032ace99d57b3f45f100296d08e3aa472be4fa4c2763973a57d576",
+      "bytes": 1860,
+      "gitBlobSha1": "1fc1a8805b1de71f2f7785b7f4518022b3ab3e18"
+    },
+    {
+      "path": "convergence/ac04/web/index.html",
+      "sha256": "58aa0493002e4a4566565ff1097ecd5ba607271a94cedaf8542d59177d1f76e9",
+      "bytes": 1782,
+      "gitBlobSha1": "0382b603eedf87af7fc5a81745829953d6d70db5"
+    },
+    {
+      "path": "convergence/ac04/web/style.css",
+      "sha256": "ed3334574db9f04e238dfdb2e3db19ae46d6e271f51b80d49e16c88d3de3251c",
+      "bytes": 1529,
+      "gitBlobSha1": "76abdc5f99d328d773dab5cc85b8951b8d79d577"
+    },
+    {
+      "path": "convergence/assurance/ac03_dod.json",
+      "sha256": "a2d2affd89d4efbc5660dac7fa483ae8aead9388f2535bccbcb5cab917b86dd4",
+      "bytes": 7787,
+      "gitBlobSha1": "580a423b597bd77d213783330701b792832c9b4b"
+    },
+    {
+      "path": "convergence/assurance/ac04_dod.json",
+      "sha256": "0618c45e156d0fff2d8dfed47831323b06c9abb3bdc49e2be8b18f517e329296",
+      "bytes": 4001,
+      "gitBlobSha1": "146833c08fbc8d72835d266d0022a898ddb5c232"
+    },
+    {
+      "path": "convergence/assurance/check.mjs",
+      "sha256": "5daba83fae3aebffde661e77944860760b1fd4bcc8fb46f647fc7e88254f01ec",
+      "bytes": 3362,
+      "gitBlobSha1": "b59692d975d3bdf08284441d508c6384494da3f2"
+    },
+    {
+      "path": "convergence/assurance/check.test.mjs",
+      "sha256": "71c0c552d5d8364e3088a902bf4e244218d4e4420956da81db6c1342940353d5",
+      "bytes": 1496,
+      "gitBlobSha1": "c13d8b192597010be8677131d38b9cd41a716119"
+    },
+    {
+      "path": "convergence/assurance/holistic_reticulum_ac04.json.gz",
+      "sha256": "846568e060dd430ef76fb2e00418dd2ac3b4dda7c2dcf4c0ff0d3f573dd2b95a",
+      "bytes": 35387,
+      "gitBlobSha1": "ab957f809bf2136240e8191a5af1f87a75f34e1c"
+    },
+    {
+      "path": "convergence/assurance/sbom_dev_spdx.json",
+      "sha256": "a3a0837e30e08299c32da57b008b4539e40e542cb6d0b71815ff7fd14910f3f2",
+      "bytes": 7821,
+      "gitBlobSha1": "81f8f00544a52a4e1f7e68058535dffbd58ebc48"
+    },
+    {
+      "path": "convergence/assurance/semantic_gap_matrix.json",
+      "sha256": "6d0d43b6a7b4fdb94fa829a76e34dbb30445eab198f71b0111da9a554a19e63e",
+      "bytes": 1009,
+      "gitBlobSha1": "7488031f2d94dfdcff477c112713d8b8df646d72"
+    },
+    {
+      "path": "convergence/assurance/source_pins.json",
+      "sha256": "8e00cba273fd80aa280945163bbdd1b5cc0c2c3a0cb17add5aedc2bc0fa85020",
+      "bytes": 838,
+      "gitBlobSha1": "7a825cbc6d52b942a63d7a265deac4bcb2c3460c"
+    },
+    {
+      "path": "convergence/assurance/verify_manifest.mjs",
+      "sha256": "4037525b4fdea4655c4d62c7299c005f4c511b6b3cd74d2cf601fc63c3ba08f2",
+      "bytes": 1000,
+      "gitBlobSha1": "4c1943e61a982c9e2014683f567c5461dc02eb81"
+    },
+    {
+      "path": "convergence/design/56_DIMENSIONS_AND_DOD.md",
+      "sha256": "9c4cad2c5d34531b1b0f1f39d5c0c9637311ab0d7437200b4cbbfd2a7ff7d667",
+      "bytes": 11747,
+      "gitBlobSha1": "8428f409054e2e03d663f9f82eff90eecc61b920"
+    },
+    {
+      "path": "convergence/design/AC02_GOLDEN_CRISIS_CONTRACT.md",
+      "sha256": "c569b42c676f55f58086bc710b1df77afc95f70adae844a67ef40073453b5ded",
+      "bytes": 3160,
+      "gitBlobSha1": "a067faec1018d9afab4da2868182e091595616a6"
+    },
+    {
+      "path": "convergence/design/ASSURANCE_CLAIMS_AND_LIMITS.md",
+      "sha256": "37a0c7478c9c2a8609895c0fdd530d99f9171c7ccd4ee1fbe8c4ffea4566dda9",
+      "bytes": 2388,
+      "gitBlobSha1": "b372edb511f83a989ec092b3b7070ca26bad9147"
+    },
+    {
+      "path": "convergence/design/CONTINUOUS_DISCOVERY_PROTOCOL.md",
+      "sha256": "b3b845c7ceb1a1aeca5ec0e9f41e95be1386d8d6e80c4594c13497720ece0415",
+      "bytes": 3078,
+      "gitBlobSha1": "73a4b43325dde258fd9e5207756059b0d5138e81"
+    },
+    {
+      "path": "convergence/design/COVERAGE_STRATEGY.md",
+      "sha256": "1839d840f17b09cfa54e77026dbd671e626a2e610b3a45cca10603624719ca89",
+      "bytes": 2791,
+      "gitBlobSha1": "8e4bb7ca26b4aa6eb66be739fafcb57503e4c379"
+    },
+    {
+      "path": "convergence/design/FIVE_ROLE_BIBLES.md",
+      "sha256": "858b991a5ee5524314e3aeeb87615e5d89558c4c7eec45603f05729faec0ef0e",
+      "bytes": 6908,
+      "gitBlobSha1": "4f8455e024e86b31e0a7fc3fadaaa053d3c24835"
+    },
+    {
+      "path": "convergence/design/GAME_MODES_AND_UIUX.md",
+      "sha256": "561ccc4e28016620f0247465f124dfbec92369b2c2dfee9fdf68272785b47f9b",
+      "bytes": 3085,
+      "gitBlobSha1": "e9281324bb23d680686a9c80bfbe60bf23966504"
+    },
+    {
+      "path": "convergence/design/INK_BLEU_CANON.md",
+      "sha256": "8a8568f07f6d21d44296986a3e8f38a651546e695be912558a88a715e1927425",
+      "bytes": 2683,
+      "gitBlobSha1": "3b239d9c4db92dc4b6c7fc6a8c725a496d188f3e"
+    },
+    {
+      "path": "convergence/design/IRON_TO_UX_LADDER.md",
+      "sha256": "5aba6a3465fccdb90ee5a5c24a21515d9d0d4f61b63a94d0ba3b898779d1b972",
+      "bytes": 3944,
+      "gitBlobSha1": "1a029ae73452305ada963b0de22d9068083f15f9"
+    },
+    {
+      "path": "convergence/design/M46_GATED_ROADMAP.md",
+      "sha256": "f79f79ffd4dedbc20a8a2db34ac07cf082f5a5aa8c1d973bf69f6452bf2e48f5",
+      "bytes": 10371,
+      "gitBlobSha1": "433c39096265c0da3e6c25abc34bcc7f8cce002c"
+    },
+    {
+      "path": "convergence/design/PRODUCT_NORTH_STAR.md",
+      "sha256": "d5e430d5d0739a54e4394344a2a32e61de07e4f6cbff517e125529a1723fe3c0",
+      "bytes": 2115,
+      "gitBlobSha1": "dbf2b3dc9555e85ab31b622bbaed4c4fa925afd9"
+    },
+    {
+      "path": "convergence/design/SCENARIO_ATLAS_30.md",
+      "sha256": "6ef4deb49e5df7ee96844a324794a82fa0a737274d9e119b49c1234f14ea25f8",
+      "bytes": 27678,
+      "gitBlobSha1": "09879916620abce84481e738c000b23fa5c96a56"
+    },
+    {
+      "path": "convergence/docs/01_CONSOLIDATED_TRUTH.md",
+      "sha256": "13ea192eae8e1704bd965d7cf782ae12d148c87366ad8fbc6f573da0c59e1ecf",
+      "bytes": 2591,
+      "gitBlobSha1": "5de187e9dd680e5f160bbfbc1b7407c5ac377fba"
+    },
+    {
+      "path": "convergence/docs/02_SEMANTIC_ADAPTER_CONTRACT.md",
+      "sha256": "b93f7f8a3002b95f02e88ff77f00fe5c540f5f2e5bd0881dc1922522eacc39da",
+      "bytes": 2643,
+      "gitBlobSha1": "c65c7358d8c97ad76e3ebc9bd99b78f60ac30162"
+    },
+    {
+      "path": "convergence/docs/03_FALSIFICATION_AND_REGRESSIONS.md",
+      "sha256": "76b7e5eb8e0b2f93f9d605ab55f5cd24ee81b559fd24106dd151d5ca506c3715",
+      "bytes": 2198,
+      "gitBlobSha1": "f233eaee08a5b0e12b2c4620ca3a7e50f526ee28"
+    },
+    {
+      "path": "convergence/docs/04_CONVERGENCE_ROADMAP.md",
+      "sha256": "fe0a8d6e736a790baed5dc3a33bdf74e2b698678c83249cd3ca53970a8b543e8",
+      "bytes": 2510,
+      "gitBlobSha1": "f79075ec70b931e45eadcfba55a1b6466eb6672e"
+    },
+    {
+      "path": "convergence/docs/05_SUPPLY_CHAIN_AND_PRODUCT_LIMITS.md",
+      "sha256": "9d546992ca84c0513b50efa86d0e7ad9e08add2f1d7a94145514ab968e3bbfcb",
+      "bytes": 1511,
+      "gitBlobSha1": "6df44f799d501039d4af6d30926ba6aa8af136cf"
+    },
+    {
+      "path": "convergence/docs/AC03_CONTRACT.md",
+      "sha256": "543e706391d3df0f2941d257f0232fa2a24a849d91223de1d86a8178b1cb632f",
+      "bytes": 3795,
+      "gitBlobSha1": "2c465ef6a025b9fa66ded5184c791ec646bab50b"
+    },
+    {
+      "path": "convergence/docs/AC03_FALSIFICATION.md",
+      "sha256": "1d590a492d40a279bad923178f4193994909864e4e48fe100fe34ace836dab45",
+      "bytes": 3217,
+      "gitBlobSha1": "a4471c8a776e7b8734ebd20a656ea0cf087b3c37"
+    },
+    {
+      "path": "convergence/infographics/AC03_ARCHITECTURE.svg",
+      "sha256": "a68d155cffcee07976b3b2fedef085b69f6aaf3f04eb5d19355f8defb05fc1e7",
+      "bytes": 3288,
+      "gitBlobSha1": "93c4ffe168dde34845a5ef36531b10aa8fcc2f47"
+    },
+    {
+      "path": "convergence/infographics/AC04_TWO_KERNELS.svg",
+      "sha256": "bbaee87217e6833c686b544121f1d123f3f343edb0159a95d7589c5529903f2e",
+      "bytes": 3583,
+      "gitBlobSha1": "285a5bc2b8c040a4b9fccf6f08934f990ab1bb30"
+    }
+  ],
+  "retainedCanonicalSources": 7,
+  "inheritedMicroDoD": 146,
+  "inheritedLocalDoD": 49,
+  "globalGates": 32,
+  "certifiedGlobalGates": 0,
+  "traceabilityCompleteWithinGraph": true,
+  "runtimeUnified": false,
+  "fullBinaryBundleEquivalence": false,
+  "release": "BLOCK",
+  "transplantModel": "semantic source and contract artifacts with exact hashes; historical binary archives retained externally"
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "DOD-A04-01",
+    "title": "Canonical 7 source blobs match GitHub main",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/source_provenance.json"
+  },
+  {
+    "id": "DOD-A04-02",
+    "title": "Legacy F7 authority reused byte-identically",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/canonical_main_regression.log"
+  },
+  {
+    "id": "DOD-A04-03",
+    "title": "Persistent canonical campaigns replay without divergence",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/canonical_lane_audit.json"
+  },
+  {
+    "id": "DOD-A04-04",
+    "title": "Five F7 roles isolated in five campaigns",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac04_tests.log"
+  },
+  {
+    "id": "DOD-A04-05",
+    "title": "Cross-role credentials cannot read another campaign",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/http_smoke.json"
+  },
+  {
+    "id": "DOD-A04-06",
+    "title": "Request key repeat has one effect",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac04_tests.log"
+  },
+  {
+    "id": "DOD-A04-07",
+    "title": "Two local server processes accept independent role steps",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/http_smoke.json"
+  },
+  {
+    "id": "DOD-A04-08",
+    "title": "Corrupted snapshot or incompatible schema rejected",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac04_tests.log"
+  },
+  {
+    "id": "DOD-A04-09",
+    "title": "Process termination before commit rolls back",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac04_tests.log"
+  },
+  {
+    "id": "DOD-A04-10",
+    "title": "Process termination after commit retries consistently",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac04_tests.log"
+  },
+  {
+    "id": "DOD-A04-11",
+    "title": "Canonical player goals reproduced from official observer",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac04_tests.log"
+  },
+  {
+    "id": "DOD-A04-12",
+    "title": "No fabricated AC02-F7 shared world or cross-kernel migration",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac04_tests.log"
+  },
+  {
+    "id": "DOD-A04-13",
+    "title": "AC03 frozen local regressions stay green",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/ac03_regression.log"
+  },
+  {
+    "id": "DOD-A04-14",
+    "title": "Native HTTP endpoint exercises canonical F7",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/http_smoke.json"
+  },
+  {
+    "id": "DOD-A04-15",
+    "title": "No regressions in canonical Node tests",
+    "status": "PASS_LOCAL",
+    "evidence": "proofs/canonical_main_regression.log"
+  },
+  {
+    "id": "DOD-A04-16",
+    "title": "Five human roles resolve ONE canonical world jointly",
+    "status": "BLOCKED",
+    "evidence": "NOT_IMPLEMENTED"
+  },
+  {
+    "id": "DOD-A04-17",
+    "title": "Common economic balances and ledger across microkernel and F7",
+    "status": "BLOCKED",
+    "evidence": "NOT_IMPLEMENTED"
+  },
+  {
+    "id": "DOD-A04-18",
+    "title": "Crosswalk for competence, legal acts and actor identity",
+    "status": "BLOCKED",
+    "evidence": "NOT_IMPLEMENTED"
+  },
+  {
+    "id": "DOD-A04-19",
+    "title": "Lossless V3/AC02/F7 migration with shared event provenance",
+    "status": "BLOCKED",
+    "evidence": "NOT_IMPLEMENTED"
+  },
+  {
+    "id": "DOD-A04-20",
+    "title": "Persistent 16-quarter world with server UTC clock",
+    "status": "BLOCKED",
+    "evidence": "NOT_IMPLEMENTED"
+  },
+  {
+    "id": "DOD-A04-21",
+    "title": "Production identities, TLS, threat model and recovery operations",
+    "status": "BLOCKED",
+    "evidence": "NOT_CERTIFIED"
+  },
+  {
+    "id": "DOD-A04-22",
+    "title": "Real native browser HTTP + independent accessibility review",
+    "status": "BLOCKED",
+    "evidence": "NOT_CERTIFIED"
+  },
+  {
+    "id": "DOD-A04-23",
+    "title": "Human fun, comprehension and strategic balance",
+    "status": "BLOCKED",
+    "evidence": "NOT_TESTED"
+  },
+  {
+    "id": "DOD-A04-24",
+    "title": "Signed SBOM, security review and compliant deployment",
+    "status": "BLOCKED",
+    "evidence": "NOT_CERTIFIED"
+  }
+]

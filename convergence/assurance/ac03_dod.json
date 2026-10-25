@@ -1,0 +1,275 @@
+{
+  "schema": "CIE-AC03-DOD-1",
+  "local": [
+    {
+      "id": "A03-01",
+      "name": "Source-layer unchanged / frozen baseline",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-01",
+      "globalGate": "GATE-G02",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-02",
+      "name": "Persistent canonical SQLite state",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-02",
+      "globalGate": "GATE-G01",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-03",
+      "name": "Unique per-role credential hash, no stored plaintext",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-03",
+      "globalGate": "GATE-G22",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-04",
+      "name": "Unauthorized requests denied",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-04",
+      "globalGate": "GATE-G22",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-05",
+      "name": "Server observer projection never returns other secrets",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-05",
+      "globalGate": "GATE-G22",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-06",
+      "name": "Role-scoped typed order dispatch",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-06",
+      "globalGate": "GATE-G03",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-07",
+      "name": "Submission request idempotency and conflict detection",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-07",
+      "globalGate": "GATE-G05",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-08",
+      "name": "Two independent authorities cannot double-commit",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-08",
+      "globalGate": "GATE-G05",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-09",
+      "name": "SQLite WAL transaction durability/reopen",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-09",
+      "globalGate": "GATE-G21",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-10",
+      "name": "SIGKILL before COMMIT rolls back",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-10",
+      "globalGate": "GATE-G31",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-11",
+      "name": "SIGKILL after COMMIT responds once on retry",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-11",
+      "globalGate": "GATE-G31",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-12",
+      "name": "Mandate revocation cancels pending privileged order",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-12",
+      "globalGate": "GATE-G03",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-13",
+      "name": "Judicial stay beats execution only on target",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-13",
+      "globalGate": "GATE-G03",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-14",
+      "name": "Concurrent scarcity preserves total balances",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-14",
+      "globalGate": "GATE-G08",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-15",
+      "name": "Public comics trace to authorized public events",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-15",
+      "globalGate": "GATE-G15",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-16",
+      "name": "Replay and state digest match after restart",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-16",
+      "globalGate": "GATE-G02",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-17",
+      "name": "Two OS server processes share one authoritative revision",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-17",
+      "globalGate": "GATE-G21",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-18",
+      "name": "Browser viewport UI with actual HTTP bridge",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-18",
+      "globalGate": "GATE-G19",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-19",
+      "name": "HTTP static delivery with no source traversal/CSP",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-19",
+      "globalGate": "GATE-G24",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-20",
+      "name": "Frozen AC-02/AC-01 targeted regression preserved",
+      "status": "PASS_LOCAL",
+      "proof": "proofs/regression_ac01_assure.log",
+      "falsifierNode": "FALSIFIER-A03-20",
+      "globalGate": "GATE-G32",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-21",
+      "name": "Browser native same-origin HTTP route E2E",
+      "status": "OPEN",
+      "proof": null,
+      "falsifierNode": "FALSIFIER-A03-21",
+      "globalGate": "GATE-G28",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-22",
+      "name": "TLS/identity provider/rotation/throttle professional security",
+      "status": "OPEN",
+      "proof": null,
+      "falsifierNode": "FALSIFIER-A03-22",
+      "globalGate": "GATE-G22",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-23",
+      "name": "Multi-quarter async world and temporal transitions",
+      "status": "OPEN",
+      "proof": null,
+      "falsifierNode": "FALSIFIER-A03-23",
+      "globalGate": "GATE-G13",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-24",
+      "name": "Real independent penetration, WCAG and human studies",
+      "status": "OPEN",
+      "proof": null,
+      "falsifierNode": "FALSIFIER-A03-24",
+      "globalGate": "GATE-G23",
+      "promotion": "FORBIDDEN"
+    },
+    {
+      "id": "A03-25",
+      "name": "Production backups, restoration, load tests and rollback",
+      "status": "OPEN",
+      "proof": null,
+      "falsifierNode": "FALSIFIER-A03-25",
+      "globalGate": "GATE-G31",
+      "promotion": "FORBIDDEN"
+    }
+  ],
+  "intermediate": [
+    [
+      "K03-A",
+      "Single source of truth",
+      "A03-02",
+      "A03-16"
+    ],
+    [
+      "K03-B",
+      "Five remote identities and legal commands",
+      "A03-03",
+      "A03-12"
+    ],
+    [
+      "K03-C",
+      "Durable exactly-once commit",
+      "A03-07",
+      "A03-11"
+    ],
+    [
+      "K03-D",
+      "Judicial/financial collision preservation",
+      "A03-13",
+      "A03-14"
+    ],
+    [
+      "K03-E",
+      "Information-to-UI narrative seam",
+      "A03-05",
+      "A03-18"
+    ],
+    [
+      "K03-F",
+      "Independent process concurrency",
+      "A03-08",
+      "A03-17"
+    ],
+    [
+      "K03-G",
+      "Production operations & human gates",
+      "A03-21",
+      "A03-25"
+    ]
+  ],
+  "release": "BLOCK"
+}

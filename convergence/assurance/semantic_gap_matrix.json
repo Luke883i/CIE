@@ -1,0 +1,14 @@
+{
+  "schema":"CIE-AC04-SEMANTIC-GAPS-1",
+  "sameSeedMeansSameGameInstance":false,
+  "F7":{"humanOrdersPerWorld":1,"otherRoles":"SEEDED_NPC","horizon":"INSTITUTIONAL_PRELUDE_PLUS_8_ECONOMIC_QUARTERS","sharedStateWithAC03":false},
+  "AC03":{"humanOrdersPerWorld":5,"horizon":"ONE_EXPERIMENTAL_QUARTER","sharedStateWithF7":false},
+  "nonNegotiableBlockingDimensions":[
+    {"id":"K01","dimension":"joint actor mandate and identity","state":"OPEN"},
+    {"id":"K02","dimension":"shared canonical economy and constraints","state":"OPEN"},
+    {"id":"K03","dimension":"legal precedence and pending approvals","state":"OPEN"},
+    {"id":"K04","dimension":"lossless event/replay contract and deterministic 16 quarters","state":"OPEN"},
+    {"id":"K05","dimension":"scoped server projections for five humans","state":"OPEN"},
+    {"id":"K06","dimension":"native real-browser multiplayer and human validation","state":"OPEN"}
+  ],"prohibitedClaim":"AC04 is canonical five-human multiplayer", "productRelease":"BLOCK"
+}

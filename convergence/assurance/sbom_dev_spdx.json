@@ -1,0 +1,259 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "CIE AC-03 local development inventory (PARTIAL SBOM)",
+  "documentNamespace": "https://example.invalid/cie-ac03/local-spdx-a6083ddd081c",
+  "creationInfo": {
+    "creators": [
+      "Tool: CIE AC03 local SBOM generator"
+    ],
+    "created": "2026-10-25T00:00:00Z"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-CIE-AC03",
+      "name": "cie-ac03-authoritative-golden-crisis",
+      "versionInfo": "0.3.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Node",
+      "name": "Node.js runtime with experimental node:sqlite",
+      "versionInfo": "v22.16.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-cli-mjs-0",
+      "fileName": "./server/cli.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7269ac67e55a2be4c6425ef47e5794c69087652b80a9343efcabea07b27da5d9"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-http-mjs-1",
+      "fileName": "./server/http.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1bf4c34364b942b418a6b7c682a79603656b428ae99d7a37eb812d5c9d1a462f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-store-mjs-2",
+      "fileName": "./server/store.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e795f4c64c32e9497bd36ef7b36b0a42ee59449e4595ec5315c457cffa09c1a9"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-golden-crisis-mjs-3",
+      "fileName": "./src/golden_crisis.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "abf071c7d06873ca7812b3f65ac6fe726dbfa1cb0f9030f9bcf59ec37c7fa3b3"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-v3-immutable-mjs-4",
+      "fileName": "./src/v3_immutable.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "acd3f845de3b32faf0cbda2cf3f3a91c92ced1f4b6c846ae1cee3646db6a60d4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-app-mjs-5",
+      "fileName": "./web/app.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ecafc4487729fc6b1a77736a8b029188a3e4fea28deb944b9b33ccdef57cbc11"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-index-html-6",
+      "fileName": "./web/index.html",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d322de40f1ac0e7c5faaf7f09d2be538d26db87db637fcab056f9fcc14de0826"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-style-css-7",
+      "fileName": "./web/style.css",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7eb13476f849cf107249f94ec912344590b58362edc9d52bde9457d5a7d93efc"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-audit-mjs-8",
+      "fileName": "./scripts/audit.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "78fa7afe7718e02c970bc580323de8b050ff10778670184fb31ae9816817d54e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-bootstrap-mjs-9",
+      "fileName": "./scripts/bootstrap.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "be75ad3ca67cc1e15b60418d5211440513a18993904c2d4981a996ae4e8cc47c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-browser-bridge-py-10",
+      "fileName": "./scripts/browser_bridge.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c5676495bade9979b519c854de2dd8470f34094929985f12eadfe474ef78a6fb"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-browser-e2e-py-11",
+      "fileName": "./scripts/browser_e2e.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e60774c152f6d30e3cf4cb1d0e9e90bd90936ddb6e0126bb3482529512313f52"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-build-assurance-py-12",
+      "fileName": "./scripts/build_assurance.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a3d9d457f3b2b138569591d6da5517d07b8f267066e950e35dccd0fb7913aa4a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-crash-worker-mjs-13",
+      "fileName": "./scripts/crash_worker.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "74d2780c54249dbd5a17c1162470a81ff78707a48478db91ceeee8a6eaddef36"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-generate-sbom-py-14",
+      "fileName": "./scripts/generate_sbom.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b921f61d1ac7a247630e9c7897774b9bccf8c062783085e65199c5d9627665a0"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-multiprocess-e2e-py-15",
+      "fileName": "./scripts/multiprocess_e2e.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10524bd92dc4422cd635219cdabffdb928e9c5d41cc1b5c3a936898130a8a687"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-authority-test-mjs-16",
+      "fileName": "./tests/authority.test.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f797e8152bbccb21dc712c16fafa8b7983dbb528ba1c0e0f7a587cf6ac6a871c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-File-crash-test-mjs-17",
+      "fileName": "./tests/crash.test.mjs",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "43c2aa6bc716954fefd85d9381a373281f9a6edf018fd3208dc578612a236612"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "annotations": [
+    {
+      "annotationDate": "2026-10-25T00:00:00Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: CIE AC03",
+      "comment": "PARTIAL development inventory only. Missing full OS, transitive native libraries, Python browser test packages, licenses and external art. Not release-compliant SBOM."
+    }
+  ]
+}
