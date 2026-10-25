@@ -35,6 +35,12 @@
     "audit:dual": "node scripts/audit_role_objectives.mjs",
     "verify:dual": "npm test && npm run audit:goal && npm run audit:dual",
     "verify:goal": "npm test && npm run audit:goal",
-    "verify:legacy": "npm run audit:f8 && npm run audit:f10"
+    "verify:legacy": "npm run audit:f8 && npm run audit:f10",
+    "test:convergence": "node --disable-warning=ExperimentalWarning --test convergence/ac03/tests/*.test.mjs convergence/ac04/tests/*.test.mjs convergence/assurance/*.test.mjs",
+    "audit:convergence": "node convergence/assurance/check.mjs && node convergence/assurance/verify_manifest.mjs",
+    "verify:convergence": "npm run test:convergence && npm run audit:convergence",
+    "verify:convergence:deep": "npm run verify:dual && npm run verify:legacy && npm run verify:convergence",
+    "serve:ac03:local": "node convergence/ac03/server/cli.mjs",
+    "serve:ac04:local": "node convergence/ac04/server/http.mjs"
   }
 }

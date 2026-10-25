@@ -1,0 +1,16 @@
+{
+  "schema": "CIE-CVG-SOURCE-PINS-1",
+  "baseMain": "21a93879d837091e23479da5621d128360d24815",
+  "files": {
+    "src/strategy.mjs": "dd68be3df5598da28c87c05c98d5cc162a0acab3",
+    "src/reticulum.mjs": "11335ed3bfdbe6453851f32d9d93d2ed33826c1e",
+    "src/economy.mjs": "2f9b8fb352133a6376dd0a2014fd6dc5e280791f",
+    "src/institutions.mjs": "0921b9e6adb386e8e69e3f7d391e4e6287f0d439",
+    "src/world.mjs": "b8016b60f3e4ffb2ea33611e1b79cf17eb508bd2",
+    "src/role_objectives.mjs": "56a73753ca8cd43d4993335c146e42601b0980f4",
+    "src/game_goal.mjs": "057bb5bfa3a8adba5b6602b01708c50f9a00143f"
+  },
+  "inheritedProofsAreNotReleaseEvidence": true,
+  "baselineGraphSha256": "a86f9061824d557e715aadc46721cb8496553180ae97c2838f0fdc2d0e90143d",
+  "baselineGraphGzipSha256": "846568e060dd430ef76fb2e00418dd2ac3b4dda7c2dcf4c0ff0d3f573dd2b95a"
+}

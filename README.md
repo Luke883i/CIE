@@ -29,3 +29,8 @@ Focus Mode has one first-viewport CTA, up to three hidden optional alternatives,
 ## Game Clarity local study (after PR11)
 
 A read-only presentation refinement clarifies the actual F7 win contract: reach 4 project progress points without defaults in eight economic quarters. Five different role tasks, a 2-metric goal panel, truthful end states and unreachable-goal warnings are shown in Focus Mode. This is a **local, unmerged experiment**. Verify with `npm run verify:goal` and `python scripts/browser_goal_clarity_smoke.py`; do not treat the 40-title desk scouting or synthetic tests as evidence of actual player enjoyment.
+
+
+## AC-03/AC-04 semantic convergence (experimental)
+
+The optional `[convergence/](convergence/README.md)` contains **two separate** runtime lanes, not a merged multiplayer canon. Use `npm run verify:convergence` for fail-closed proof contracts. `npm run verify:convergence:deep` also runs existing legacy game tests. The release remains BLOCKED; do not expose local servers or credentials to the internet.

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 680" role="img" aria-label="AC-03: cinque scrivanie con credenziali indipendenti inviano ordini al server Node autorevole, che usa SQLite WAL e il microkernel AC-02; le viste filtrate ritornano ai personaggi; produzione bloccata">
+<rect width="1280" height="680" fill="#e8f2f7"/><rect x="22" y="20" width="1236" height="640" rx="23" fill="#f9fcff" stroke="#112c47" stroke-width="5"/>
+<text x="65" y="82" fill="#102d48" font-family="Arial,sans-serif" font-size="36" font-weight="800">AC-03 / CINQUE ACCESSI, UN MONDO</text>
+<text x="65" y="113" fill="#476b89" font-family="Arial,sans-serif" font-size="17">Contratti di attraversamento e confini delle prove locali</text>
+<rect x="67" y="160" rx="12" width="295" height="379" fill="#13304a"/>
+<text x="92" y="200" font-family="Arial,sans-serif" fill="#eeb875" font-size="20" font-weight="bold">5 RUOLI</text>
+<g font-family="Arial,sans-serif" font-size="18" fill="#e7f3ff"><text x="95" y="249">Costantino</text><text x="95" y="304">Finanziatore</text><text x="95" y="359">Parlamentare</text><text x="95" y="414">Presidente</text><text x="95" y="469">Giudice</text></g>
+<g stroke="#7bb6df" stroke-width="1" opacity=".65"><path d="M90 265H340M90 320H340M90 375H340M90 430H340"/></g>
+<path d="M365 330 H470" stroke="#2776b2" stroke-width="7" fill="none"/><path d="M455 315 L476 330 455 344" fill="none" stroke="#2776b2" stroke-width="7"/>
+<text x="376" y="304" font-family="Arial,sans-serif" font-size="13" fill="#335e83">Ordini</text>
+<rect x="480" y="166" rx="12" width="338" height="373" fill="#dbeafa" stroke="#27679d" stroke-width="3"/>
+<text x="501" y="206" font-family="Arial,sans-serif" font-weight="800" fill="#143a5e" font-size="23">SERVER AUTORITATIVO</text>
+<g font-family="Arial,sans-serif" font-size="17" fill="#214b6e"><text x="506" y="252">Token → mandato (hash)</text><text x="506" y="299">Validazione competenze</text><text x="506" y="346">SQLite WAL + journal</text><text x="506" y="393">Commit canonico AC-02</text><text x="506" y="440">Ricevute / replay</text><text x="506" y="487">Proiezioni allowlist</text></g>
+<path d="M821 330 H920" stroke="#2776b2" stroke-width="7"/><path d="M905 315 L928 330 905 345" fill="none" stroke="#2776b2" stroke-width="7"/>
+<rect x="934" y="166" rx="12" width="276" height="373" fill="#13304a"/>
+<text x="958" y="204" font-family="Arial,sans-serif" font-weight="800" fill="#eeb875" font-size="22">PROVE AC-03</text>
+<g font-family="Arial,sans-serif" font-size="16" fill="#e8f4ff"><text x="958" y="260">SIGKILL prima / dopo</text><text x="958" y="306">2 server in concorrenza</text><text x="958" y="352">400 mondi e replay</text><text x="958" y="398">5 viste riservate</text><text x="958" y="444">Test desktop / mobile</text><text x="958" y="489">Release: BLOCCATA</text></g>
+<path d="M480 562 H817" stroke="#bd5c50" stroke-width="3" stroke-dasharray="8 8"/>
+<text x="642" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#91433b">NON ANCORA: TLS, IdP, multi-trimestre, CI deploy, audit indipendente</text>
+<text x="66" y="624" font-family="Arial,sans-serif" font-size="14" fill="#5d7589">INK &amp; BLEU · schema editabile SVG · scenario fittizio · nessuna attestazione produzione</text>
+</svg>
