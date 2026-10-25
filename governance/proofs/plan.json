@@ -1,0 +1,287 @@
+{
+  "audit": {
+    "pass": true,
+    "errors": []
+  },
+  "plan": {
+    "schema": "CIE-ICTC-PLAN-1",
+    "release": "BLOCK",
+    "gateClosure": 0,
+    "globalGates": 32,
+    "workPackages": 14,
+    "weightedDebt": 104,
+    "criticalDependencyDepth": 10,
+    "ready": [
+      "ICTC01"
+    ],
+    "ranked": [
+      {
+        "id": "ICTC01",
+        "title": "Baseline, scopes and evidence governance",
+        "depth": 1,
+        "weight": 3,
+        "impact": 5,
+        "uncertainty": 4,
+        "risk": 23,
+        "blockedBy": [],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G32"
+        ]
+      },
+      {
+        "id": "ICTC02",
+        "title": "Five-human constitution, mandates and 0-N orders",
+        "depth": 2,
+        "weight": 8,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 33,
+        "blockedBy": [
+          "ICTC01"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G01",
+          "GATE-G03",
+          "GATE-G04"
+        ]
+      },
+      {
+        "id": "ICTC03",
+        "title": "Twelve domains, scarce stock/flow economy",
+        "depth": 3,
+        "weight": 8,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 33,
+        "blockedBy": [
+          "ICTC02"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G06",
+          "GATE-G07",
+          "GATE-G08"
+        ]
+      },
+      {
+        "id": "ICTC05",
+        "title": "Atomic joint transitions and replay",
+        "depth": 4,
+        "weight": 8,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 33,
+        "blockedBy": [
+          "ICTC02",
+          "ICTC03"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G02",
+          "GATE-G05"
+        ]
+      },
+      {
+        "id": "ICTC04",
+        "title": "Territories, cohorts and distribution",
+        "depth": 4,
+        "weight": 7,
+        "impact": 4,
+        "uncertainty": 5,
+        "risk": 27,
+        "blockedBy": [
+          "ICTC03"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G09",
+          "GATE-G10"
+        ]
+      },
+      {
+        "id": "ICTC06",
+        "title": "Persistent server, role privacy and security",
+        "depth": 5,
+        "weight": 8,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 33,
+        "blockedBy": [
+          "ICTC05"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G21",
+          "GATE-G22"
+        ]
+      },
+      {
+        "id": "ICTC07",
+        "title": "NPC agency, war and regime shifts",
+        "depth": 5,
+        "weight": 8,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 33,
+        "blockedBy": [
+          "ICTC04",
+          "ICTC05"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G11",
+          "GATE-G12"
+        ]
+      },
+      {
+        "id": "ICTC08",
+        "title": "Complete campaigns and differentiated goals",
+        "depth": 6,
+        "weight": 8,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 33,
+        "blockedBy": [
+          "ICTC07"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G13",
+          "GATE-G14"
+        ]
+      },
+      {
+        "id": "ICTC10",
+        "title": "Narrative provenance and adult graphic art",
+        "depth": 6,
+        "weight": 6,
+        "impact": 4,
+        "uncertainty": 4,
+        "risk": 22,
+        "blockedBy": [
+          "ICTC04",
+          "ICTC06"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G15",
+          "GATE-G25"
+        ]
+      },
+      {
+        "id": "ICTC12",
+        "title": "Turntable UX, tutorial, accessibility and performance",
+        "depth": 7,
+        "weight": 7,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 32,
+        "blockedBy": [
+          "ICTC08",
+          "ICTC10"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G19",
+          "GATE-G20",
+          "GATE-G27",
+          "GATE-G28"
+        ]
+      },
+      {
+        "id": "ICTC09",
+        "title": "Scenario and grammar factory",
+        "depth": 7,
+        "weight": 6,
+        "impact": 4,
+        "uncertainty": 4,
+        "risk": 22,
+        "blockedBy": [
+          "ICTC07",
+          "ICTC08"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G16",
+          "GATE-G17"
+        ]
+      },
+      {
+        "id": "ICTC11",
+        "title": "Game balance and no dominant strategies",
+        "depth": 8,
+        "weight": 9,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 34,
+        "blockedBy": [
+          "ICTC08",
+          "ICTC09"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G18",
+          "GATE-G26"
+        ]
+      },
+      {
+        "id": "ICTC13",
+        "title": "Human playtesting, consent and community safety",
+        "depth": 9,
+        "weight": 9,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 34,
+        "blockedBy": [
+          "ICTC11",
+          "ICTC12"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G23",
+          "GATE-G29"
+        ]
+      },
+      {
+        "id": "ICTC14",
+        "title": "Reproducible release and operation",
+        "depth": 10,
+        "weight": 9,
+        "impact": 5,
+        "uncertainty": 5,
+        "risk": 34,
+        "blockedBy": [
+          "ICTC06",
+          "ICTC09",
+          "ICTC13"
+        ],
+        "state": "OPEN",
+        "gates": [
+          "GATE-G24",
+          "GATE-G30",
+          "GATE-G31"
+        ]
+      }
+    ],
+    "scenarioIterations": [
+      {
+        "verifiedWeightedUnitsPerIteration": 1.25,
+        "indicativeIterations": 102
+      },
+      {
+        "verifiedWeightedUnitsPerIteration": 2,
+        "indicativeIterations": 70
+      },
+      {
+        "verifiedWeightedUnitsPerIteration": 3,
+        "indicativeIterations": 53
+      }
+    ],
+    "notes": [
+      "These are ordinal planning capacity assumptions, not throughput measurements.",
+      "No PR, mutation audit, or governance file alone certifies any release gate."
+    ]
+  }
+}

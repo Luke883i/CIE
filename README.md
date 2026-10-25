@@ -34,3 +34,7 @@ A read-only presentation refinement clarifies the actual F7 win contract: reach 
 ## AC-03/AC-04 semantic convergence (experimental)
 
 The optional `[convergence/](convergence/README.md)` contains **two separate** runtime lanes, not a merged multiplayer canon. Use `npm run verify:convergence` for fail-closed proof contracts. `npm run verify:convergence:deep` also runs existing legacy game tests. The release remains BLOCKED; do not expose local servers or credentials to the internet.
+
+## Governance ICTC — Intento, Contratto, Test, Chiusura (project convention)
+
+The release-oriented governance overlay is in [`governance/`](governance/METHOD.md). It reads the previous AC04 pinned assurance graph and maintains a minimal adaptive roadmap of 14 work packages covering 32 still-open product gates. `npm run verify:ictc` runs contract tests, local source assurance and 100,000 controlled registry mutations; **passing does not make the game publishable**. See [`governance/ROADMAP.md`](governance/ROADMAP.md). `main` branch protection/reviews must also be activated in GitHub settings by a repository administrator.

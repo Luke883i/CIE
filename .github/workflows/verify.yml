@@ -1,5 +1,7 @@
 name: CIE deterministic game contracts
 on: [push, pull_request]
+permissions:
+  contents: read
 jobs:
   dual-goals:
     runs-on: ubuntu-latest
@@ -25,3 +27,12 @@ jobs:
         with:
           node-version: '22'
       - run: npm run verify:convergence
+  ictc-governance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run verify:ictc

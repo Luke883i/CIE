@@ -41,6 +41,10 @@
     "verify:convergence": "npm run test:convergence && npm run audit:convergence",
     "verify:convergence:deep": "npm run verify:dual && npm run verify:legacy && npm run verify:convergence",
     "serve:ac03:local": "node convergence/ac03/server/cli.mjs",
-    "serve:ac04:local": "node convergence/ac04/server/http.mjs"
+    "serve:ac04:local": "node convergence/ac04/server/http.mjs",
+    "audit:ictc": "node governance/cli.mjs",
+    "test:ictc": "node --test governance/*.test.mjs",
+    "mutate:ictc": "node governance/mutate.mjs 100000 --write",
+    "verify:ictc": "npm run test:ictc && npm run audit:ictc && npm run mutate:ictc"
   }
 }
