@@ -13,5 +13,6 @@ jobs:
           node-version: '22'
       - run: node --test experience/tests/episode.test.mjs
       - run: node experience/tests/audit.mjs
+      - run: node experience/tests/verify_assurance.mjs
       - run: npm run test:convergence
       - run: npm run test:ictc

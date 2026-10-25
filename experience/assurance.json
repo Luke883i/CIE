@@ -1,0 +1,27 @@
+{
+  "schema": "CIE-EX01-ASSURANCE-1",
+  "projectRelease": "BLOCK",
+  "baseline": {"main": "29e2b1691bf411f7c84e0552e301fcbe24fdc185", "kernelPath": "convergence/ac03/src/golden_crisis.mjs", "kernelGitBlob": "91c946bfb3160d5666c24c9b9b8860c3cb20929d", "v3Path": "convergence/ac03/src/v3_immutable.mjs", "v3GitBlob": "14d31ebae228dca2cdf3b11f24f16d470c7bdf2e"},
+  "auditCrosswalk": {"AUDIT-1": {"purpose": "realistic game availability", "claim": "ONE_TURN_HOTSEAT_ONLY", "proofs": ["experience/tests/episode.test.mjs", "experience/proofs/EX01-audit.json"]}, "AUDIT-2": {"purpose": "provenance and governance", "claim": "LOCAL_INVARIANTS_ONLY", "proofs": ["experience/episode.mjs", "experience/tests/episode.test.mjs"]}, "AUDIT-3": {"purpose": "emerging complex user experience", "claim": "UNVERIFIED_HUMAN_FUN", "proofs": ["experience/web/index.html", "experience/tests/browser_smoke.py"]}},
+  "microGates": [
+    {"id":"EX01-01","audit":"AUDIT-1","state":"LOCAL_PASS","evidence":"experience/web/index.html"},
+    {"id":"EX01-02","audit":"AUDIT-1","state":"LOCAL_PASS","evidence":"experience/tests/episode.test.mjs"},
+    {"id":"EX01-03","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/tests/episode.test.mjs"},
+    {"id":"EX01-04","audit":"AUDIT-3","state":"LOCAL_PASS","evidence":"experience/tests/episode.test.mjs"},
+    {"id":"EX01-05","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/episode.mjs"},
+    {"id":"EX01-06","audit":"AUDIT-3","state":"LOCAL_PASS","evidence":"experience/tests/episode.test.mjs"},
+    {"id":"EX01-07","audit":"AUDIT-1","state":"LOCAL_PASS","evidence":"experience/web/index.html"},
+    {"id":"EX01-08","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/tests/episode.test.mjs"},
+    {"id":"EX01-09","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/tests/episode.test.mjs"},
+    {"id":"EX01-10","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/tests/episode.test.mjs"},
+    {"id":"EX01-11","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/proofs/EX01-audit.json"},
+    {"id":"EX01-12","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/proofs/EX01-audit.json"},
+    {"id":"EX01-13","audit":"AUDIT-2","state":"LOCAL_PASS","evidence":"experience/assurance.json"},
+    {"id":"EX01-14","audit":"AUDIT-3","state":"PARTIAL","evidence":"experience/tests/browser_smoke.py"},
+    {"id":"EX01-15","audit":"AUDIT-3","state":"BLOCK","evidence":null},
+    {"id":"EX01-16","audit":"AUDIT-1","state":"BLOCK","evidence":null}
+  ],
+  "worldReleaseGates": {"total":32,"certified":0,"status":"BLOCK"},
+  "claimScope": "BOUNDED_SINGLE_QUARTER_OVER_AC03_MICROKERNEL",
+  "metrics": {"syntheticEpisodes":960,"replayMismatch":0,"ledgerMismatch":0,"comicSourceFailures":0,"humanParticipants":0,"browserViewports":2,"humanFunMeasured":false,"secureMultiplayer":false}
+}

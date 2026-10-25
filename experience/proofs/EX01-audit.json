@@ -1,0 +1,14 @@
+{
+  "schema": "CIE-EX01-AUDIT-1",
+  "seeds": 320,
+  "campaigns": 960,
+  "full": 320,
+  "partial": 640,
+  "loans": 640,
+  "courtStays": 320,
+  "scarcity": 320,
+  "sourceFailures": 0,
+  "balanceFailures": 0,
+  "replayFailures": 0,
+  "globalRelease": "BLOCK"
+}
