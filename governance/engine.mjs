@@ -69,13 +69,13 @@ export function validate(reg, {readAssets=false, root=path.join(dir,'..')}={}){
  }
  return {pass:errors.length===0,errors};
 }
-export function plan(reg){
- const checked=validate(reg);if(!checked.pass)throw Error('INVALID_GOVERNANCE_REGISTRY:'+checked.errors.join(','));
+export function plan(reg,{simulation=false}={}){
+ const checked=validate(reg,{readAssets:!simulation});if(!checked.pass)throw Error('INVALID_GOVERNANCE_REGISTRY:'+checked.errors.join(','));
  const work=reg.workPackages;const map=new Map(work.map(x=>[x.id,x]));const memo=new Map();
  const depth=(id)=>{if(memo.has(id))return memo.get(id);const p=map.get(id);const d=1+Math.max(0,...p.dependsOn.map(depth));memo.set(id,d);return d};
  const rows=work.map(x=>({id:x.id,title:x.title,depth:depth(x.id),weight:x.weight,impact:x.impact,uncertainty:x.uncertainty,risk:x.impact*x.uncertainty+x.weight,blockedBy:x.dependsOn.filter(d=>!complete(map.get(d))),state:x.state,gates:x.gates}));
  const ready=rows.filter(x=>x.state==='OPEN'&&!x.blockedBy.length).sort((a,b)=>b.risk-a.risk||a.id.localeCompare(b.id));
  const weightedDebt=rows.filter(x=>x.state!=='INTEGRATED').reduce((s,x)=>s+x.weight,0);
  const p=reg.scenarioPlanning,reserve=p.integrationReserve+p.humanCycles+p.stabilizationReserve;
- return {schema:'CIE-ICTC-PLAN-1',release:'BLOCK',gateClosure:0,globalGates:reg.gates.length,workPackages:rows.length,weightedDebt,criticalDependencyDepth:Math.max(...rows.map(x=>x.depth)),ready:ready.map(x=>x.id),ranked:rows.sort((a,b)=>a.depth-b.depth||b.risk-a.risk||a.id.localeCompare(b.id)),scenarioIterations:p.deliveredCapacityPerIteration.map(rate=>({verifiedWeightedUnitsPerIteration:rate,indicativeIterations:Math.ceil(weightedDebt/rate)+reserve})),notes:['These are ordinal planning capacity assumptions, not throughput measurements.','No PR, mutation audit, or governance file alone certifies any release gate.']};
+ return {schema:'CIE-ICTC-PLAN-1',simulation,release:'BLOCK',gateClosure:0,globalGates:reg.gates.length,workPackages:rows.length,weightedDebt,criticalDependencyDepth:Math.max(...rows.map(x=>x.depth)),ready:ready.map(x=>x.id),ranked:rows.sort((a,b)=>a.depth-b.depth||b.risk-a.risk||a.id.localeCompare(b.id)),scenarioIterations:p.deliveredCapacityPerIteration.map(rate=>({verifiedWeightedUnitsPerIteration:rate,indicativeIterations:Math.ceil(weightedDebt/rate)+reserve})),notes:['These are ordinal planning capacity assumptions, not throughput measurements.','No PR, mutation audit, or governance file alone certifies any release gate.']};
 }

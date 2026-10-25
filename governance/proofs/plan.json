@@ -5,6 +5,7 @@
   },
   "plan": {
     "schema": "CIE-ICTC-PLAN-1",
+    "simulation": false,
     "release": "BLOCK",
     "gateClosure": 0,
     "globalGates": 32,

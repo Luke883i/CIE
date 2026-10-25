@@ -42,3 +42,5 @@ We hybridize: OpenSSF repository best practices (branch protection and least-pri
 ## Fail-closed nature and limits
 
 A passing audit means *this pinned governance overlay is structurally consistent*. It does NOT prove runtime behavior, human enjoyment, security of a multiplayer deployment, completeness of discovered needs, signed supply-chain provenance, or release readiness. The 100k mutations target defined detector classes; unmodelled attacks may survive. Schema and gate pins are not a substitute for trusted approvals.
+
+**Official planning hardening:** `plan(registry)` validates the bytes of all claimed proof artifacts before promoting downstream readiness; `plan(registry,{simulation:true})` is solely an explicitly labeled hypothetical scenario and can never change gate certification.

@@ -79,3 +79,5 @@ Weighted open units = sum of package weights not at the evidence-backed INTEGRAT
 ## Release rule
 
 `BLOCK` until: every `GATE-G01 ... GATE-G32` has fresh evidence from the *same exact release candidate*, signed/offline-verifiable provenance where required, independently reviewed human studies and operational drill results; owner approval recorded outside these scripts. Any P0 exception or stale evidence blocks release.
+
+**No ghost-proof progress:** the official planner performs `readAssets:true`; a nonexistent or stale evidence artifact blocks readiness. Only `simulation:true` may bypass disk evidence, and its output is clearly labeled hypothetical.
