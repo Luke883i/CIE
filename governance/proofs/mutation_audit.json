@@ -113,6 +113,5 @@
   ],
   "pass": true,
   "scope": "registry semantics and integrity only, not gameplay or human efficacy",
-  "baselineSha256": "72ad495d9297aac1bb357de8843651708c3c2250652701465f1a01ef7ef3f6e4",
-  "elapsedMs": 22809
+  "baselineSha256": "72ad495d9297aac1bb357de8843651708c3c2250652701465f1a01ef7ef3f6e4"
 }

@@ -57,7 +57,7 @@ export function run(count=100000){
  return report;
 }
 if(import.meta.url===`file://${process.argv[1]}`){
- const count=Number(process.argv[2]||100000);const start=performance.now();const result=run(count);result.elapsedMs=Math.round(performance.now()-start);console.log(JSON.stringify(result,null,2));
+ const count=Number(process.argv[2]||100000);const start=performance.now();const result=run(count);const elapsedMs=Math.round(performance.now()-start);console.log(JSON.stringify({...result,benchmarkElapsedMs:elapsedMs},null,2));
  if(process.argv.includes('--write')){mkdirSync('governance/proofs',{recursive:true});writeFileSync('governance/proofs/mutation_audit.json',JSON.stringify(result,null,2)+'\n');}
  if(!result.pass)process.exitCode=1;
 }
