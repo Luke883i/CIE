@@ -1,0 +1,12 @@
+{
+  "schema": "CIE-EX02-ASSURANCE-1",
+  "baseMain": "9eb7a70f9d647f5a4ac68988f2528a08e99b00a7",
+  "kernelBlob": "91c946bfb3160d5666c24c9b9b8860c3cb20929d",
+  "roleModelBlob": "14d31ebae228dca2cdf3b11f24f16d470c7bdf2e",
+  "audits": ["AUDIT-1", "AUDIT-2", "AUDIT-3"],
+  "local": {"contract": "experience/docs/EX02_CONTRACT.md", "previewTests": "experience/tests/choice_contract.test.mjs", "mutationAudit": "experience/tests/audit_ex02.mjs", "browserBridge": "experience/tests/browser_ex02_smoke.py"},
+  "metrics": {"syntheticEpisodes": 600, "legalPreviews": 9000, "negativePreviews": 3000, "previewStateMutations": 0, "replayFailures": 0, "ledgerFailures": 0, "sourceFailures": 0, "humanParticipants": 0},
+  "scope": "ONE_QUARTER_FIVE_ROLE_HOTSEAT_OVER_AC03",
+  "open": ["HUMAN_COMPREHENSION", "HUMAN_FUN", "HOSTED_BROWSER_E2E", "SECURE_MULTIPLAYER", "FULL_CAMPAIGN", "INDEPENDENT_ACCESSIBILITY_AUDIT"],
+  "globalGates": {"total": 32, "certified": 0, "status": "BLOCK"}
+}

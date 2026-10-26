@@ -1,0 +1,21 @@
+/** Fail-closed EX02 scope gate. Does not imply production certification. */
+import {readFileSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const root=new URL('../../',import.meta.url);
+const get=p=>readFileSync(new URL(p,root));
+const reg=JSON.parse(get('experience/assurance_ex02.json'));
+const audit=JSON.parse(get('experience/proofs/EX02-audit.json'));
+const blob=p=>{const b=get(p);return createHash('sha1').update(Buffer.from(`blob ${b.length}\0`)).update(b).digest('hex')};
+const must=(x,message)=>{if(!x)throw Error('EX02_ASSURANCE_'+message)};
+must(reg.schema==='CIE-EX02-ASSURANCE-1'&&reg.scope==='ONE_QUARTER_FIVE_ROLE_HOTSEAT_OVER_AC03','SCOPE');
+must(reg.globalGates.status==='BLOCK'&&reg.globalGates.certified===0&&reg.globalGates.total===32,'FALSE_RELEASE');
+must(reg.metrics.humanParticipants===0&&reg.open.includes('HUMAN_FUN')&&reg.open.includes('SECURE_MULTIPLAYER'),'FALSE_MATURITY');
+must(blob('convergence/ac03/src/golden_crisis.mjs')===reg.kernelBlob,'KERNEL_DRIFT');
+must(blob('convergence/ac03/src/v3_immutable.mjs')===reg.roleModelBlob,'ROLE_DRIFT');
+for(const p of Object.values(reg.local))must(existsSync(new URL(p,root)),'MISSING_'+p);
+must(reg.audits.length===3&&new Set(reg.audits).size===3,'AUDITS');
+must(audit.scenarios===reg.metrics.syntheticEpisodes&&audit.legalPreviews===reg.metrics.legalPreviews&&audit.invalidPreviewsRejected===reg.metrics.negativePreviews,'AUDIT_COUNTS');
+must(audit.noMutationFailures===0&&audit.replayFailures===0&&audit.ledgerFailures===0&&audit.unsourcedPanels===0&&audit.globalRelease==='BLOCK','AUDIT_FAILURE');
+const app=get('experience/web/app.mjs').toString();
+must(app.includes("import {choiceMeaning} from '../choice_contract.mjs'")&&app.includes('showChoiceMeaning(v,c.code)'),'UI_NOT_WIRED');
+console.log(JSON.stringify({pass:true,scope:reg.scope,globalRelease:'BLOCK',audit:reg.audits,sourcePins:'MATCH',episodes:audit.scenarios}));
