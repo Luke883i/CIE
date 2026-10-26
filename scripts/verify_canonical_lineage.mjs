@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+const read=p=>fs.readFileSync(p,'utf8');
+const main=read('web/index.html'),controller=read('web/canonical.mjs'),model=read('web/canonical_model.mjs');
+if(!main.includes('canonical.mjs')||main.includes('http-equiv="refresh"'))throw Error('CANONICAL_ENTRY');
+if(!controller.includes("../experience/episode.mjs")||!model.includes("../experience/choice_contract.mjs"))throw Error('SOURCE_LINEAGE');
+if(controller.includes('golden_crisis.mjs')||model.includes('golden_crisis.mjs'))throw Error('SECOND_ENGINE');
+const walk=dir=>fs.existsSync(dir)?fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${dir}/${e.name}`):e.name.endsWith('.html')?[`/${dir}/${e.name}`]:[]):[];
+const all=['web','experience/web','convergence/ac03/web','convergence/ac04/web'].flatMap(walk).sort();
+const registry=JSON.parse(read('registry/legacy_routes.json'));if(registry.canonical!=='/web/index.html'||registry.historic.length!==11||registry.globalRelease!=='BLOCK')throw Error('WRONG_CANONICAL_REGISTRY');
+const expected=['/web/index.html',...registry.historic].sort();if(JSON.stringify(all)!==JSON.stringify(expected))throw Error('UNREGISTERED_HOME_OR_MISSING_ROUTE');
+const sbom=JSON.parse(read('registry/sbom_ux_spdx.json'));if(sbom.spdxVersion!=='SPDX-2.3'||!sbom.packages.length)throw Error('SBOM');
+console.log(JSON.stringify({canonical:'/web/index.html',legacy:registry.historic.length,choiceContract:'EX02',runtime:'EX01/AC03',release:'BLOCK'}));
