@@ -47,6 +47,8 @@
     "mutate:ictc": "node governance/mutate.mjs 100000 --write",
     "verify:ictc": "npm run test:ictc && npm run audit:ictc && npm run mutate:ictc",
     "verify:experience": "node --test experience/tests/episode.test.mjs experience/tests/choice_contract.test.mjs && node experience/tests/audit.mjs && node experience/tests/audit_ex02.mjs && node experience/tests/verify_assurance.mjs && node experience/tests/verify_ex02_assurance.mjs",
-    "verify:canonical": "node scripts/verify_canonical_lineage.mjs && node --test tests/canonical.test.mjs && node scripts/audit_canonical.mjs"
+    "verify:canonical": "node scripts/verify_canonical_lineage.mjs && node --test tests/canonical.test.mjs && node scripts/audit_canonical.mjs",
+    "audit:campaign": "node scripts/audit_campaign.mjs",
+    "verify:campaign": "node --test tests/campaign_turn.test.mjs && node scripts/audit_campaign.mjs"
   }
 }
