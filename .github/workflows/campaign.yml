@@ -1,0 +1,30 @@
+name: CP02 complete turn campaign
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'web/campaign*'
+      - 'tests/campaign_turn.test.mjs'
+      - 'scripts/audit_campaign.mjs'
+      - 'package.json'
+      - '.github/workflows/campaign.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'web/campaign*'
+      - 'tests/campaign_turn.test.mjs'
+      - 'scripts/audit_campaign.mjs'
+      - 'package.json'
+      - '.github/workflows/campaign.yml'
+  workflow_dispatch:
+jobs:
+  complete-turns:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Complete campaign and role replay audit
+        run: npm run verify:campaign

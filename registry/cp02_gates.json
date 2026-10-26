@@ -1,0 +1,84 @@
+{
+  "schema": "CIE-CP02-GATES-1",
+  "parent": "CP01",
+  "localGates": [
+    {
+      "id": "CP02-L01",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L02",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L03",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L04",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L05",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L06",
+      "status": "CI_OR_REVIEW_PENDING",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L07",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L08",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L09",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L10",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L11",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L12",
+      "status": "LOCAL_VERIFIED",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L13",
+      "status": "CI_OR_REVIEW_PENDING",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L14",
+      "status": "CI_OR_REVIEW_PENDING",
+      "releaseCertified": false
+    },
+    {
+      "id": "CP02-L15",
+      "status": "CI_OR_REVIEW_PENDING",
+      "releaseCertified": false
+    }
+  ],
+  "globalGatesCertified": 0,
+  "globalGatesTotal": 32,
+  "release": "BLOCK"
+}
