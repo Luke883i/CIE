@@ -1,0 +1,14 @@
+{
+  "schema": "CIE-EX02-ADVERSARIAL-1",
+  "seeds": 200,
+  "scenarios": 600,
+  "legalPreviews": 9000,
+  "roleViews": 3000,
+  "invalidPreviewsRejected": 3000,
+  "noMutationFailures": 0,
+  "replayFailures": 0,
+  "ledgerFailures": 0,
+  "unsourcedPanels": 0,
+  "globalRelease": "BLOCK",
+  "humanParticipants": 0
+}

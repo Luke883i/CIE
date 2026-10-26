@@ -45,6 +45,7 @@
     "audit:ictc": "node governance/cli.mjs",
     "test:ictc": "node --test governance/*.test.mjs",
     "mutate:ictc": "node governance/mutate.mjs 100000 --write",
-    "verify:ictc": "npm run test:ictc && npm run audit:ictc && npm run mutate:ictc"
+    "verify:ictc": "npm run test:ictc && npm run audit:ictc && npm run mutate:ictc",
+    "verify:experience": "node --test experience/tests/episode.test.mjs experience/tests/choice_contract.test.mjs && node experience/tests/audit.mjs && node experience/tests/audit_ex02.mjs && node experience/tests/verify_assurance.mjs && node experience/tests/verify_ex02_assurance.mjs"
   }
 }
