@@ -14,4 +14,4 @@
 
 Vedi `docs/CP01_CONTRACT.md`: 18 DoD locali, tre catene E2E, release 0/32. I risultati locali vengono confermati sulla source real del repository dalla CI della PR; solo dopo quel risultato il merge può essere preso in considerazione.
 
-La homepage non sostiene di essere il gioco completo; preserva le nove route legacy, no eliminazione di motori o archivi. La ricerca su 100 giochi è uno scouting documentale ragionato per trasferimento di primitive, non osservazione empirica o riuso di proprietà intellettuale.
+La homepage non sostiene di essere il gioco completo; preserva le undici route legacy, no eliminazione di motori o archivi. La ricerca su 100 giochi è uno scouting documentale ragionato per trasferimento di primitive, non osservazione empirica o riuso di proprietà intellettuale.

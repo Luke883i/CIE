@@ -18,7 +18,7 @@ Baseline ispezionata: `main` `6918a3da1562b629b66eacb050a7ee6cd7737509`, PR #16 
 | Significato della scelta | PR16 EX02 | competenza, costo e incertezza prima di confermare | proiezione read-only |
 | Homepage unica | CP01 questa PR | tavolo+carte+drilldown, riuso EX01/EX02 | nuova entrata, stessa meccanica |
 
-## Censimento homepage HTML pre-CP01 (`web/`)
+## Censimento completo delle 12 homepage HTML di `main` pre-CP01
 
 | Route | Cosa mostra | Classificazione dopo CP01 |
 |---|---|---|
@@ -32,5 +32,9 @@ Baseline ispezionata: `main` `6918a3da1562b629b66eacb050a7ee6cd7737509`, PR #16 
 | `/web/f10.html` | Focus/obiettivi | LEGACY leggibile |
 | `/web/f10-expert.html` | dashboard esperta | LEGACY leggibile |
 | `/experience/web/index.html` | EX01+EX02 giocabile | LEGACY REFERENZA E2E; non eliminata |
+| `/convergence/ac03/web/index.html` | esperimento HTTP persistente AC03 | LABORATORIO LEGACY, non home commerciale |
+| `/convergence/ac04/web/index.html` | adattatore F7 persistente AC04 | LABORATORIO LEGACY, non home commerciale |
 
 Le pagine legacy non vengono cancellate o redirette: replay e deep link possono dipenderne. La deprecazione è **a livello di navigazione canonica e di registro**; non è una rimozione immediata. Nessun asset storico viene riciclato senza verifica di provenienza.
+
+Il censimento fallisce se una nuova pagina HTML nelle quattro radici note non compare nel registro. Numero: 12 homepage = 1 canonica + 11 legacy.

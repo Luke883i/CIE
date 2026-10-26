@@ -9,7 +9,7 @@ Il tavolo CP01 usa `experience/episode.mjs` (EX01) e `experience/choice_contract
 | Id | Requisito | Falsificatore | Prova attesa |
 |---|---|---|---|
 | CP-L01 | Una sola URL d'ingresso `/web/` | redirect verso F10 | ispezione HTML |
-| CP-L02 | Nove vecchie route web + EX01 mantenute | pagina eliminata | census e diff |
+| CP-L02 | Undici homepage legacy/laboratorio mantenute | pagina eliminata | census e diff |
 | CP-L03 | Decisione autorizzata per ruolo | giudice ordina porto | suite cinque ruoli |
 | CP-L04 | Spiegazione potere/costo/incertezza | preview insicura | `choiceMeaning` |
 | CP-L05 | Vista pura: nessuna mutazione osservando | hash differente | 15k proiezioni |
